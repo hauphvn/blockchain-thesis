@@ -1,0 +1,1093 @@
+.top-head-bg {
+  display: none;
+}
+
+@media (max-width: 1300.9px) {
+
+  .top-menu-wrapper div ul:not(.sub-menu) > li {
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: 1199.9px) {
+  body {
+    padding-top: 58px;
+  }
+
+  .mobile-top-menu-toggle {
+    display: inline-block;
+  }
+
+  .logo-wrapper {
+    display: inline-block;
+    padding-left: 20px;
+  }
+
+  .head-call-to-action {
+    margin: 15px 0 0;
+    text-align: right;
+  }
+
+  .head-call-to-action .btn {
+    padding: 6px 16px 5px;
+    border-radius: 3px;
+    font-size: 18px;
+  }
+
+  .logo-wrapper img {
+    width: 205px;
+    max-width: 100%;
+  }
+
+  .top-menu-wrapper div ul:not(.sub-menu) > li {
+    margin-left: 10px;
+  }
+
+  .top-section-widget .widget .landing-title {
+    font-size: 28px;
+  }
+
+  .top-section-widget .widget .landing-description {
+    font-size: 18px;
+  }
+
+  .exitpopup-modal-window {
+    max-width: 100% !important;
+    height: auto;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+
+  .title-xl {
+    font-size: 38px;
+  }
+
+  .top-head-wrapper {
+    padding: 90px 0;
+  }
+
+  .top-head-bg img {
+    top: 0;
+  }
+
+  .brands-logo-section {
+    padding: 10px 0 0 40px;
+  }
+
+  .brands-logo-section h3 {
+    font-size: 14px;
+  }
+
+  .brand-logo,
+  .brand-logo-first-row,
+  .brand-logo-second-row {
+    padding: 10px;
+  }
+
+  .brand-logo-yandex,
+  .brand-logo-samsung {
+    margin-right: 15px;
+    margin-left: 10px;
+  }
+
+  .brand-logo-samsung {
+    margin-right: 30px;
+  }
+
+  .brand-logo-disney {
+    margin-right: 0;
+  }
+
+  .brand-logo.brand-logo-startups img,
+  .brand-logo.brand-logo-combinator img {
+    max-width: 130px;
+  }
+
+  .logos-title-box {
+    padding: 20px 10px;
+    max-width: 25%;
+  }
+
+  .developer-card-section .slick-track {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+
+  .feature-description {
+    padding-top: 20px;
+    padding-right: 15px;
+  }
+
+  .feature-description h3 {
+    margin: 20px 0 20px;
+  }
+
+  .feature-description p,
+  blockquote.testimonial-quote,
+  .testimonial-author,
+  .testimonial-author .testimonial-author-name,
+  .testimonial-services ul {
+    font-size: 16px;
+  }
+
+  .quote-sign {
+    width: 56px;
+  }
+
+  blockquote.testimonial-quote .quote-sign::before {
+    font-size: 140px;
+    top: 27px;
+  }
+
+  .testimonial-card {
+    text-align: center;
+  }
+
+  .howto-card-title {
+    position: relative;
+  }
+
+  .howto-card-img {
+    height: 170px;
+  }
+
+  .howto-step-number {
+    display: block;
+    position: absolute;
+    top: -65px;
+    left: 0;
+  }
+
+  .howto-step-title {
+    display: block;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .content-section {
+    padding: 30px 0;
+  }
+
+  .right-sidebar {
+    padding: 0 15px;
+  }
+
+  .seen-logo img {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .skill-list-padding {
+    padding-left: 40px;
+  }
+
+  .feature-wrapper:last-child {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .projects-slider {
+    letter-spacing: -0.3em;
+  }
+
+  .projects-slider > div {
+    letter-spacing: normal;
+    display: inline-block;
+    width: 50%;
+  }
+
+  .widget-project-cards {
+    border-top: 1px solid #d3e0e9;
+    padding-top: 30px;
+  }
+
+  .widget-project-slider.projects-slider > div {
+    width: 25%;
+  }
+}
+
+@media (max-width: 1199.9px) and (min-width: 991.9px) {
+  .comparison-box .comparison-box-head {
+    min-height: 70px;
+  }
+}
+
+@media (max-width: 1199.9px) and (min-width: 767.9px) {
+  .comparison-box ul li {
+    padding: 5px 0;
+  }
+}
+
+@media (max-width: 991.9px) and (min-width: 767.9px) {
+  .seen-logo.seen-logo-inc img {
+    max-height: 25px;
+    margin-top: 3px;
+  }
+}
+
+@media (max-width: 991.9px) {
+  /* Content*/
+  .top-head-wrapper {
+    background-image: none;
+    padding: 80px 0 0;
+    position: relative;
+  }
+
+  .top-head-bg {
+    position: absolute;
+    top: 0;
+    height: 550px;
+    width: 100%;
+    display: block;
+  }
+
+  .top-head-wrapper,
+  .brands-logo-section,
+  .brands-logo-wrapper {
+    text-align: center;
+  }
+
+  .brands-logo-section h3 {
+    font-size: 16px;
+  }
+
+  .top-head-wrapper h1,
+  .top-head-wrapper .h1 {
+    max-width: 100%;
+  }
+
+  .top-head-banner p {
+    padding-right: 0;
+  }
+
+  .form-wrapper {
+    text-align: left;
+  }
+
+  .brands-logo-section {
+    padding-left: 0;
+  }
+
+  .brands-logo-section h3 {
+    padding-top: 60px;
+  }
+
+  .brand-logo:nth-child(3n+3) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .brand-logo-samsung,
+  .brand-logo-yandex,
+  .brand-logo-disney {
+    margin-right: 0;
+  }
+
+  .brands-logo-section {
+    margin-top: 60px;
+  }
+
+  .brand-logo img {
+    max-width: 150px;
+  }
+
+  .brand-logo,
+  .brand-logo-first-row,
+  .brand-logo-second-row {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .logos-title-box {
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .logos-title-box p {
+    text-transform: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .logos-title-box p span {
+    text-transform: none;
+    display: inline;
+  }
+
+  body.home .entry-content {
+    padding-right: 0;
+  }
+
+  #secondary .widget {
+    width: 100% !important;
+  }
+
+  article.post ul, article.post ol, article.post p {
+    margin-bottom: 10px;
+  }
+
+  .feature-wrapper:not(:first-child) {
+    border-top: 1px solid #ccc;
+  }
+
+  .feature-wrapper {
+    margin: 20px 0 0;
+    padding: 30px 0 20px;
+  }
+
+  .feature-wrapper:nth-child(2n+2) .feature-image,
+  .feature-image {
+    padding: 0;
+  }
+
+  .feature-image img {
+    display: block;
+    width: 80%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .feature-description {
+    padding-left: 0;
+    padding-top: 40px;
+  }
+
+  .feature-description h4 {
+    margin: 0 0 15px;
+    font-size: 24px;
+    padding-top: 0 !important;
+  }
+
+  .feature-wrapper:nth-child(2n+2) .feature-description {
+    padding-right: 0;
+    padding-top: 40px;
+  }
+
+  /* howto*/
+  .howto-card {
+    letter-spacing: -0.3em;
+  }
+
+  .howto-card-img {
+    display: inline-block;
+    width: 210px;
+    letter-spacing: normal;
+    vertical-align: middle;
+  }
+
+  .howto-desc-block {
+    display: inline-block;
+    width: calc(100% - 210px);
+    padding-left: 40px;
+    vertical-align: middle;
+    letter-spacing: normal;
+  }
+
+  .howto-step-number {
+    display: inline-block;
+    position: relative;
+    top: 0;
+  }
+
+  .howto-step-title {
+    display: inline-block;
+    padding-left: 10px;
+    width: calc(100% - 40px);
+  }
+
+  /* Clutch */
+  .clutch-info-row,
+  .clutch-testimonials-link-wrapper {
+    text-align: center;
+  }
+
+  .clutch-testimonials-link-wrapper {
+    padding: 20px 0;
+  }
+
+  /* Project card   */
+  .project-card-wrapper {
+    background-size: cover;
+    border: 1px solid #ccc;
+    background-position: top center;
+    height: 360px;
+  }
+
+  .project-card-info h3 {
+    height: auto;
+  }
+
+  /* Developers slider horz   */
+  .developer-card-horz .box-card-body {
+    text-align: center;
+  }
+
+  .project-card-description {
+    overflow-y: hidden;
+  }
+
+  .developer-card-horz .developer-description-wrapper {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .developer-card-horz {
+    margin: 15px;
+  }
+
+  .developer-card-horz .box-card-body {
+    padding: 10px;
+  }
+
+  .developer-card-horz h4 {
+    font-size: 18px;
+  }
+
+  .scholarship-page-banner {
+    padding: 100px 0 10px;
+  }
+
+  /*  Footer request widget  */
+  .request-widget .purple-filter {
+    padding: 120px 0;
+  }
+
+  .request-widget-inner {
+    line-height: 1.3;
+    font-size: 24px;
+  }
+
+  .btn-lg {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .page-head {
+    background-image: url(../../img/header-inner-mobile.svg);
+  }
+
+  .single-post .site-main {
+    padding: 15px 0;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .footer-column:last-child {
+    width: 100%;
+  }
+
+  .footer-list {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .developer-slider-horz .slick-prev {
+    left: 5px;
+    z-index: 2;
+  }
+  .developer-slider-horz .slick-next{
+    right: -5px;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 782px) {
+  .admin-bar .header-wrapper {
+    top: 45px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .page-head h1,
+  .page-head .h1 {
+    font-size: 40px;
+  }
+
+  .content-section-title,
+  .landing-section-title {
+    font-size: 28px;
+  }
+
+  .wmle_container .wmle_item .wmle_post_excerpt p:last-child {
+    text-align: left;
+  }
+
+  #mc_embed_signup .button {
+    font-size: 15px;
+    padding: 25px 10px 24px;
+  }
+
+  .page-header {
+    padding-bottom: 0;
+  }
+
+  .entry-title {
+    font-size: 26px !important;
+  }
+
+  #primary article.post .entry-content > h2:not(.awac-wrapper) {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  #primary article.post .entry-content > h3:not(.awac-wrapper) {
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+
+  #primary article.post .entry-content > h4:not(.awac-wrapper) {
+    margin: 15px 0;
+  }
+
+  #primary article.post .entry-content > *:not(.awac-wrapper) {
+    font-size: 17px;
+  }
+
+  article.post ul, article.post ol, article.post p {
+    margin-bottom: 10px;
+  }
+
+  .single-post .site-main {
+    padding: 15px 0;
+  }
+
+  #exitpopup-showexit .modal-body {
+    padding: 20px;
+  }
+
+  #exitpopup-showexit .exitpopup-modal-window h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+
+  #exitpopup-showexit .modal-small-block div {
+    font-size: 18px;
+  }
+
+  #exitpopup-showexit #mc_embed_signup input.email {
+    font-size: 15px;
+    height: 50px;
+    max-width: 185px;
+  }
+
+  #exitpopup-showexit .modal-body .button.btn-default {
+    font-size: 16px;
+    padding: 10px 0;
+    height: 50px;
+    max-width: 185px;
+  }
+
+  /* Top Banner  */
+  .top-head-bg {
+    text-align: center;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .top-head-bg img {
+    width: auto;
+    display: inline-block;
+    height: 400px;
+    min-width: 100%;
+    max-width: none;
+  }
+
+  /* Video section  */
+  .video-slide-preview .widget-play-icon i {
+    top: 40%;
+    font-size: 24px;
+    width: 55px;
+    height: 55px;
+    padding-left: 6px;
+    padding-top: 15px;
+  }
+
+  /* Banner  */
+  .horz-banner-wrapper {
+    margin: 25px 0;
+    padding: 25px 5px;
+  }
+
+  .horz-banner-wrapper .description-wrapper {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-right: 0;
+  }
+
+  .horz-banner-wrapper .btn-wrapper {
+    width: 100%;
+  }
+
+  .testimonial-card {
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+
+  /* Seen section   */
+  .seen-logos-wrapper .seen-logo:nth-child(6),
+  .seen-logos-wrapper .seen-logo:nth-child(7),
+  .seen-logos-wrapper .seen-logo:nth-child(8),
+  .seen-logos-wrapper > * {
+    width: 33.333%;
+  }
+
+  .seen-logos-wrapper .seen-logo:nth-child(5) {
+    text-align: center;
+  }
+
+  /* Comparison table   */
+  .comparison-box {
+    width: 100%;
+    margin: 20px auto;
+    max-width: 380px;
+    font-size: 14px;
+  }
+
+  .comparison-box .comparison-box-head {
+    font-size: 16px;
+    min-height: inherit;
+  }
+
+  .comparison-box ul li {
+    height: 65px;
+  }
+
+  /* scholarship    */
+  .screen-arrow-down {
+    display: none;
+  }
+
+  .eligibility-icon-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+
+  .eligibility-description-wrapper {
+    padding-top: 20px;
+    padding-left: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .btns-inline-wrapper .btn {
+    display: block;
+    max-width: 320px;
+    margin: 15px auto;
+  }
+}
+
+@media (max-width: 575.9px) {
+  body {
+    padding-top: 40px;
+  }
+
+  .page-head h1,
+  .page-head .h1 {
+    font-size: 32px;
+  }
+
+  .hidden-xxs {
+    display: none;
+  }
+
+  .mobile-top-menu-toggle {
+    padding: 18px 0 7px;
+  }
+
+  .logo-wrapper {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    padding: 10px 0 13px;
+  }
+
+  .logo-wrapper a {
+    pointer-events: auto;
+  }
+
+  /* Seen section   */
+  .seen-logos-wrapper .seen-logo:nth-child(6),
+  .seen-logos-wrapper .seen-logo:nth-child(7),
+  .seen-logos-wrapper .seen-logo:nth-child(8),
+  .seen-logos-wrapper > * {
+    width: 50%;
+    text-align: center;
+  }
+
+  .seen-logos-wrapper .seen-logo:nth-child(3n+3),
+  .seen-logos-wrapper .seen-logo:nth-child(2n+2),
+  .seen-logos-wrapper .seen-logo:nth-child(5) {
+    text-align: center;
+  }
+
+  .skills-list-toggle h4 {
+    font-size: 18px;
+    width: calc(100% - 24px);
+  }
+
+  .skills-list-toggle .skills-toggle-icon {
+    width: 16px;
+  }
+
+  .vetting-img-wrapper {
+    display: none;
+  }
+
+  .vetting-grey-section .vetting-process-desc,
+  .vetting-process-desc {
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .vetting-process-desc-inline {
+    padding: 60px 0;
+  }
+
+  .vetting-process-desc .text-bigger {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+
+  h1,
+  .h1 {
+    font-size: 24px;
+  }
+
+  .page-title {
+    font-size: 36px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 22px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 18px;
+  }
+
+  h4,
+  .h4 {
+  }
+
+  .scholarship-page-content h1,
+  .scholarship-page-content .h1 {
+    text-align: left;
+  }
+
+  .scholarship-video-section h1,
+  .scholarship-video-section .h1 {
+    text-align: center;
+  }
+
+  .eligibility-banner-head .intro-text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .btn-custom,
+  .btn-inverse {
+    padding: 14px 20px;
+  }
+
+  .mobile-top-menu-toggle {
+    padding: 11px 0;
+  }
+
+  .logo-wrapper img {
+    width: 160px;
+  }
+
+  .top-head-wrapper {
+    padding: 60px 0;
+  }
+
+  .box-content-wrapper {
+    padding: 20px 15px;
+  }
+
+  .form-wrapper .form-error {
+    top: auto;
+    bottom: -30px;
+  }
+
+  .title-xl {
+    font-size: 28px;
+  }
+
+  .intro-text,
+  .request-widget-inner p,
+  .top-head-wrapper p {
+    font-size: 18px;
+  }
+
+  .content-section {
+    font-size: 16px;
+  }
+
+  .expertise-table-wrapper .expertise-table-content {
+    padding: 10px;
+  }
+
+  .expertise-table-wrapper .expertise-table-th {
+    padding-bottom: 0;
+  }
+
+  .developer-card {
+    min-width: auto;
+    margin: 10px;
+    padding: 10px;
+    min-height: 360px;
+  }
+
+  .developer-pic {
+    margin-top: 30px;
+  }
+
+  .bg-inclined-wrapper {
+    padding: 20px 0;
+  }
+
+  .bg-inclined::after {
+    border-width: 20px 100vw 0 0;
+  }
+
+  .bg-inclined::before {
+    border-width: 20px 0 0 100vw;
+  }
+
+  .content-section-title,
+  .landing-section-title {
+    font-size: 24px;
+  }
+
+  .brand-logo, .brand-logo-first-row, .brand-logo-second-row {
+    padding: 20px 5px;
+  }
+
+  .brand-logo:nth-child(3n+3) {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .brand-logo:nth-child(3n+3).brand-logo-mi {
+    padding: 20px 10px;
+  }
+
+  .brand-logo-combinator img {
+    margin-right: 20px;
+  }
+
+  /* howto*/
+  .howto-card {
+    letter-spacing: -0.3em;
+    margin: 10px 15px;
+  }
+
+  .howto-card-img {
+    display: block;
+    width: 100%;
+    letter-spacing: normal;
+  }
+
+  .howto-desc-block {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    letter-spacing: normal;
+  }
+
+  .howto-card-title {
+    margin: 20px 0 15px;
+  }
+
+  .howto-card-description {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  /* Clutch  */
+  .clutch-info-row.inline-wrapper > * {
+    display: block;
+  }
+
+  .clutch-info-row .clutch-logo {
+    margin: 20px auto;
+  }
+
+  /*  Developers slider horz  */
+  .developer-card-horz .developer-pic {
+    height: 175px;
+    width: 175px;
+  }
+
+  .developer-card-horz .tags-skills {
+  }
+
+  /*  Footer request widget  */
+  .request-widget .purple-filter {
+    padding: 60px 0;
+  }
+
+  .request-widget-inner {
+    line-height: 1.3;
+    font-size: 18px;
+  }
+
+  .footer-widget .request-widget-inner p {
+    font-size: 18px;
+  }
+
+  .request-widget-inner p {
+    padding: 15px 0 20px;
+  }
+
+  .btn-lg {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .clutch-reviews-body .star-container i {
+    font-size: 20px;
+  }
+
+  .floated-right-img {
+    margin: 15px auto;
+    display: block;
+    float: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .developer-card-horz {
+    margin: 15px 0;
+  }
+
+  .developer-card {
+    min-height: 370px;
+  }
+
+  .developer-slider-horz .slick-next,
+  .developer-slider-horz .slick-prev {
+    top: 125px;
+  }
+
+  .developer-card-slider .slick-next,
+  .developer-card-slider .slick-prev {
+    top: 105px;
+  }
+
+  .developer-card-slider .slick-prev {
+    left: 30px;
+  }
+
+  .developer-card-slider .slick-next {
+    right: 30px;
+  }
+
+  /* Project card   */
+  .project-card-wrapper {
+    height: 410px;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand-logo.brand-logo-startups img,
+  .brand-logo.brand-logo-combinator img,
+  .brand-logo img,
+  .brand-logo-first-row img,
+  .brand-logo-second-row img {
+    max-width: 100%;
+  }
+
+  .brand-logo-samsung img {
+    margin-right: 10px;
+  }
+
+  .sharing-widget ul li a {
+    height: 55px;
+    width: 55px;
+    padding: 15px 0 0;
+    font-size: 21px;
+  }
+
+  .sharing-widget ul li > span {
+    height: 55px;
+    width: 55px;
+    padding: 13px 0 0;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .mobile-top-menu-toggle {
+    display: inline-block;
+    width: 36px;
+  }
+
+  .logo-wrapper {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 50px);
+    vertical-align: top;
+  }
+
+  .logo-wrapper img {
+    max-width: 100%;
+  }
+
+  .title-xl {
+    font-size: 25px;
+  }
+
+  .intro-text,
+  .request-widget-inner p,
+  .top-head-wrapper p {
+    font-size: 16px;
+  }
+
+  .brand-logo,
+  .brand-logo:nth-child(3n+3).brand-logo-mi,
+  .brand-logo-first-row,
+  .brand-logo-second-row {
+    max-width: 50%;
+    padding: 10px 20px;
+  }
+
+  .developer-card {
+    min-height: 330px;
+  }
+
+  .developer-pic {
+    margin-top: 10px;
+  }
+
+  .bg-inclined-wrapper {
+    padding: 10px 0;
+  }
+
+  .bg-inclined::after {
+    border-width: 10px 100vw 0 0;
+  }
+
+  .bg-inclined::before {
+    border-width: 10px 0 0 100vw;
+  }
+}

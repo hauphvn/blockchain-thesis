@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://ethgasstation.info/ -->
+<html lang="en" class="gr__ethgasstation_info"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Meta, title, CSS, favicons, etc. -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ETH Gas Station | Consumer oriented metrics for the Ethereum gas market </title>
+
+    <meta name="keywords" content="Ethereum ETH gas blockchain market price transactions miners users">
+    <meta name="description" content="ETH gasprice recommendations.">
+    
+    <meta property="og:title" content="ETH Gas Station">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ethgasstation.info/images/ETHGasStation.png">
+    <meta property="og:description" content="ETH gas price recommendations.">
+    <meta property="og:url" content="https://ethgasstation.info/">
+
+
+    <!-- Bootstrap -->
+    <style type="text/css" data-tippy-stylesheet="">.tippy-iOS{cursor:pointer!important;-webkit-tap-highlight-color:transparent}.tippy-popper{transition-timing-function:cubic-bezier(.165,.84,.44,1);max-width:calc(100% - 8px);pointer-events:none;outline:0}.tippy-popper[x-placement^=top] .tippy-backdrop{border-radius:40% 40% 0 0}.tippy-popper[x-placement^=top] .tippy-roundarrow{bottom:-7px;bottom:-6.5px;-webkit-transform-origin:50% 0;transform-origin:50% 0;margin:0 3px}.tippy-popper[x-placement^=top] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(180deg);transform:rotate(180deg)}.tippy-popper[x-placement^=top] .tippy-arrow{border-top:8px solid #333;border-right:8px solid transparent;border-left:8px solid transparent;bottom:-7px;margin:0 3px;-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=top] .tippy-backdrop{-webkit-transform-origin:0 25%;transform-origin:0 25%}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(1) translate(-50%,-55%);transform:scale(1) translate(-50%,-55%)}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(.2) translate(-50%,-45%);transform:scale(.2) translate(-50%,-45%);opacity:0}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=visible]{-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}.tippy-popper[x-placement^=top] [data-animation=perspective]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=visible]{-webkit-transform:perspective(700px) translateY(-10px);transform:perspective(700px) translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:perspective(700px) rotateX(60deg);transform:perspective(700px) rotateX(60deg)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=visible]{-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=visible]{-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=hidden]{opacity:0}.tippy-popper[x-placement^=top] [data-animation=scale]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=visible]{-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(-10px) scale(.5);transform:translateY(-10px) scale(.5)}.tippy-popper[x-placement^=bottom] .tippy-backdrop{border-radius:0 0 30% 30%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow{top:-7px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%;margin:0 3px}.tippy-popper[x-placement^=bottom] .tippy-roundarrow svg{position:absolute;left:0}.tippy-popper[x-placement^=bottom] .tippy-arrow{border-bottom:8px solid #333;border-right:8px solid transparent;border-left:8px solid transparent;top:-7px;margin:0 3px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%}.tippy-popper[x-placement^=bottom] .tippy-backdrop{-webkit-transform-origin:0 -50%;transform-origin:0 -50%}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(1) translate(-50%,-45%);transform:scale(1) translate(-50%,-45%)}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(.2) translate(-50%);transform:scale(.2) translate(-50%);opacity:0}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=visible]{-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}.tippy-popper[x-placement^=bottom] [data-animation=perspective]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=visible]{-webkit-transform:perspective(700px) translateY(10px);transform:perspective(700px) translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:perspective(700px) rotateX(-60deg);transform:perspective(700px) rotateX(-60deg)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=visible]{-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=visible]{-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=hidden]{opacity:0}.tippy-popper[x-placement^=bottom] [data-animation=scale]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=visible]{-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(10px) scale(.5);transform:translateY(10px) scale(.5)}.tippy-popper[x-placement^=left] .tippy-backdrop{border-radius:50% 0 0 50%}.tippy-popper[x-placement^=left] .tippy-roundarrow{right:-12px;-webkit-transform-origin:33.33333333% 50%;transform-origin:33.33333333% 50%;margin:3px 0}.tippy-popper[x-placement^=left] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(90deg);transform:rotate(90deg)}.tippy-popper[x-placement^=left] .tippy-arrow{border-left:8px solid #333;border-top:8px solid transparent;border-bottom:8px solid transparent;right:-7px;margin:3px 0;-webkit-transform-origin:0 50%;transform-origin:0 50%}.tippy-popper[x-placement^=left] .tippy-backdrop{-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(1) translate(-50%,-50%);transform:scale(1) translate(-50%,-50%)}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(.2) translate(-75%,-50%);transform:scale(.2) translate(-75%,-50%);opacity:0}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=visible]{-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(-20px);transform:translateX(-20px)}.tippy-popper[x-placement^=left] [data-animation=perspective]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=visible]{-webkit-transform:perspective(700px) translateX(-10px);transform:perspective(700px) translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:perspective(700px) rotateY(-60deg);transform:perspective(700px) rotateY(-60deg)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=visible]{-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=visible]{-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=hidden]{opacity:0}.tippy-popper[x-placement^=left] [data-animation=scale]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=visible]{-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(-10px) scale(.5);transform:translateX(-10px) scale(.5)}.tippy-popper[x-placement^=right] .tippy-backdrop{border-radius:0 50% 50% 0}.tippy-popper[x-placement^=right] .tippy-roundarrow{left:-12px;-webkit-transform-origin:66.66666666% 50%;transform-origin:66.66666666% 50%;margin:3px 0}.tippy-popper[x-placement^=right] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.tippy-popper[x-placement^=right] .tippy-arrow{border-right:8px solid #333;border-top:8px solid transparent;border-bottom:8px solid transparent;left:-7px;margin:3px 0;-webkit-transform-origin:100% 50%;transform-origin:100% 50%}.tippy-popper[x-placement^=right] .tippy-backdrop{-webkit-transform-origin:-50% 0;transform-origin:-50% 0}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(1) translate(-50%,-50%);transform:scale(1) translate(-50%,-50%)}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(.2) translate(-25%,-50%);transform:scale(.2) translate(-25%,-50%);opacity:0}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=visible]{-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(20px);transform:translateX(20px)}.tippy-popper[x-placement^=right] [data-animation=perspective]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=visible]{-webkit-transform:perspective(700px) translateX(10px);transform:perspective(700px) translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:perspective(700px) rotateY(60deg);transform:perspective(700px) rotateY(60deg)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=visible]{-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=visible]{-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=hidden]{opacity:0}.tippy-popper[x-placement^=right] [data-animation=scale]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=visible]{-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(10px) scale(.5);transform:translateX(10px) scale(.5)}.tippy-tooltip{position:relative;color:#fff;border-radius:.25rem;font-size:.875rem;padding:.3125rem .5625rem;line-height:1.4;text-align:center;background-color:#333}.tippy-tooltip[data-size=small]{padding:.1875rem .375rem;font-size:.75rem}.tippy-tooltip[data-size=large]{padding:.375rem .75rem;font-size:1rem}.tippy-tooltip[data-animatefill]{overflow:hidden;background-color:initial}.tippy-tooltip[data-interactive],.tippy-tooltip[data-interactive] .tippy-roundarrow path{pointer-events:auto}.tippy-tooltip[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-tooltip[data-inertia][data-state=hidden]{transition-timing-function:ease}.tippy-arrow,.tippy-roundarrow{position:absolute;width:0;height:0}.tippy-roundarrow{width:18px;height:7px;fill:#333;pointer-events:none}.tippy-backdrop{position:absolute;background-color:#333;border-radius:50%;width:calc(110% + 2rem);left:50%;top:50%;z-index:-1;transition:all cubic-bezier(.46,.1,.52,.98);-webkit-backface-visibility:hidden;backface-visibility:hidden}.tippy-backdrop:after{content:"";float:left;padding-top:100%}.tippy-backdrop+.tippy-content{transition-property:opacity;will-change:opacity}.tippy-backdrop+.tippy-content[data-state=hidden]{opacity:0}</style><link href="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/font-awesome.min.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="https://ethgasstation.info/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://ethgasstation.info/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://ethgasstation.info/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://ethgasstation.info/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://ethgasstation.info/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://ethgasstation.info/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://ethgasstation.info/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://ethgasstation.info/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://ethgasstation.info/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://ethgasstation.info/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ethgasstation.info/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://ethgasstation.info/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ethgasstation.info/images/favicon-16x16.png">
+    <link rel="manifest" href="https://ethgasstation.info/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- Custom Theme Style -->
+
+     
+    <script type="text/javascript" async="" src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/analytics.js"></script><script type="text/javascript" src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/xcanvas.js"></script>
+    <script type="text/javascript" src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/tbe.js"></script>
+    <script type="text/javascript" src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/digitaldisplay.js"></script>
+    <script type="text/javascript" src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/speedometer.js"></script>
+    <script type="text/javascript" src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/default.js"></script>
+    <script type="text/javascript" src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/controls.js"></script>
+    <script src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/popper.js@1"></script>
+    <script src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/tippy.js@4"></script>
+    <link rel="stylesheet" href="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/jquery-ui.css">
+    <script src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/jquery-1.12.4.js"></script>
+    <script src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/jquery-ui.js"></script>
+    <link href="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/custom.css" rel="stylesheet">
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/js"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'UA-134672026-1');
+	</script>
+
+  </head>
+
+  <body class="nav-md" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+  <style type="text/css">
+    #unofficialWarning {
+        color: #333;
+        background-color: gold;
+        border-bottom-color: darkgoldenrod;
+
+        display: block;
+        margin: 0;
+        padding: 1em;
+        border-bottom: 1px solid;
+    }
+
+    #unofficialWarning p {
+        margin: 0;
+    }
+</style>
+<!--<div id="unofficialWarning">
+    <p>
+        <strong>This is an official ethgasstation node.</strong>
+        The canonical EthGasStation is at <a href="https://ethgasstation.info/">ethgasstation.info</a>.
+        If you want to run your own EthGasStation, <a href="https://github.com/SettleFinance/ethgasstation-frontend">see the code on GitHub</a>.
+    </p>
+</div>-->    <div class="container body">
+      <div class="main_container">
+      <!-- Sidebar -->
+
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="https://ethgasstation.info/index.php" class="site_title">
+                <div>
+                  <img class="egs_icon" src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/egs_transparent.png">
+                  <div class="title">
+                    <span>Eth Gas</span>
+                    <span>Station</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+            <div class="clearfix"></div>
+            <br>
+
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <ul class="nav side-menu">
+                  <li><a href="https://ethgasstation.info/calculatorTxV.php"><i class="fa fa-calculator"></i><span class="link_text">Tx Calculator</span></a></li>
+                  <li><a href="https://ethgasstation.info/txPoolReport.php"><i class="fa fa-eye"></i><span class="link_text">TxPool Vision</span></a></li>
+                  <!--<li><a href="minerTable.php"><i class ="fa fa-cubes"></i>Miner Stats</a></li>
+                  <li><a href="pendingTxReport.php"><i class ="fa fa-flag"></i>Pending Tx Report</a></li>
+                  <li><a href="hashPowerTable.php"><i class ="fa fa-cubes"></i>Hash Power by Gas Price</a></li>
+                  <li><a href="safeLow.php"><i class ="fa fa-clock-o"></i>Safe Low</a></li>
+                  <li><a href="txpool2.php"><i class ="fa fa-upload"></i>TxPool Monitor</a></li>
+                  <li><a href="predictionTable.php"><i class ="fa fa-cubes"></i>Predict Confirm Time</a></li>-->
+                  <!-- <li><a href="validatedTable.php">Low Gas Price Watch List</a></li> -->
+                  <li><a href="https://ethgasstation.info/gasguzzlers.php"><i class="fa fa-car"></i><span class="link_text">Gas Burners</span></a></li>
+                  <li><a><i class="fa fa-bookmark-o"></i><span class="link_text">FAQ</span><span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="https://ethgasstation.info/about.php">What Is This Site?</a></li>
+                      <li><a href="https://ethgasstation.info/FAQcalc.php">Calculator</a></li>
+                      <li><a href="https://ethgasstation.info/gasrecs.php">Gas Price Recommendations</a></li>
+                      <li><a href="https://ethgasstation.info/FAQpage.php">Other FAQ</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-link"></i><span class="link_text">Links</span> <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="https://concourseopen.com/blog/what-is-ethereum" target="_blank">What is Ethereum?</a></li>
+                      <li><a href="https://concourseopen.com/blog/ethereum-faq" target="_blank">Ethereum FAQ</a></li>
+                      <li><a href="https://ethgasstation.info/blog/what-is-gas" target="_blank">What is gas?</a></li>
+                      <li><a href="https://ethgasstation.info/blog/gwei" target="_blank">What is Gwei?</a></li>
+                      <li class="submenu">
+                        <a><span>Ethereum Resources</span> <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                          <li class="joint_links">
+                            <a href="https://defipulse.com/" target="_blank">DeFi</a>
+                            <span class="joint"> - </span>
+                            <a href="https://defipulse.com/" target="_blank">DeFi Pulse</a>
+                          </li>
+                          <li><a href="https://dex.ag/" target="_blank">DEX Aggregation from DEX.AG</a></li>
+                          <li><a href="https://ethhub.io/" target="_blank">Ethereum Knowledge Base at EthHub</a></li>
+                        </ul>
+                      </li>
+                      <li class="submenu">
+                        <a><span>How to's</span><span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                          <li><a href="https://ethgasstation.info/blog/how-to-buy-ethereum-how-to-buy-eth" target="_blank">How to buy ETH</a></li>
+                          <li><a href="https://ethgasstation.info/blog/ethereum-transaction-how-long" target="_blank">How long do transactions take?</a></li>
+                          <li><a href="https://ethgasstation.info/blog/stuck-transaction-guide" target="_blank">How to fix pending transactions</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://docs.ethgasstation.info/"><i class="fa fa-book"></i><span class="link_text">API</span></a>
+                  </li>
+                  <li>
+                    <a href="https://ethgasstation.info/feedback.html"><i class="fa fa-envelope"></i><span class="link_text">Feedback</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /sidebar -->
+        </div>
+      </div>      <!-- egs header starts -->
+  <div class="top_nav">
+    <div class="nav_menu">
+      <nav>
+        <div class="nav toggle">
+          <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="header_left_contents">
+          <div class="social_links">
+            <div class="social_link">
+                <a href="https://discord.gg/mzDxADE" target="_blank"><img class="social_icon primary" src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/discord.svg"></a>
+                <a href="https://discord.gg/mzDxADE" target="_blank"><img class="social_icon secondary" src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/discord-green.svg"></a>
+            </div>
+            <div class="social_link">
+                <a href="https://twitter.com/ethgasstation" target="_blank"><img class="social_icon primary" src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/twitter.svg"></a>
+                <a href="https://twitter.com/ethgasstation" target="_blank"><img class="social_icon secondary" src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/twitter-green.svg"></a>
+            </div>
+          </div>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="https://ethgasstation.info/#" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-globe"></i><span class="change_currency_text"> Change Currency <img class="down_arrow" src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/down-arrow.svg"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li id="usd"><a href="https://ethgasstation.info/#"> USD<span class="pull-right"><i class="fa fa-check"></i></span></a></li>
+              <li id="eur"><a href="https://ethgasstation.info/#"> EUR</a></li>
+              <li id="gbp"><a href="https://ethgasstation.info/#"> GBP</a></li>
+              <li id="cny"><a href="https://ethgasstation.info/#"> CNY</a></li>
+            </ul>
+          </li>
+      </ul>
+      </nav>
+    </div>
+  </div>
+<!-- /egs header ends -->
+
+        <!-- page content starts -->
+        <div class="right_col page_content_container" role="main" style="min-height: 440px;">
+          <div class="page_content">
+            <!-- top tiles start -->
+            <div class="row tile_count">
+              <div class="rgp">
+                <div class="top_tiles_title">Recommended Gas Prices in Gwei</div>
+                <div class="col-md-4 col-sm-4 col-xs-6 tile_stats_count">
+                  <div>
+                    <div class="count fast">
+                      10                    </div>
+                    <div class="divider"></div>
+                    <div class="text-container">
+                      <div class="count_top"><span>fast</span><span>&lt; 2m</span></div>
+                      <div class="count_top usd">
+                        $0.037 / Transfer                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-6 tile_stats_count">
+                  <div>
+                    <div class="count standard">
+                      3.8                    </div>
+                    <div class="divider"></div>
+                    <div class="text-container">
+                      <div class="count_top"><span>standard</span><span>&lt; 5m</span></div>
+                      <div class="count_top usd">
+                        $0.014 / Transfer                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-6 tile_stats_count">
+                  <div>
+                    <div class="count safe_low" id="medTx">
+                      1                    </div>
+                    <div class="divider"></div>
+                    <div class="text-container">
+                      <div class="count_top"><span>safe low</span><span>&lt; 30m</span></div>
+                      <div class="count_top usd">
+                        $0.004 / Transfer                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- /top tiles end -->
+
+          <!-- blogpost starts -->
+            <div class="row table_row blogPost">
+              <div class="col-md-12 col-sm-12 col-xs-12 table-cell">
+                <div class="x_panel tile table_cell">
+                  <div class="x_title blog_header">
+                    <div class="title">
+                      <div class="blog_post_title"><a href="https://ethgasstation.info/blog/dex-ag-sets-new-record-volume-294733/" class="post_title" target="_blank">DEX.AG Sets New Volume Record – $294,733</a></div><span><a href="https://ethgasstation.info/blog/dex-ag-sets-new-record-volume-294733/" class="post_external_link" target="_blank"><span>Read on EGS NEWS</span> <img class="right_arrow" src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/right-arrow.svg"> </a></span>                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!--/blogpost ends -->
+
+          <!-- 2nd row starts -->
+            <div class="row table_row">
+              <!-- leaderboard starts -->
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="leaderboard">
+                      <div class="header">
+                        <div class="title">ETH25<span> Leaderboard</span></div>
+                        <div class="small_text">Last 30 Days</div>
+                      </div>
+                      <div class="leading_projects">
+                        <table style="">
+                            <thead>
+                              <tr>
+                                  <th><span>Rank</span><span>#</span></th>
+                                  <th>Name</th>
+                                  <th>ETH Spent</th>
+                                  <th>Ave. Gwei</th>
+                                  <th>
+                                    <span>
+                                      USD                                     </span>
+                                    Value
+                                  </th>
+                              </tr>
+                            </thead>
+                              
+                            <tbody>
+                                <tr><td>1</td><td><span data-template="5d0a6738588cbb0da958a519" class="top_project" tabindex="0">Tether USD</span></td><td>2.13K</td><td>22.6</td><td>$380K</td></tr><template id="5d0a6738588cbb0da958a519"></template><tr><td>2</td><td><span data-template="5d5ebc84e4eb4c0db391ddcb" class="top_project" tabindex="0">Fair Win</span> <a href="https://concourseq.io/Q/FairWin.me" class="spam_reference_link" target="_blank">(Scam Reported)</a></td><td>1.41K</td><td>16.1</td><td>$245K</td></tr><template id="5d5ebc84e4eb4c0db391ddcb"></template><tr><td>3</td><td><span data-template="5d77bf52c383b00db2bd823c" class="top_project" tabindex="0">ATB Banknote</span></td><td>560</td><td>27.5</td><td>$100K</td></tr><template id="5d77bf52c383b00db2bd823c"></template><tr><td>4</td><td><span data-template="5d0f1c3ca45fee0db0948918" class="top_project" tabindex="0">ChainLink</span></td><td>460</td><td>21.5</td><td>$82.3K</td></tr><template id="5d0f1c3ca45fee0db0948918"></template><tr><td>5</td><td><span data-template="5d8e1f4a3783ce0dce0b0af8" class="top_project" tabindex="0">Ether Honor</span></td><td>423</td><td>20.3</td><td>$75.1K</td></tr><template id="5d8e1f4a3783ce0dce0b0af8"></template><tr><td>6</td><td><span data-template="5d63b225ee0c490dc24d10f9" class="top_project" tabindex="0">5GH</span></td><td>243</td><td>25.0</td><td>$43.5K</td></tr><template id="5d63b225ee0c490dc24d10f9"></template><tr><td>7</td><td><a href="https://etherscan.io/address/0xd5dc8921a5c58fb0eba6db6b40eab40283dc3c01" class="etherscan_link" target="_blank">0xd5dc8921a5c58...c3c01</a></td><td>227</td><td>35.3</td><td>$40.8K</td></tr><template id=""></template><tr><td>8</td><td><span data-template="5d8e23cd3783ce0dce0b0af9" class="top_project" tabindex="0">Tepleton</span></td><td>196</td><td>22.5</td><td>$35.0K</td></tr><template id="5d8e23cd3783ce0dce0b0af9"></template><tr><td>9</td><td><span data-template="5ce5869ab462bb0e1e1afa5a" class="top_project" tabindex="0">Eth2Dai</span></td><td>190</td><td>10.9</td><td>$33.9K</td></tr><template id="5ce5869ab462bb0e1e1afa5a"></template><tr><td>10</td><td><span data-template="5cd21ce6ad9a3d0e051208c1" class="top_project" tabindex="0">IDEX</span></td><td>176</td><td>11.9</td><td>$31.4K</td></tr><template id="5cd21ce6ad9a3d0e051208c1"></template><tr><td>11</td><td><span data-template="5da45c343783ce0dce0b0afa" class="top_project" tabindex="0">Eth Magic</span></td><td>176</td><td>16.8</td><td>$31.3K</td></tr><template id="5da45c343783ce0dce0b0afa"></template><tr><td>12</td><td><span data-template="5d8e1f74c383b00db2bd823e" class="top_project" tabindex="0">Alchemy Coin</span></td><td>153</td><td>21.4</td><td>$27.5K</td></tr><template id="5d8e1f74c383b00db2bd823e"></template><tr><td>13</td><td><span data-template="5d8e1f0c3783ce0dce0b0af7" class="top_project" tabindex="0">Hyper Fair</span></td><td>149</td><td>19.3</td><td>$25.9K</td></tr><template id="5d8e1f0c3783ce0dce0b0af7"></template><tr><td>14</td><td><a href="https://etherscan.io/address/0x60cf284021f58e87d3360cbec8b906e7d3185236" class="etherscan_link" target="_blank">0x60cf284021f58...85236</a></td><td>134</td><td>11.8</td><td>$23.9K</td></tr><template id=""></template><tr><td>15</td><td><span data-template="5cd21fdfad9a3d0e051208c5" class="top_project" tabindex="0">Maximine Coin</span></td><td>128</td><td>31.8</td><td>$22.3K</td></tr><template id="5cd21fdfad9a3d0e051208c5"></template><tr><td>16</td><td><span data-template="5d5ea548e0297a0dc994e469" class="top_project" tabindex="0">Biigo2</span></td><td>124</td><td>21.6</td><td>$21.9K</td></tr><template id="5d5ea548e0297a0dc994e469"></template><tr><td>17</td><td><span data-template="5cd495d9dfe87c0e116f45ee" class="top_project" tabindex="0">Dice2Win</span></td><td>121</td><td>14.4</td><td>$21.6K</td></tr><template id="5cd495d9dfe87c0e116f45ee"></template><tr><td>18</td><td><span data-template="5ce30e69a0884a0daf170a38" class="top_project" tabindex="0">0x</span></td><td>106</td><td>13.0</td><td>$18.8K</td></tr><template id="5ce30e69a0884a0daf170a38"></template><tr><td>19</td><td><span data-template="5d59c373b80bc50d9c57d97d" class="top_project" tabindex="0">Mycion</span></td><td>98.1</td><td>26.1</td><td>$17.5K</td></tr><template id="5d59c373b80bc50d9c57d97d"></template><tr><td>20</td><td><span data-template="5cd49522dfe87c0e116f45ec" class="top_project" tabindex="0">CryptoKitties</span></td><td>83.6</td><td>9.16</td><td>$14.9K</td></tr><template id="5cd49522dfe87c0e116f45ec"></template><tr><td>21</td><td><a href="https://etherscan.io/address/0xd4b6cd147ad8a0d5376b6fdba85fe8128c6f0686" class="etherscan_link" target="_blank">0xd4b6cd147ad8a...f0686</a></td><td>78.6</td><td>151</td><td>$14.2K</td></tr><template id=""></template><tr><td>22</td><td><span data-template="5d4c50e98f39250df8f73cf6" class="top_project" tabindex="0">MakerDAO</span></td><td>75.0</td><td>7.86</td><td>$13.4K</td></tr><template id="5d4c50e98f39250df8f73cf6"></template><tr><td>23</td><td><a href="https://etherscan.io/address/0x3c7b464376db7c9927930cf50eefdea2eff3a66a" class="etherscan_link" target="_blank">0x3c7b464376db7...3a66a</a></td><td>73.7</td><td>31.3</td><td>$13.2K</td></tr><template id=""></template><tr><td>24</td><td><a href="https://etherscan.io/address/0xd8b93107d820d294cd8082a15c65261ee9d30790" class="etherscan_link" target="_blank">0xd8b93107d820d...30790</a></td><td>76.6</td><td>3.72</td><td>$13.0K</td></tr><template id=""></template><tr><td>25</td><td><a href="https://etherscan.io/address/0xa699153e046531b7580da3e59d139fb8844e3f85" class="etherscan_link" target="_blank">0xa699153e04653...e3f85</a></td><td>68.3</td><td>16.2</td><td>$12.4K</td></tr><template id=""></template>                            </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="powered_by">Powered by <a href="https://dappdir.com/" target="_black">DappDir</a></div>
+                </div>
+              <!-- leaderboard ends -->
+            </div>
+          <!-- 2nd row ends -->
+
+          <div class="gas_internals">
+            <div class="big_title">Gas Internals</div>
+            <div class="mwt">
+              <h2 class="top_tiles_title">Median Wait Times</h2>
+              <div class="tile_stats_count">
+                <div class="count">28</div>
+                <div class="text-container">
+                  <div class="count_top">seconds</div>
+                </div>
+              </div>
+               <div class="tile_stats_count">
+                <div class="count">
+                  2                </div>
+                <div class="text-container">
+                  <div class="count_top">blocks</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3rd row starts -->
+            <div class="row table_row" style="clear: both;">
+
+              <!-- Transactions by Gas Price -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="x_panel tile table_cell">
+                    <div class="x_title">
+                      <h4>Transaction Count by Gas Price</h4>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content myBar"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;" src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/saved_resource.html"></iframe>
+                      <canvas id="mybarChart2" height="171" width="245" style="width: 245px; height: 171px;"></canvas>
+                    </div>
+                  </div>
+                </div>
+              <!-- /Transaction by Gas Price -->
+
+              <!-- Confirmation Time by Gas Price -->
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="x_panel tile table_cell overflow_hidden">
+                      <div class="x_title">
+                        <h4>Confirmation Time by Gas Price</h4>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="x_content myBar"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;" src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/saved_resource(1).html"></iframe>
+                              <canvas id="mybarChart" height="171" width="245" style="width: 245px; height: 171px;"> </canvas>
+                        </div>
+                    </div>
+                  </div>
+              <!-- Confirmation Time by Gas Price -->
+
+              <!-- Speedometer starts -->
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="x_panel tile table_cell">
+                      <div class="x_title">
+                        <h4>Real Time Gas Use</h4>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="x_content sMeter">
+                          <div id="speedometer" class="speedometer"><canvas width="200" height="200" style="position: absolute;"></canvas><canvas width="200" height="200" style="position: absolute;"></canvas><canvas width="200" height="200" style="position: absolute;"></canvas><canvas width="200" height="200" style="position: absolute;"></canvas><canvas width="200" height="200" style="position: absolute;"></canvas></div>
+                          <p id="blockNum">Last Block: 8819503</p> 
+                      </div>
+                    </div>
+                  </div>
+              <!--/Speedometer ends -->
+              
+              <div class="clearfix"></div>
+            </div>
+          <!-- 3rd row ends -->
+
+          <!-- 4th row starts -->
+            <div class="row table_row">
+              <!-- Miner Rankings -->
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                  <div class="x_panel tile table_cell top_miners">
+                    <div class="x_title">
+                      <h4>Top 10 Miners by Blocks Mined</h4>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                      <table class="table table_data table-bordered" style="margin-left: -18px;">
+                          <thead>
+                            <tr>
+                              <th>Miner</th>
+                              <th>Lowest gas price (gwei)</th>
+                              <th>Weighted avg gas price (gwei)</th>
+                              <th>% of total blocks</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr><td>miningpoolhub</td><td>0.3</td><td>4</td><td>5</td></tr><tr><td>0x9d6d492bd500da5b33cf95a5d610a73360fcaaa0</td><td>1</td><td>7</td><td>2</td></tr><tr><td>0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c</td><td>1</td><td>10</td><td>26</td></tr><tr><td>Ethermine</td><td>1</td><td>14</td><td>24</td></tr><tr><td>Dwarfpool</td><td>1.5</td><td>16</td><td>2</td></tr><tr><td>0x04668ec2f57cc15c381b461b9fedab5d451c8f7f</td><td>2</td><td>12</td><td>4</td></tr><tr><td>f2pool</td><td>5.4</td><td>15</td><td>13</td></tr><tr><td>0xaa5c4244f05c92781c4f259913319d8ba1acf05e</td><td>8</td><td>16</td><td>1</td></tr><tr><td>Nanopool</td><td>10</td><td>27</td><td>10</td></tr><tr><td>0x06b8c5883ec71bc3f4b332081519f23834c8706e</td><td>40</td><td>40</td><td>1</td></tr>                          </tbody>
+                        </table>
+                    </div>
+                  </div>
+                </div>
+              <!-- /miner rankings -->
+
+              <!-- Misc Transaction Table -->
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="x_panel tile table_cell">
+                      <div class="x_content">
+                        <table class="table table_data table-bordered">
+                            <thead>
+                              <tr>
+                                <th>Category</th>
+                                <th>Value</th>
+                              </tr>
+                            </thead>
+                            <tbody> 
+                              <tr>
+                                <td>Cheapest Gas Price (gwei)</td>
+                                <td>0.3</td>
+                              </tr>
+                              <tr>
+                                <td>Highest Gas Price (gwei)</td>
+                                <td><a href="https://etherscan.io/tx/0xffdf178bd2350a42561587dd88266ca1fd069bcf205826b416efdea37cbb958d" target="_blank">60</a></td>
+                              </tr>
+                              <tr>
+                                <td>Median Gas Price (gwei)</td>
+                                <td>10</td>
+                              </tr>
+                              <tr>
+                                <td>Cheapest Transfer Fee</td>
+                                <td id="cheapestTransfer"><a href="https://etherscan.io/tx/0xffb546d14335416274676a86ccd24727e66f27b55737c61791b878a58489418f" target="_blank">$0.0041</a></td>
+                          
+                              </tr>
+                              <tr>
+                                <td>Highest Transfer Fee</td>
+                                <td><a href="https://etherscan.io/tx/0xfee778c0cbc7bbdd6e32dcee1f0f7e01a36e1ddff585d88ecaab6c0cb4f3f545" target="_blank">$0.19</a></td>
+                                
+                              </tr>
+                              <tr>
+                                <td>Total Transactions</td>
+                                <td>342</td>
+                              </tr>
+                              <tr>
+                                <td>% Empty Blocks</td>
+                                <td>3</td>
+                              </tr>
+                              <tr>
+                                <td>% Full Blocks</td>
+                                <td>31</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div>
+                    </div>
+                  </div>
+              <!-- /misc transactions -->
+              
+            </div>
+          <!-- 4th row ends -->
+          </div>
+        </div>           
+      <!-- /page content ends -->
+
+      <!-- footer content -->
+  <footer>
+    <div class="eth_footer_links">
+      <a href="https://docs.ethgasstation.info/" target="_blank">API</a>
+      <a href="https://ethgasstation.info/feedback.html" target="_blank">Feedback</a>
+      <a href="https://twitter.com/ethgasstation" target="_blank">Twitter</a>
+      <a href="https://discord.gg/mzDxADE" target="_blank">Discord</a>
+    </div>
+ 
+    <div class="concourse_link"><a href="https://concourseopen.com/" target="_blank">Concourse Open Community</a></div>
+    <div class="clearfix"></div>
+  </footer>
+<!-- /footer content -->
+      </div>
+    </div>
+
+ <!-- jQuery -->
+   <!-- <script src="vendors/jquery/dist/jquery.min.js"></script> -->
+ <!-- Bootstrap -->
+    <script src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/bootstrap.min.js"></script>
+ <!-- Chart.js -->
+    <script src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/Chart.min.js"></script>
+    
+
+<!-- Custom Theme Scripts -->
+    <script>
+
+    var exchangeRate = 177;
+    var currSymbol = "$"
+
+    $(document).ready(function(){
+      $.ajax({
+        url: "json/predictTable.json",
+		    method: "GET",
+        dataType: "json",
+		    success: function(data) {
+          predictArray = data;
+        }
+      })
+    })
+
+      $( "#slider" ).slider({
+        value: 12.8,
+        min: 10,
+        max: 19,
+        step: 1,
+        slide: function(event, ui){
+          $("#gasPrice").val(predictArray[ui.value]['gasprice']);
+          $("#timeToConfirm").val(predictArray[ui.value]['expectedTime']);
+          $("#blocksToConfirm").val(predictArray[ui.value]['expectedWait']);
+          var maxtime = Math.round(predictArray[ui.value]['expectedTime']*2.5)
+          $("#maxTimeToConfirm").val(maxtime);
+          var maxblocks = Math.round(predictArray[ui.value]['expectedWait']*2.5)
+          $("#maxBlocksToConfirm").val(maxblocks);
+          var fiatFee = Math.round(exchangeRate * $("#gasPrice").val() * $("#gas_used").val()/ 1e9 *1000)/1000;
+          fiatString = currSymbol+fiatFee;
+          var ethFee = Math.round($("#gasPrice").val() * $("#gas_used").val()/ 1e9 *100000)/100000;
+          $("#fiatFee").val(fiatString);
+          $("#ethFee").val(ethFee);
+
+        }
+      });
+
+      $("#gas_used").change(function(){
+        var fiatFee = Math.round(exchangeRate * $("#gasPrice").val() * $("#gas_used").val()/ 1e9 *1000)/1000;
+        fiatString = currSymbol+fiatFee;
+        var ethFee = Math.round($("#gasPrice").val() * $("#gas_used").val()/ 1e9 *100000)/100000;
+        $("#fiatFee").val(fiatString);
+        $("#ethFee").val(ethFee);
+      })
+  
+  
+
+
+
+    //Data for Transaction Count by Gas Price Graph
+
+        if ($('#mybarChart2').length ){ 
+			  
+			  var ctx = document.getElementById("mybarChart2");
+			  var mybarChart = new Chart(ctx, {
+				type: 'bar',
+				data: {
+				  labels: ["≤1", "1≤4", "4≤20", "20≤50", ">50"],
+				  datasets: [{
+                    label: "Percent of transactions",  
+					backgroundColor: "#26B99A",
+					data: [18.71,15.79,45.61,19.59,0.29]				  }], 
+				},
+
+				options: {
+                    legend: {
+                        display: false
+                    },
+				  scales: {
+					yAxes: [{
+					  ticks: {
+						beginAtZero: true
+					  },
+						scaleLabel:{
+							display:true,
+							labelString:"% of transactions"
+						}
+					}],
+					xAxes:[{
+						scaleLabel:{
+							display:true,
+							labelString:"Gas price category"
+						}
+
+					}]
+				  }
+				}
+			  });
+        }
+
+        //Data for Confirmation Time by Gas Price Graph
+
+        if ($('#mybarChart').length ){ 
+			  
+			  var ctx = document.getElementById("mybarChart");
+			  var mybarChart = new Chart(ctx, {
+				type: 'bar',
+				data: {
+				  labels: ['1','2','3','4','5','6','7','8','10','20','21','>40'],
+				  datasets: [{
+					label: 'Median Time to Confirm',
+					backgroundColor: "#26B99A",
+					data: [0.7,0.5,0.6,0.7,0.4,0.6,0.2,0.4,0.2,0.2,0.6,0.2]
+				  }]
+				},
+
+				options: {
+                    legend: {
+                        display: false
+                    },
+				  scales: {
+					yAxes: [{
+					  ticks: {
+						beginAtZero: true
+					  },
+						scaleLabel:{
+							display:true,
+							labelString:"Time to Confirm (min)"
+						}
+					}],
+					xAxes:[{
+						scaleLabel:{
+							display:true,
+							labelString:"Gas price (gwei)"
+						}
+
+					}]
+				  }
+				}
+			  });
+			  
+			} 
+
+      
+
+    //Speedometer
+			  
+          if ($('#speedometer').length ){
+              var speedometer;
+              speedometer = new Speedometer ('speedometer', {theme: 'default'});
+              speedometer.draw ();
+              getSpeed();
+              //setInterval(getSpeed,5000);
+              
+               }
+
+
+          function getSpeed (){
+
+          
+                    $.ajax({
+		    url: "json/ethgasAPI.json",
+		                      method: "GET",
+                              dataType: "json",
+		                      success: function(data) {
+			                          speedArray  = data;
+                                var speed = speedArray['speed']*100;
+                                var blockNum = speedArray['blockNum'];
+                                updateSpeedo (speed,blockNum);
+                                var out = "Last Block: " + blockNum;
+                                $('#blockNum').text(out);
+                                
+                          }               
+                
+                    });
+          };
+
+          function updateSpeedo (speedInt, blockNum){
+
+            var curSpeed = speedometer.value();
+
+            if (curSpeed === speedInt){
+                return;
+
+            } 
+            else {
+                speedometer.animatedUpdate(speedInt,1000);
+            }
+            
+
+
+          }
+
+      //Curency Support
+      
+            $("#eur").click(function(){
+                 
+                location = location.origin + "/index.php?curr=eur";
+			          
+                                                                     
+            });
+            
+            $("#usd").click(function(){
+                 
+                location = location.origin + "/index.php?curr=usd";
+			          
+                                                                     
+            });
+          
+            $("#cny").click(function(){
+
+                location = location.origin + "/index.php?curr=cny";
+                               
+			        
+                                                                     
+            });
+
+            $("#gbp").click(function(){
+                location = location.origin + "/index.php?curr=gbp";                                                    
+            });
+
+         
+
+
+
+  </script>
+
+  <script src="./ETH Gas Station _ Consumer oriented metrics for the Ethereum gas market_files/custom3.js"></script>
+  <script>
+    tippy('span.top_project', {
+      arrow: true,
+      interactive: true,
+      placement: 'right',
+      content(reference) {
+        var id = reference.getAttribute('data-template');
+        var container = document.createElement('div');
+        var linkedTemplate = document.getElementById(id);
+        var node = document.importNode(linkedTemplate.content, true);
+        container.appendChild(node);
+
+        return container;
+      }
+    });
+  </script>	
+  
+
+<div id="shadowMeasureIt"></div><div id="divCoordMeasureIt"></div><div id="divRectangleMeasureIt"><div id="divRectangleBGMeasureIt"></div></div><div id="eJOY__extension_root" style="all: unset;"></div></body></html>

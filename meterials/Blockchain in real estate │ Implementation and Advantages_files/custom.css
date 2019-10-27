@@ -1,0 +1,27 @@
+.close_icon{
+
+    text-decoration: none !important;
+    display: block;
+    width: 35px;
+    height: 35px;
+    z-index: 1500;
+    font-size: 27px;
+    color: #b2b2b2;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    -webkit-transition: .2s all;
+    transition: .2s all;
+
+}
+i.close-iconn {
+    font-size: 27px;
+    color: #b2b2b2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    -webkit-transition: .2s all;
+    transition: .2s all;
+}

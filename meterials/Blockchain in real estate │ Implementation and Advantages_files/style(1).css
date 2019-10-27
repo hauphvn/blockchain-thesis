@@ -1,0 +1,220 @@
+#secondary .widget .videowidget.textwidget  {
+    padding: 0;
+}
+
+#secondary .widget .videowidget.textwidget img  {
+}
+
+aside.widget .textwidget img  {
+    width: 100%;
+    height: auto;
+}
+
+#secondary .widget{
+    z-index: 99;
+}
+
+#secondary .widget .textwidget.videowidget {
+    border: none;
+}
+
+.widget-video-preview {
+/*    margin-bottom: 15px;*/
+    width: 100%;
+    height: 145px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+}
+
+.widget-play-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.widget-play-icon i {
+    font-size: 25px;
+    position: relative;
+    top: 50px;
+    color: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    border: 2px solid #fff;
+    width: 50px;
+    height: 50px;
+    padding-top: 12px;
+    text-align: center;
+    padding-left: 5px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.videowidget .widget-content-inner {
+    padding: 15px 0;
+    text-align: left;
+    text-transform: none;
+}
+
+
+.videowidget .widget-content-inner h4 {
+    text-transform: none;
+    color: #282828;
+}
+
+.videowidget .widget-content-inner  a {
+    color: #282828;
+    font-size: 18px;
+}
+
+.widget-content-inner h4 {
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+
+.widget-video-popup .modal-title {
+    font-size: 27px;
+    font-weight: 400;
+    margin: 15px 0 20px;
+}
+
+.widget-video-popup .modal-body {
+    color: #000;
+}
+
+.widget-video-popup-content {
+    font-size: 22px;
+}
+
+.title-underlined {
+    text-transform: none;
+    font-size: 22px; 
+}
+
+.title-underlined span {
+    display: inline-block;
+    border-bottom: 1px solid #000;
+    padding: 5px 30px;
+    font-weight: 400;
+}
+
+.btn-custom {
+    border: 1px #9e1dae solid;
+    background-color: #9e1dae;
+    color: #fff;
+    transition: all 0.2s;
+    padding: 14px 30px;
+    max-width: 100%;
+    font-size: 18px;   
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:focus:hover {
+    border: 1px #9e1dae solid;
+    background-color: #fff;
+    color: #9e1dae;
+}
+
+
+.btn-custom-reverse {
+    border: 1px #9e1dae solid;
+    background-color: #fff;
+    color: #9e1dae;
+    transition: all 0.2s;
+    padding: 14px 30px;
+    max-width: 100%;
+    font-size: 18px;   
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-custom-reverse:hover,
+.btn-custom-reverse:focus,
+.btn-custom-reverse:focus:hover {
+    border: 1px #9e1dae solid;
+    background-color: #9e1dae;
+    color: #fff;
+}
+
+
+.widget-video-popup .btn-custom {
+    width: 100%;
+    margin: 15px auto;
+    max-width: 400px;
+    font-size: 22px;
+}
+
+
+@media (max-width: 992px) {
+
+
+    .widget-video-popup iframe {
+        width: 100%;
+        height: 320px;
+    }
+    .widget-video-popup-content,
+    .title-underlined,
+    .btn-custom {
+        font-size: 18px;   
+    }
+    
+}
+
+/*html widget*/
+
+.html-widget-wrapper .html-widget-content {
+    padding: 15px;
+}
+
+.html-widget-wrapper .html-widget-content h4 {
+    line-height: 1.3;
+}
+
+.html-widget-wrapper .btn {
+    margin: 0 0 30px;
+}
+
+
+#secondary .html-widget-wrapper .textwidget {
+    background-image: url(/wp-content/themes/dazzling/img/header-bg-new.svg);
+    background-size: cover;
+    background-position: center center;
+    padding: 0;
+}
+
+/*Terms*/
+.taxonomy-item {
+    margin-right: 10px;
+    
+}
+
+.taxonomy-item-title {
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-size: 13px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border: 1px solid rgb(81, 177, 92);
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(81, 177, 92);
+}
+
+.taxonomy-item-qty {
+    float: right;
+    color: #b9b9b9;
+    font-size: 18px;
+}
+
+
+
+
+
+

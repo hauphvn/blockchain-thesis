@@ -1,0 +1,3 @@
+// empty
+window.Adform.Tracking.TrackingPointName = "bloomberg.com/features/-the-ether-thief/";
+(function(c,b){var x="https://c1.adform.net/imatch/pixels?uid=8270132179372766872&agencyId=5088&advertiserId=232711&src=tp&rnd=363623";var a=c.Adform&&c.Adform.ADFUtilInstance;a?a.loadTrackingIframes([x]):(a=b.createElement("div"),b.getElementById("adformtrackingiframe")||(a.innerHTML='<iframe src="'+x+'" allowtransparency="true" webkitallowfullscreen mozallowfullscreen allowfullscreen marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" style="display:none" id="adformtrackingiframe"></iframe>',b.body.appendChild(a.removeChild(a.firstChild))))})(window,document);

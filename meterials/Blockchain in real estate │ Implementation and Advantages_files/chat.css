@@ -1,0 +1,363 @@
+.chat-button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    text-align: center;
+    color: #f0f0f0;
+    cursor: pointer;
+    -webkit-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+    overflow: hidden;
+    position: fixed;
+    right: 15px;
+    bottom: 90px;
+    z-index: 998;
+    background-image: url('../../img/favicon.svg');
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.31);
+}
+.dv-fabs .dv-fab > i {
+    font-size: 2em;
+    line-height: 55px;
+    -webkit-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.dv-fabs .dv-fab:not(:last-child) {
+    width: 0;
+    height: 0;
+    margin: 20px auto 0;
+    opacity: 0;
+    visibility: hidden;
+    line-height: 40px;
+}
+.dv-fabs .dv-fab:not(:last-child) > i {
+    font-size: 1.4em;
+    line-height: 40px;
+}
+.dv-fabs .dv-fab:not(:last-child).is-visible {
+    width: 40px;
+    height: 40px;
+    margin: 15px auto 10px;
+    opacity: 1;
+    visibility: visible;
+}
+.dv-fabs .dv-fab:nth-last-child(1) {
+    -webkit-transition-delay: 25ms;
+    transition-delay: 25ms;
+}
+.dv-fabs .dv-fab:not(:last-child):nth-last-child(2) {
+    -webkit-transition-delay: 20ms;
+    transition-delay: 20ms;
+}
+.dv-fabs .dv-fab:not(:last-child):nth-last-child(3) {
+    -webkit-transition-delay: 40ms;
+    transition-delay: 40ms;
+}
+.dv-fabs .dv-fab(:last-child):active, .fabs .fab(:last-child):focus, .fabs .fab(:last-child):hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
+}
+.dv-fabs .dv-chat {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    max-width: 350px;
+    width: 100%;
+    display:  none;
+}
+
+.dv-fabs .dv-chat.is-visible {
+    opacity: 1;
+    -webkit-animation: zoomIn .2s cubic-bezier(.42, 0, .58, 1);
+    animation: zoomIn .2s cubic-bezier(.42, 0, .58, 1);
+    z-index: 999;
+    display:  block;
+}
+
+.dv-fabs .dv-chat_option {
+    position: relative;
+    width: 100%}
+.dv-fabs .dv-chat_option #dv-chat_head {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+    color: #282828;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    line-height: 20px;
+}
+/*.dv-fabs .dv-chat_option #dv-chat_head:before {
+    content: '';
+    background-color: #51B15C;
+    height: 9px;
+    width: 9px;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 9px;
+    vertical-align: middle;
+}*/
+.dv-fabs .dv-chat_option img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom:  7px;
+    left: -70px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+.dv-fabs .dv-chat_body {
+    /* background: #f1f3f5; */
+    border-radius: 4px;
+    /* padding: 10px 10px 0; */
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    max-width: 100%;
+}
+.dv-fabs .dv-chat_body p {
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #282828;
+    font-family: "Proxima Nova";
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: 0;
+    display: table;
+    width: 100%;
+    max-width: 100%}
+.dv-fabs .dv-chat_body a.dv-fab {
+    width: 10%;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+    line-height: 40px;
+    font-size: 15px;
+}
+.dv-fabs .dv-chat_field {
+    position: relative;
+    margin: 5px 0;
+    width: 50%;
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #4b4b4b;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+.dv-fabs .dv-chat_field.dv-chat_message {
+    height: 30px;
+    resize: none;
+    font-size: 13px;
+    font-weight: 400;
+}
+.dv-fabs .dv-fab_field {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    background: #fff;
+    border-top: 1px solid #eee;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.dv-fabs .dv-fab_field a {
+    display: inline-block;
+    text-align: center;
+}
+.dv-fabs #dv-fab_camera {
+    float: left;
+    background: rgba(0, 0, 0, 0);
+}
+.dv-fabs #dv-fab_send {
+    float: right;
+    background: rgba(0, 0, 0, 0);
+}
+.dv-fabs .dv-fab_field .dv-fab {
+    width: 35px;
+    height: 35px;
+    box-shadow: none;
+    margin: 5px;
+}
+.dv-fabs .dv-fab_field .dv-fab>i {
+    font-size: 1.6em;
+    line-height: 35px;
+    color: #bbb;
+}
+.dv-fabs .dv-fab_field .dv-fab>i:hover {
+    color: #42a5f5;
+}
+@-webkit-keyframes zoomIn  {
+    
+    0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+}
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+}
+@keyframes zoomIn  {
+    
+    0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+}
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+}
+.dv-fabs .dv-get-started-btn {
+    max-width: 142px;
+    margin-top: 12px;
+    width: 100%;
+    padding: 10px 3px;
+    display: block;
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    border: 1px solid #9e1daf;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    background-color: #9e1daf;
+    display: inline-block;
+    outline: none;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.dv-fabs .dv-get-started-btn:hover {
+    background-color: #8a019c;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.dv-fabs .dv-close-the-chat {
+    display:  inline-block;
+    margin-bottom:  10px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #FFF;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.31);
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align:  center;
+}
+
+.dv-fabs .dv-close-the-chat:hover img {
+    -webkit-transform: scale(1.1) rotate(360deg);
+    -moz-transform: scale(1.1) rotate(360deg);
+    -ms-transform: scale(1.1) rotate(360deg);
+    -o-transform: scale(1.1) rotate(360deg);
+    transform: scale(1.1) rotate(360deg);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.dv-fabs .dv-close-the-chat img {
+    display:  inline-block;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    width: 20px;
+    height: 20px;
+    vertical-align:  middle;
+    margin:  0 auto;
+}
+
+.dv-fabs .dv-chat-inner {
+    background-color: #FFF;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.31);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.dv-fabs .dv-chat-action-box {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    text-align: right;
+}
+.dv-dv-fabs #dv-chat_head span {
+    display: inline;
+    vertical-align: middle;
+}
+@media only screen and (max-width: 480px)  {
+    
+    .dv-fabs .dv-get-started-btn {
+    max-width: 100%;
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 2px;
+}
+    .dv-fabs .dv-chat {
+    bottom: 10px;
+    right: 10px;
+    max-width: 250px;
+}
+    .dv-fabs .dv-chat-inner {
+    padding: 10px;
+}
+    .dv-fabs .dv-chat_option #dv-chat_head {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+    .dv-fabs .dv-chat_option img {
+    left: -60px;
+}
+    .dv-fabs .dv-fab {
+    bottom: 10px;
+    right: 10px;
+}
+    .dv-fabs .dv-chat_body p {
+    margin-bottom: 10px;
+        font-size: 14px;
+}
+}

@@ -1,0 +1,1 @@
+MoatDataJsonpRequest_89082750({"nu": 624730, "nm": 190593})

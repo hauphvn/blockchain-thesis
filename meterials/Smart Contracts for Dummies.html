@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://www.freecodecamp.org/news/smart-contracts-for-dummies-a1ba1e0b9575/ -->
+<html lang="en" class="gr__freecodecamp_org"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Smart Contracts for Dummies</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./Smart Contracts for Dummies_files/prism.min.css">
+    <link rel="stylesheet" type="text/css" href="./Smart Contracts for Dummies_files/prism-unescaped-markup.css">
+
+    <link href="./Smart Contracts for Dummies_files/css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./Smart Contracts for Dummies_files/screen.css">
+    <link rel="stylesheet" type="text/css" href="./Smart Contracts for Dummies_files/algolia-search.css">
+    
+    <script type="text/javascript" async="" src="./Smart Contracts for Dummies_files/analytics.js"></script><script async="" src="./Smart Contracts for Dummies_files/gtm.js"></script><script src="./Smart Contracts for Dummies_files/algoliasearch.min.js"></script>
+    <script src="./Smart Contracts for Dummies_files/autocomplete.min.js"></script>
+
+    <script src="./Smart Contracts for Dummies_files/saved_resource"></script>
+
+    <link rel="shortcut icon" href="https://www.freecodecamp.org/news/favicon.png" type="image/png">
+    <link rel="canonical" href="https://www.freecodecamp.org/news/smart-contracts-for-dummies-a1ba1e0b9575/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="https://www.freecodecamp.org/news/smart-contracts-for-dummies-a1ba1e0b9575/amp/">
+    
+    <meta property="og:site_name" content="freeCodeCamp.org">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Smart Contracts for Dummies">
+    <meta property="og:description" content="by Nik Custodio
+
+Smart Contracts for Dummies
+If you still don’t get what the heck a Smart Contract is…
+Ok, you know a bit about Bitcoin (see: Explain Bitcoin Like I’m Five
+[https://medium.com/@nik5ter/explain-bitcoin-like-im-five-73b4257ac833]). You’ve
+been seeing the blockchain on the news.
+
+But what’s this new Ethereum
+[https://www.nytimes.com/2017/02/27/business/dealbook/ethereum-alliance-business-banking-security.html] 
+ thing? Apparently it’s this crypto-currency you can use to build “smart">
+    <meta property="og:url" content="https://www.freecodecamp.org/news/smart-contracts-for-dummies-a1ba1e0b9575/">
+    <meta property="og:image" content="https://cdn-media-1.freecodecamp.org/images/1*lsZWlQRE0lWRLzx-BpxR8A.jpeg">
+    <meta property="article:published_time" content="2017-05-26T12:01:00.000Z">
+    <meta property="article:modified_time" content="2017-05-24T15:48:33.000Z">
+    <meta property="article:tag" content="Blockchain">
+    <meta property="article:tag" content="Ethereum">
+    <meta property="article:tag" content="Technology">
+    <meta property="article:tag" content="Cryptocurrency">
+    <meta property="article:tag" content="ICO">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/freecodecamp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Smart Contracts for Dummies">
+    <meta name="twitter:description" content="by Nik Custodio
+
+Smart Contracts for Dummies
+If you still don’t get what the heck a Smart Contract is…
+Ok, you know a bit about Bitcoin (see: Explain Bitcoin Like I’m Five
+[https://medium.com/@nik5ter/explain-bitcoin-like-im-five-73b4257ac833]). You’ve
+been seeing the blockchain on the news.
+
+But what’s this new Ethereum
+[https://www.nytimes.com/2017/02/27/business/dealbook/ethereum-alliance-business-banking-security.html] 
+ thing? Apparently it’s this crypto-currency you can use to build “smart">
+    <meta name="twitter:url" content="https://www.freecodecamp.org/news/smart-contracts-for-dummies-a1ba1e0b9575/">
+    <meta name="twitter:image" content="https://cdn-media-1.freecodecamp.org/images/1*lsZWlQRE0lWRLzx-BpxR8A.jpeg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="freeCodeCamp.org">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Blockchain, Ethereum, Technology, Cryptocurrency, ICO">
+    <meta name="twitter:site" content="@freecodecamp">
+    <meta property="og:image:width" content="612">
+    <meta property="og:image:height" content="609">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "freeCodeCamp.org",
+        "logo": "https://www.freecodecamp.org/news/content/images/2019/10/minified.svg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "freeCodeCamp.org",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/fcda43852608626fe46d7fd43145766e?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "https://www.freecodecamp.org/news/author/freecodecamp/",
+        "sameAs": []
+    },
+    "headline": "Smart Contracts for Dummies",
+    "url": "https://www.freecodecamp.org/news/smart-contracts-for-dummies-a1ba1e0b9575/",
+    "datePublished": "2017-05-26T12:01:00.000Z",
+    "dateModified": "2017-05-24T15:48:33.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://cdn-media-1.freecodecamp.org/images/1*lsZWlQRE0lWRLzx-BpxR8A.jpeg",
+        "width": 612,
+        "height": 609
+    },
+    "keywords": "Blockchain, Ethereum, Technology, Cryptocurrency, ICO",
+    "description": "by Nik Custodio\n\nSmart Contracts for Dummies\nIf you still don’t get what the heck a Smart Contract is…\nOk, you know a bit about Bitcoin (see: Explain Bitcoin Like I’m Five\n[https://medium.com/@nik5ter/explain-bitcoin-like-im-five-73b4257ac833]). You’ve\nbeen seeing the blockchain on the news.\n\nBut what’s this new Ethereum\n[https://www.nytimes.com/2017/02/27/business/dealbook/ethereum-alliance-business-banking-security.html] \n thing? Apparently it’s this crypto-currency you can use to build “smart",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.freecodecamp.org/news/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 2.25">
+    <link rel="alternate" type="application/rss+xml" title="freeCodeCamp.org" href="https://www.freecodecamp.org/news/rss/">
+    <script>
+  // Set up dataLayer with data if provided
+  window.dataLayer = window.dataLayer || [{ gaPropertyId: 'UA-55446531-20' }];
+
+  // Initialized GTM via gtag
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-55446531-20');
+
+  // Configure and initialize GTM
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl+'&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer', 'GTM-5D6RKKP');
+</script>
+
+<script>
+// For Runkit embeds
+document.addEventListener('DOMContentLoaded', function() {
+  (function() {
+    const runkitElements = document.querySelectorAll('.runkit-element');
+	  runkitElements.forEach(function(element) {
+      const source = element.innerHTML.replace(/&amp;/g, '&');
+      element.innerHTML = '';
+      RunKit.createNotebook({element, source});
+	  });
+  })();
+});
+</script>
+
+<style id="fit-vids-style">.fluid-width-video-container{flex-grow: 1;width:100%;}.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+
+<body class="post-template tag-blockchain tag-ethereum tag-technology tag-cryptocurrency tag-ico" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+
+    <div class="site-wrapper">
+        <nav class="site-nav nav-padding">
+    <div class="site-nav-left">
+        <form onsubmit="event.preventDefault();">
+  <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="search" placeholder="Search 5,000+ tutorials" id="search-input" class="aa-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="aa-dataset-1"></div></span></span>
+</form>
+
+<script>
+  const client = algoliasearch('QMJYL5WYTI', '4318af87aa3ce128708f1153556c6108');
+  const index = client.initIndex('news');
+  autocomplete('#search-input', { hint: false }, [
+    {
+      source: autocomplete.sources.hits(index, { hitsPerPage: 8 }),
+      debounce: 250,
+      templates: {
+        suggestion: (suggestion, result) => {
+          return `
+            <a href="${suggestion.url}">
+              <div class="algolia-result">
+                <span>${suggestion._highlightResult.title.value}</span>
+              </div>
+            </a>
+          `;
+        },
+        empty: (options) => {
+          return `
+            <div class="algolia-result">
+              No tutorials found
+            </div>
+          `;
+        },
+        footer: (query, result) => {
+          if (!query.isEmpty) {
+            return `
+              <hr/>
+              <a href="https://freecodecamp.org/news/search?query=${result.query}">
+                <div class="algolia-result algolia-footer">
+                  <span>See all results for ${result.query}</span>
+                </div>
+              </a>
+            `;
+          }
+        }
+      }
+    }
+  ]).on('autocomplete:selected', (event, suggestion, dataset, context) => {
+    // Set to true if hit is selected by mouse or enter key
+    hitSelected = true;
+    // Do nothing on click, as the browser will already do it
+    if (context.selectionMethod === 'click') {
+      return;
+    }
+    // Change the page, for example, on other events
+    window.location.assign(suggestion.url);
+  });
+
+  // If no hits in the Autocomplete dropdown are highlighted,
+  // treat input like normal search bar
+  const input = document.getElementById("search-input");
+  let searchQuery;
+  let hitSelected;
+
+  // Get the value of the search bar after each key event
+  input.addEventListener('input', e => {
+    searchQuery = input.value;
+  });
+
+  input.addEventListener('keydown', e => {
+    if (event.key === "Enter" && !hitSelected && searchQuery) {
+      window.location.assign(`https://freecodecamp.org/news/search?query=${searchQuery}`);
+    }
+  });
+</script>    </div>
+    <div class="site-nav-middle">
+        <a class="site-nav-logo" href="https://www.freecodecamp.org/news"><img src="./Smart Contracts for Dummies_files/minified.svg" alt="freeCodeCamp.org"></a>
+    </div>
+    <div class="site-nav-right main-nav">
+        <div class="main-nav-group">
+            <ul class="nav" role="menu">
+    <li class="nav-news" role="menuitem"><a href="https://www.freecodecamp.org/news/">/news</a></li>
+    <li class="nav-forum" role="menuitem"><a href="https://www.freecodecamp.org/forum/">/forum</a></li>
+    <li class="nav-learn" role="menuitem"><a href="https://www.freecodecamp.org/learn/">/learn</a></li>
+</ul>
+
+        </div>
+    </div>
+    <button class="site-nav-right toggle-button-nav">
+        Menu
+    </button>
+</nav>
+
+
+        
+
+
+
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full post tag-blockchain tag-ethereum tag-technology tag-cryptocurrency tag-ico ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="2017-05-26">26 May 2017</time>
+                    <span class="date-divider">/</span>
+                    <a href="https://www.freecodecamp.org/news/tag/blockchain/">
+                        #Blockchain
+                    </a>
+                </section>
+                <h1 class="post-full-title">Smart Contracts for Dummies</h1>
+            </header>
+
+            <div class="post-full-author-header">
+
+
+            </div>
+
+            <figure class="post-full-image">
+                <img srcset="https://cdn-media-1.freecodecamp.org/images/1*lsZWlQRE0lWRLzx-BpxR8A.jpeg 300w,
+                            https://cdn-media-1.freecodecamp.org/images/1*lsZWlQRE0lWRLzx-BpxR8A.jpeg 600w,
+                            https://cdn-media-1.freecodecamp.org/images/1*lsZWlQRE0lWRLzx-BpxR8A.jpeg 1000w,
+                            https://cdn-media-1.freecodecamp.org/images/1*lsZWlQRE0lWRLzx-BpxR8A.jpeg 2000w" sizes="(max-width: 800px) 400px,
+                            (max-width: 1170px) 700px,
+                            1400px" src="./Smart Contracts for Dummies_files/1_lsZWlQRE0lWRLzx-BpxR8A.jpeg" alt="Smart Contracts for Dummies" onerror="this.style.display=&#39;none&#39;">
+            </figure>
+
+            <section class=" post-full-content">
+                <div class="post-content medium-migrated-article">
+                    <p>by Nik Custodio</p><h1 id="smart-contracts-for-dummies">Smart Contracts for Dummies</h1><h4 id="if-you-still-don-t-get-what-the-heck-a-smart-contract-is-"><strong>If you still don’t get what the heck a Smart Contract is…</strong></h4><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./Smart Contracts for Dummies_files/1_lsZWlQRE0lWRLzx-BpxR8A.jpeg" class="kg-image"></figure><!--kg-card-end: image--><p>Ok, you know a bit about Bitcoin (see: <a href="https://medium.com/@nik5ter/explain-bitcoin-like-im-five-73b4257ac833" rel="noopener">Explain Bitcoin Like I’m Five</a>). You’ve been seeing the blockchain on the news.</p><p>But what’s this new <a href="https://www.nytimes.com/2017/02/27/business/dealbook/ethereum-alliance-business-banking-security.html" rel="noopener"><strong>Ethereum</strong></a><strong> </strong>thing? Apparently it’s this crypto-currency you can use to build “smart contracts”. Sounds impressive. So, uh… what are they again? <em>(Spoiler: They’re not that smart. And they’re not really contracts!)</em></p><p>Instead of a one line definition, let’s try to get an intuition. First, we’ll revisit the <em>blockchain</em> and the word “trust”. Then, we’ll talk about the word “contract”. Understanding both words is the secret.</p><h3 id="part-i-what-we-mean-by-trust-less-">Part I: What we mean by “Trust(less)”</h3><p>Most of the time, when we think Bitcoin (or Ethereum), we have a mental image of, well…<em>coins</em>.</p><p>Aren’t these <em>crypto-currencies</em> after all? Isn’t that the whole point? In our minds we see objects — digital gold, or silver (or tulips for the skeptics).</p><p>Because these images are easy to understand, we forget a bit about that <em>thing</em> that’s underneath it all. So, I say we start thinking about this in a different way.</p><h3 id="digital-stone"><strong><em>Digital Stone</em></strong></h3><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./Smart Contracts for Dummies_files/1_iU2aL8uUyDD5Sqg66Bo9Tw.jpeg" class="kg-image"></figure><!--kg-card-end: image--><p>Ugh, really? Digital rocks? Actually, rocks are pretty useful.</p><p>We have this idiom in the english language that goes something like this: “set it in <strong>stone</strong>.”</p><blockquote>“I’ve reviewed the contract Bob. Looks good. Let’s set this in stone!”</blockquote><blockquote>“Don’t get too excited Alice, nothing’s in stone yet.”</blockquote><blockquote>“This is God. I’ve written my 10 commandments on these two stone tablets. You know. Just in case ya'll start getting any funny ideas.”</blockquote><p>This metaphor continues to have meaning in a modern world because in the physical (ancient) world, stone had some interesting properties:</p><ol><li>When you carve something on stone there is a physical <strong><em>finality and permanence </em></strong>to it. You can’t make changes just like that.</li><li>If you try to “erase” something later on, it’ll be obvious. Any changes you make to it are quite <strong><em>transparent and tamper proof (provable)</em></strong>.</li><li>These rules apply equally to all. Stone is <strong><em>neutral</em></strong>. It obeys the laws of physics, not men. It doesn’t care if you’re a powerful king or a peasant — it behaves exactly the same for everyone.</li></ol><p>Because of all these properties, we have a pretty <strong><em>high level of trust</em> </strong>in stone.</p><p>I mean — there’s a reason why we never say “let’s set this agreement in <strong><em>sand</em></strong><em>.”</em> Stone is the kind of thing I can point to in the future for evidence. Stone equals solid proof — not just any material will do!</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="./Smart Contracts for Dummies_files/1_8sfxhyikasLgeiUpNBa1iw.jpeg" class="kg-image"><figcaption><a href="http://www.economist.com/news/leaders/21677198-technology-behind-bitcoin-could-transform-how-economy-works-trust-machine" rel="noopener" target="_blank" title="">The Economist</a> agrees!</figcaption></figure><!--kg-card-end: image--><p>When it comes down to it, a<strong> </strong>blockchain<strong> </strong>is really just the above:<em> a kind of material that, through a special mix of cryptography and decentralization, has the properties of permanence, transparency, and neutrality — whatever you put on it.</em></p><p>Whether it’s a list of how many apples you sent to Joe. Or the words “I love Jenny.” It doesn’t matter. When you put it on a blockchain — it’s <em>on</em>.</p><blockquote><strong>Setting something on a blockchain is like setting something in stone. It makes trust easier.</strong></blockquote><p>Except now we can do it <em>digitally</em>. And that’s pretty special.</p><p>Thinking about a blockchain as a piece of stone you can write things on (instead of a piece of currency) also helps us understand its broad potential. Which leads us to…contracts!</p><h3 id="part-ii-what-we-mean-by-contracts-">Part II: What we mean by “Contracts”</h3><p>The word “contract” has a lot of baggage. We start thinking: legal documents and lawyers.</p><p>The go-to description used in the news is a bit better: things that <em>self-execute</em> or<em> execute automatically</em>. That seems vaguely familiar though. After all, there’s really nothing new about <em>automation </em>or <em>execution.</em></p><h4 id="the-great-grandfather-of-smart-contracts">The great grandfather of smart contracts</h4><p>Take your good ol’ office <a href="https://perma.cc/V6AZ-7V8W" rel="noopener"><strong>vending machine</strong></a><strong> </strong>for example. It’s a “stupid” machine that does what it’s told, and<em> </em>executes things automatically. It’s been around for decades!</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="./Smart Contracts for Dummies_files/1_U73m4z7Tl3fQVtAThldjGg.png" class="kg-image"><figcaption>Behold, the magical machine that spits out high-fructose sustenance.</figcaption></figure><!--kg-card-end: image--><p>Let’s pretend one afternoon you find yourself in front of this machine. It says: <strong>“If you give me $2.50, and press this button, you will get a Diet Coke.”</strong></p><p>It might not actually <em>say</em> those words<em> </em>anywhere. But that’s the promise of this little interaction. One might even call this a kind of simple <a href="http://internetofagreements.com/files/InternetOfAgreements.pdf" rel="noopener"><strong><em>agreement</em></strong></a><em>. </em>(You can guess where this is going.)</p><p>You feed in the money. Press the button. Presto! Bottle in hand, you forget this meaningless event in your life 2 seconds later and start worrying again about those darn TPS reports you forgot to do.</p><p>Well, you didn’t notice, but this whole thing was actually a small program(“contract”) coded(“written”) into the machine beforehand that ran when you hit the button(“signed off on it”). Something like:</p><!--kg-card-begin: code--><pre><code>&amp;gt; if money received == $2.50 &gt;     &amp;&amp; the button pressed is "Diet Coke"&gt; then release Diet__Coke</code></pre><!--kg-card-end: code--><p>Computer code, as you see, is <em>kind of </em>like a <strong><em>contract</em></strong>.</p><p>It’s making statements and declarations. There are terms (if you do this…then…). And just like someone you trust — it even fulfills its end of the bargain!</p><p>Voila. Contracts are just code. But unlike a “contract” in English, this is something both humans <em>and</em> machines can read. Extra fun!</p><h4 id="ok-but-">Ok, but…</h4><p>Now you’re more confused about this smart contract business. As we said, this is nothing special. In fact, as the vending machine demonstrates, this kind of code <em>is</em> already everywhere in our daily lives. If a smart contract is just “if…then” code (or <em>any</em> code for that matter), then what’s the hoopla? What’s actually <em>new?</em></p><h3 id="vending-machines-2-0">Vending Machines 2.0</h3><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./Smart Contracts for Dummies_files/1_fhtPA_xZNCEwq1SMzYS2rw.jpeg" class="kg-image"></figure><!--kg-card-end: image--><p>One sunny day, you spot a vending machine sitting on the corner. You’ve never seen this one before!</p><p>You walk over and take a look. This machine says: “<strong>If you put in $1,000 this machine will give you $5,000.”</strong></p><p>Whoa! Whoever put this machine together must be very rich and generous.(Or insanely stupid…). Either way. 1k for 5k? No brainer — that’s a deal you’ll take any day! Right?</p><p>This is exactly like our good old Diet Coke machine. Same logic. Same if-then process.</p><p>Except now the stakes are different. You reach for your pocket but suddenly, you feel hesitant. Who the hell put this machine together anyway? And what if it eats your money? $1,000 isn’t a small amount — you were saving that for months. You didn’t think twice about that Diet Coke. But now? Now you realize that maybe vending machines aren’t that simple.</p><p>You start thinking about <strong>trust.</strong></p><blockquote><strong><em>How do we know it has enough funds to spit out the promised $5,000?</em></strong></blockquote><blockquote><strong><em>How do we know the code is going to </em>run<em>?</em></strong></blockquote><blockquote><strong><em>Is there any way to publicly and transparently verify this code?</em></strong></blockquote><h3 id="conclusion">Conclusion</h3><p>The $5,000 vending machine is an extreme, theoretical example but it does hint at the problem with <em>scaling</em> trust. In an expanding, digital world where people can connect anonymously — trust becomes a tricky thing. We usually rely on third-parties and other middle men for that reason. We have to. Especially if we’re moving things way more valuable than Diet Cokes. You know, like newfangled financial stuff. Or <a href="http://nikcustodio.tumblr.com/post/150500263430/why-blockchains-an-eli21" rel="noopener">the very idea of “value” and “ownership”</a> itself.</p><p>Hmmm. If only you could marry the automation of traditional programming <strong><em>and </em></strong>the trust-worthy properties of <em>digital stone….</em></p><p>Well, that is exactly what a smart contract is! It’s just code — with a very special kind of backing.</p><blockquote>Keep in mind, we’ve had both computation and execution before. <em>But never one that was finalized in a neutral, provable, trustable way on (digital) stone.</em></blockquote><h4 id="how-about-the-real-world-a-few-ideas-"><strong>How about the real world? A few ideas.</strong></h4><p><strong>Online Gaming: </strong>Fight <a href="http://money.cnn.com/2012/07/31/technology/online-poker-settlement/" rel="noopener">fraud on gambling sites</a>. Are the odds of that dice roll you just did <em>actually </em>1 in 6? How do we know they’re going to pay out? Well, why not “set the code in stone” and prove it? A live <a href="https://etheroll.com/#tab7" rel="noopener">example</a>.</p><p><strong>Supply Chains:</strong> Maybe <a href="https://www.provenance.org/whitepaper" rel="noopener">track and verify where and how things are made?</a></p><p><strong>Voting:</strong> Maybe a tamper proof <a href="http://www.govtech.com/blogs/lohrmann-on-cybersecurity/can-blockchain-technology-secure-your-vote.html" rel="noopener">voting</a> process?</p><p><strong>Decentralized and Autonomous Companies: </strong>Sci-fi time.</p><p>Throughout history, automation has always been applied to the <em>bottom </em>of companies<em>. </em>The assembly line. The factory worker. But if the rules of a corporation are just a kind of operational <em>logic</em>— then isn’t it possible to flip the pyramid and instead <a href="https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide/" rel="noopener">automate the <em>top</em></a>?</p><p>These are only a few examples of what you could code on a blockchain using Ethereum’s <a href="https://www.wikiwand.com/simple/Turing_complete" rel="noopener">Turing complete programming language</a>. We’re only at the beginning. If you dream it, you might be able to code it.</p><p>And in many ways, that’s what makes this whole thing exciting. We have some guesses, but honestly — we have no idea what will be built in the years and decades to come.</p><p>All we know is that the building blocks are here. And it is open to all. The rest is up to you.</p><h4 id="ready-to-go-down-the-rabbit-hole"><strong>Ready to go down the rabbit hole?</strong></h4><ul><li><a href="https://blog.coinbase.com/a-beginners-guide-to-ethereum-46dd486ceecf" rel="noopener">A Beginner’s Guide to Ethereum</a></li><li><a href="https://medium.com/@cdixon/crypto-tokens-a-breakthrough-in-open-network-design-e600975be2ef" rel="noopener">Crypto-Tokens: A Breakthrough in Open Network Design <em>(</em></a><em>Chris Dixon)</em></li><li><a href="https://perma.cc/V6AZ-7V8W" rel="noopener">The Idea of Smart Contracts <em>(Nick Szabo, 1997)</em></a></li><li><a href="https://medium.com/@nik5ter/the-other-side-of-the-coin-f293b65b1eda?source=linkShare-2d6f142ff3cc-1513820863" rel="noopener">The Other Side of the Coin: A different perspective on cryptocurrencies</a></li></ul>
+                </div>
+                <hr>
+                <p>
+    If this article was helpful,
+
+    <a onclick="window.open(`https://twitter.com/share?text=Smart%20Contracts%20for%20Dummies&amp;url=https://www.freecodecamp.org/news/smart-contracts-for-dummies-a1ba1e0b9575/`, &#39;share-twitter&#39;, &#39;width=550,height=235&#39;);return false;">
+        tweet it</a>
+    or
+    <a onclick="window.open(`https://www.facebook.com/sharer/sharer.php?u=https://www.freecodecamp.org/news/smart-contracts-for-dummies-a1ba1e0b9575/`, &#39;share-facebook&#39;,&#39;width=580,height=296&#39;);return false;">
+        share it</a>.
+</p>                <p>
+    <a href="https://freecodecamp.org/donate">
+        Donate $5 and buy the world 250 hours of learning</a>.
+</p>            </section>
+
+
+
+        </article>
+    </div>
+</main>
+
+
+
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            <article class="read-next-card" style="background-image: url(/news/content/images/size/w600/2019/06/background.png)">
+                <header class="read-next-card-header">
+                    <p class="read-next-card-header-sitetitle">Countinue reading about</p>
+                    <h3 class="read-next-card-header-title"><a href="https://www.freecodecamp.org/news/tag/blockchain/">Blockchain</a></h3>
+                </header>
+                <div class="read-next-card-content">
+                    <ul>
+                        <li><a href="https://www.freecodecamp.org/news/universal-ethereum-delegated-transactions-no-more-ethereum-fees/">Universal Ethereum Delegated Transactions: No More Transaction Fees</a></li>
+                        <li><a href="https://www.freecodecamp.org/news/a-global-immutable-registry-of-labeled-fake-news/">How AI and Distributed Ledgers Can Help Us Solve Fake News</a></li>
+                        <li><a href="https://www.freecodecamp.org/news/technical-primer-to-blockchain-ethereum/">Technical primer to Blockchain &amp; Ethereum</a></li>
+                    </ul>
+                </div>
+                <footer class="read-next-card-footer">
+                    <a href="https://www.freecodecamp.org/news/tag/blockchain/">See all 60 posts
+                        →</a>
+                </footer>
+            </article>
+
+            <article class="post-card post tag-web-development tag-heroku tag-cloud-computing tag-coding tag-programming ">
+
+    <a class="post-card-image-link" href="https://www.freecodecamp.org/news/how-to-host-lightweight-apps-for-free-a29773e5f39e/">
+        <img class="post-card-image" srcset="https://cdn-media-1.freecodecamp.org/images/1*m8zEyzBZkPlhZlNZ-w1gaw.jpeg 300w,
+                    https://cdn-media-1.freecodecamp.org/images/1*m8zEyzBZkPlhZlNZ-w1gaw.jpeg 600w,
+                    https://cdn-media-1.freecodecamp.org/images/1*m8zEyzBZkPlhZlNZ-w1gaw.jpeg 1000w,
+                    https://cdn-media-1.freecodecamp.org/images/1*m8zEyzBZkPlhZlNZ-w1gaw.jpeg 2000w" sizes="(max-width: 1000px) 400px, 700px" onerror="this.style.display=&#39;none&#39;" src="./Smart Contracts for Dummies_files/1_m8zEyzBZkPlhZlNZ-w1gaw.jpeg" alt="How to host lightweight apps for free">
+    </a>
+
+    <div class="post-card-content">
+
+        <div class="post-card-content-link">
+
+            <header class="post-card-header">
+                <span class="post-card-tags">
+                    <a href="https://www.freecodecamp.org/news/tag/web-development/">
+                        #Web Development
+                    </a>
+                </span>
+                <h2 class="post-card-title">
+                    <a href="https://www.freecodecamp.org/news/how-to-host-lightweight-apps-for-free-a29773e5f39e/">
+                        How to host lightweight apps for free
+                    </a>
+                </h2>
+            </header>
+
+        </div>
+
+
+        <footer class="post-card-meta">
+
+            <time class="meta-item-single">2 years ago</time>
+
+
+        </footer>
+
+    </div>
+
+</article>
+            <article class="post-card post tag-life-lessons tag-inspiration tag-self-improvement tag-software-development tag-public-speaking ">
+
+    <a class="post-card-image-link" href="https://www.freecodecamp.org/news/public-speaking-transformed-my-life-and-can-change-yours-too-ca8acdbcc188/">
+        <img class="post-card-image" srcset="https://cdn-media-1.freecodecamp.org/images/1*BRdWbn_QRnfEg5VmKzj1dg.jpeg 300w,
+                    https://cdn-media-1.freecodecamp.org/images/1*BRdWbn_QRnfEg5VmKzj1dg.jpeg 600w,
+                    https://cdn-media-1.freecodecamp.org/images/1*BRdWbn_QRnfEg5VmKzj1dg.jpeg 1000w,
+                    https://cdn-media-1.freecodecamp.org/images/1*BRdWbn_QRnfEg5VmKzj1dg.jpeg 2000w" sizes="(max-width: 1000px) 400px, 700px" onerror="this.style.display=&#39;none&#39;" src="./Smart Contracts for Dummies_files/1_BRdWbn_QRnfEg5VmKzj1dg.jpeg" alt="Public Speaking Transformed My Life…and Can Change Yours Too">
+    </a>
+
+    <div class="post-card-content">
+
+        <div class="post-card-content-link">
+
+            <header class="post-card-header">
+                <span class="post-card-tags">
+                    <a href="https://www.freecodecamp.org/news/tag/life-lessons/">
+                        #Life Lessons
+                    </a>
+                </span>
+                <h2 class="post-card-title">
+                    <a href="https://www.freecodecamp.org/news/public-speaking-transformed-my-life-and-can-change-yours-too-ca8acdbcc188/">
+                        Public Speaking Transformed My Life…and Can Change Yours Too
+                    </a>
+                </h2>
+            </header>
+
+        </div>
+
+
+        <footer class="post-card-meta">
+
+            <ul class="author-list">
+                <li class="author-list-item">
+
+                    <div class="author-name-tooltip">
+                        Cory House
+                    </div>
+
+                    <a href="https://www.freecodecamp.org/news/author/housecor/" class="static-avatar">
+                        <img class="author-profile-image" src="./Smart Contracts for Dummies_files/09e16ce7b4bc21025c9940f5a167cfa9.jpeg" alt="Cory House">
+                    </a>
+                </li>
+            </ul>
+
+            <a class="meta-item" href="https://www.freecodecamp.org/news/author/housecor/">Cory House</a>
+            <time class="meta-item">2 years ago</time>
+
+
+
+        </footer>
+
+    </div>
+
+</article>
+        </div>
+    </div>
+</aside>
+
+
+
+
+        <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-desc-col">
+                <p>freeCodeCamp is a donor-supported tax-exempt 501(c)(3) nonprofit organization (United States Federal
+                    Tax Identification Number: 82-0779546)
+                </p>
+                <p>
+                    Our mission: to help people learn to code for free. We accomplish this by creating thousands of
+                    videos, articles, and interactive coding lessons - all freely available to the public. We also have
+                    thousands of freeCodeCamp study groups around the world.
+                </p>
+                <p>
+                    Donations to freeCodeCamp go toward our education initiatives, and help pay for servers, services,
+                    and staff. You can&nbsp;<a href="https://freecodecamp.org/donate" class="inline" rel="noopener noreferrer" target="_blank">make a tax-deductible donation here</a>.
+                </p>
+            </div>
+            <div class="footer-col-1">
+                <div class="col-header">Our Nonprofit</div>
+                <a href="https://www.freecodecamp.org/news/about/">About</a>
+                <a href="https://freecodecamp.org/donate">Donate</a>
+                <a href="https://www.freecodecamp.org/shop/" rel="noopener noreferrer" target="_blank">Shop</a>
+                <a href="https://www.linkedin.com/school/free-code-camp/people/" rel="noopener noreferrer" target="_blank">Alumni Network</a>
+                <a href="https://github.com/freeCodeCamp/">Open Source</a>
+                <a href="https://www.freecodecamp.org/news/support/">Support</a>
+                <a href="https://www.freecodecamp.org/news/sponsors/">Sponsors</a>
+                <a href="https://www.freecodecamp.org/news/academic-honesty-policy/">Academic Honesty</a>
+                <a href="https://www.freecodecamp.org/news/code-of-conduct/">Code of Conduct</a>
+                <a href="https://www.freecodecamp.org/news/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.freecodecamp.org/news/terms-of-service/">Terms of Service</a>
+                <a href="https://www.freecodecamp.org/news/copyright-policy/">Copyright Policy</a>
+            </div>
+            <div class="footer-col-2">
+                <div class="col-header">Best Tutorials</div>
+                <a href="https://www.freecodecamp.org/news/best-python-tutorial/">Python Tutorial</a>
+                <a href="https://www.freecodecamp.org/news/best-git-tutorial/">Git Tutorial</a>
+                <a href="https://www.freecodecamp.org/news/the-best-linux-tutorials/">Linux Tutorial</a>
+                <a href="https://www.freecodecamp.org/news/best-javascript-tutorial/">JavaScript Tutorial</a>
+                <a href="https://www.freecodecamp.org/news/best-react-javascript-tutorial/">React Tutorial</a>
+                <a href="https://www.freecodecamp.org/news/best-html-html5-tutorial/">HTML Tutorial</a>
+                <a href="https://www.freecodecamp.org/news/best-css-and-css3-tutorial/">CSS Tutorial</a>
+                <a href="https://www.freecodecamp.org/news/best-sql-database-tutorial/">SQL Tutorial</a>
+                <a href="https://www.freecodecamp.org/news/best-java-8-tutorial/">Java Tutorial</a>
+                <a href="https://www.freecodecamp.org/news/best-angular-tutorial-angularjs/">Angular Tutorial</a>
+                <a href="https://www.freecodecamp.org/news/best-wordpress-tutorial/">WordPress Tutorial</a>
+                <a href="https://www.freecodecamp.org/news/best-bootstrap-tutorial-responsive-web-design/">Bootstrap
+                    Tutorial</a>
+
+            </div>
+            <div class="footer-col-3">
+                <div class="col-header">Best Examples</div>
+                <a href="https://www.freecodecamp.org/news/python-example/">Python Example </a>
+                <a href="https://www.freecodecamp.org/news/javascript-example/">JavaScript Example</a>
+                <a href="https://www.freecodecamp.org/news/react-examples-reactjs/">React Example</a>
+                <a href="https://www.freecodecamp.org/news/linux-example-bash-command-line/">Linux Example</a>
+                <a href="https://www.freecodecamp.org/news/html-and-html5-example/">HTML Example</a>
+                <a href="https://www.freecodecamp.org/news/css-example-css3/">CSS Example</a>
+                <a href="https://www.freecodecamp.org/news/sql-example/">SQL Example</a>
+                <a href="https://www.freecodecamp.org/news/java-example/">Java Example</a>
+                <a href="https://www.freecodecamp.org/news/the-best-angular-examples/">Angular Example</a>
+                <a href="https://www.freecodecamp.org/news/the-best-jquery-examples/">jQuery Example</a>
+                <a href="https://www.freecodecamp.org/news/the-best-bootstrap-examples/">Bootstrap Example</a>
+                <a href="https://www.freecodecamp.org/news/the-best-php-examples/">PHP Example</a>
+            </div>
+            <div class="footer-col-4">
+                <div class="col-header">Trending Reference</div>
+                <a href="https://www.freecodecamp.org/news/2019-web-developer-roadmap/">2019 Web Developer Roadmap</a>
+                <a href="https://www.freecodecamp.org/news/linux-command-line-bash-tutorial/">Linux Command Line
+                    Guide</a>
+                <a href="https://www.freecodecamp.org/news/the-ultimate-guide-to-git-reset-and-git-revert/">Git Reset
+                    and Git Revert</a>
+                <a href="https://www.freecodecamp.org/news/the-ultimate-guide-to-git-merge-and-git-rebase/">Git Merge
+                    and Git Rebase</a>
+                <a href="https://www.freecodecamp.org/news/the-ultimate-guide-to-javascript-array-methods-map/">JavaScript
+                    Array Map</a>
+                <a href="https://www.freecodecamp.org/news/the-ultimate-guide-to-javascript-array-methods-reduce/">JavaScript
+                    Array Reduce</a>
+                <a href="https://www.freecodecamp.org/news/the-ultimate-guide-to-javascript-date-and-moment-js/">JavaScript
+                    Date</a>
+                <a href="https://www.freecodecamp.org/news/the-ultimate-guide-to-javascript-string-methods-split/">JavaScript
+                    String Split</a>
+                <a href="https://www.freecodecamp.org/news/understanding-flexbox-everything-you-need-to-know-b4013d4dc9af/">CSS
+                    Flexbox Guide</a>
+                <a href="https://www.freecodecamp.org/news/11-things-i-learned-reading-the-css-grid-specification-fb3983aa5e0/">CSS
+                    Grid Guide</a>
+                <a href="https://www.freecodecamp.org/news/the-ultimate-guide-to-linux-creating-a-sudo-user/">Create a
+                    Linux Sudo User</a>
+                <a href="https://www.freecodecamp.org/news/the-ultimate-guide-to-ssh-setting-up-ssh-keys/">How to Set Up
+                    SSH Keys</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+
+    <script>
+        var images = document.querySelectorAll('.kg-gallery-image img');
+        images.forEach(function (image) {
+            var container = image.closest('.kg-gallery-image');
+            var width = image.attributes.width.value;
+            var height = image.attributes.height.value;
+            var ratio = width / height;
+            container.style.flex = ratio + ' 1 0%';
+        })
+    </script>
+
+
+    <script src="./Smart Contracts for Dummies_files/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/jquery.fitvids.js"></script>
+
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-unescaped-markup.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-markup-templating.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-bash.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-c.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-clojure.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-cpp.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-csharp.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-css.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-docker.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-elixir.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-erlang.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-git.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-go.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-graphql.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-haskell.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-java.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-javascript.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-json.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-jsx.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-kotlin.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-lua.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-markup.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-php.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-python.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-r.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-ruby.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-rust.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-scala.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-sql.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-swift.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-typescript.min.js"></script>
+    <script type="text/javascript" src="./Smart Contracts for Dummies_files/prism-yaml.min.js"></script>
+
+    <script>
+    $(document).ready(function () {
+        // Start fitVids
+        var $postContent = $(".post-full-content");
+        $postContent.fitVids();
+        // End fitVids
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $(".toggle-button-nav").click(function () {
+            $(".nav").toggleClass("show-main-nav-items");
+            $(".site-nav").toggleClass("expand-nav");
+            $(".toggle-button-nav").toggleClass("reverse-toggle-color");
+            $(".site-nav-left").toggleClass("display-search");
+        });
+    });
+</script>
+
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D6RKKP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+<div id="shadowMeasureIt"></div><div id="divCoordMeasureIt"></div><div id="divRectangleMeasureIt"><div id="divRectangleBGMeasureIt"></div></div><div id="eJOY__extension_root" style="all: unset;"></div></body></html>

@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://www.provenance.org/whitepaper -->
+<html class="js gr__provenance_org"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+<script type="text/javascript" src="./Blockchain_ the solution for supply chain transparency _ Provenance_files/ef965252c7"></script><script src="./Blockchain_ the solution for supply chain transparency _ Provenance_files/nr-1130.min.js"></script><script async="" src="./Blockchain_ the solution for supply chain transparency _ Provenance_files/fbevents.js"></script><script type="text/javascript" async="" src="./Blockchain_ the solution for supply chain transparency _ Provenance_files/uwt.js"></script><script type="text/javascript" async="" src="./Blockchain_ the solution for supply chain transparency _ Provenance_files/insight.min.js"></script><script type="text/javascript" async="" src="./Blockchain_ the solution for supply chain transparency _ Provenance_files/hotjar-1116996.js"></script><script type="text/javascript" async="" src="./Blockchain_ the solution for supply chain transparency _ Provenance_files/analytics.js"></script><script type="text/javascript" async="" src="./Blockchain_ the solution for supply chain transparency _ Provenance_files/mixpanel-2-latest.min.js"></script><script async="" src="./Blockchain_ the solution for supply chain transparency _ Provenance_files/gtm.js"></script><script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"ef965252c7","applicationID":"9969745","transactionName":"e1lbQEMNDllRERdHEFlCXFduEgNSURAXQwxRQlBEUBIHRw==","queueTime":5,"applicationTime":142,"agent":""}</script>
+<script>window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blockchain: the solution for supply chain transparency | Provenance</title>
+<meta name="description" content="A white paper describing how blockchain technology can enable secure traceability of certifications and other product supply chain information.">
+<link rel="canonical" href="https://www.provenance.org/whitepaper">
+<meta property="og:article:author" content="http://www.facebook.com/ProjectProvenance">
+<meta property="og:article:publisher" content="http://www.facebook.com/ProjectProvenance">
+<meta property="og:article:published_time" content="2015-11-21T00:00:00+00:00">
+<meta property="og:article:modified_time" content="2015-11-21T00:00:00+00:00">
+<meta property="og:description" content="A white paper describing how blockchain technology can enable secure traceability of certifications and other product supply chain information.">
+<meta property="og:image" content="https://assets.provenance.org/web-assets/modules/provenance-meta-coffee-cherries-1e789004055ef5901bc523561d86a7e7273c44a7b00b297bd16a5073a1c3676d.jpg">
+<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="1200">
+<meta property="og:site_name" content="Provenance">
+<meta property="og:title" content="Blockchain: the solution for supply chain transparency">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.provenance.org/whitepaper">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ProvenanceHQ">
+  <link rel="dns-prefetch" href="https://use.typekit.net/">
+  <link rel="stylesheet" href="./Blockchain_ the solution for supply chain transparency _ Provenance_files/xwt5rue.css">
+  <link rel="stylesheet" media="all" href="./Blockchain_ the solution for supply chain transparency _ Provenance_files/application-c42a00ef5b5de0ca3568dd2b7b8134926d32681f67a2306f398d09bdd52766de.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.provenance.org/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://www.provenance.org/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://www.provenance.org/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://www.provenance.org/manifest.json">
+<link rel="mask-icon" href="https://www.provenance.org/safari-pinned-tab.svg" color="#3b2d51">
+<meta name="apple-mobile-web-app-title" content="Provenance">
+<meta name="application-name" content="Provenance">
+<meta name="theme-color" content="#ffffff">
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="AUwc14BpYN72H0ZZHq141Tr7Jf3GaOPe8Y6EZ/uRsQTjGiQl51uo8lqasUxgkfbqcyqTOMkR0PI6WSOngsYMgg==">
+  <script>window.document.documentElement.className = 'js';</script>
+  <script>
+window.globals = {
+  applicationEnvironment: "production",
+  filestackApiKey: "AFAwtzoUSeKXjZ2rarvyYz",
+  rollbarPostClientItemToken: "f0a7df5846514f5e85015e7c29c24895",
+  googleApiKey: "AIzaSyA5xty23KOxUE7pbgsuwxlRPVzPkcU7atw",
+  ipfsConfig: {
+    host: "ipfs.provenance.org",
+    port: "",
+    protocol: "https"
+  },
+  mapboxAccessToken: "pk.eyJ1IjoicHJvdmVuYW5jZSIsImEiOiJEZzBpQWhvIn0.l_2qYZJDq1nJJoSNQBrglg",
+  mapboxUsername: "provenance",
+  networkUrls: {"live":"https://live.provenance.org/","morden":"https://morden.infura.io/v3/8497d125a6024c5a978d70f9802505d9","kovan":"https://kovan.infura.io/v3/8497d125a6024c5a978d70f9802505d9","ropsten":"https://ropsten.infura.io/v3/8497d125a6024c5a978d70f9802505d9"},
+  stripePublishableKey: "pk_live_J4ItCuQ1KnntApUBQpl7dPcH"
+};
+</script>
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TTDC6DS');</script>
+<!-- End Google Tag Manager -->
+
+  <script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-59977860-1', 'auto');
+// Enable IP anonymisation
+ga('set', 'anonymizeIp', true);
+// GA custom dimensions
+ga('set', 'dimension1', 0);
+// enable GA autotrack plugins
+ga('require', 'maxScrollTracker', {
+  maxScrollMetricIndex: 1
+});
+ga('require', 'mediaQueryTracker', {
+  definitions: [
+    {
+      name: 'Breakpoint',
+      dimensionIndex: 2,
+      items: [
+        {name: 'mobile', media: 'all'},
+        {name: 'mobile-wide', media: '(min-width: 480px)'},
+        {name: 'tablet-small', media: '(min-width: 640px)'},
+        {name: 'tablet', media: '(min-width: 768px)'},
+        {name: 'desktop', media: '(min-width: 960px)'},
+        {name: 'desktop-new', media: '(min-width: 1024px)'},
+        {name: 'large', media: '(min-width: 1200px)'},
+        {name: 'xlarge', media: '(min-width: 1500px)'}
+      ]
+    },
+    {
+      name: 'Resolution',
+      dimensionIndex: 3,
+      items: [
+        {name: '1x',   media: 'all'},
+        {name: '1.5x', media: '(min-resolution: 144dpi)'},
+        {name: '2x',   media: '(min-resolution: 192dpi)'}
+      ]
+    },
+    {
+      name: 'Orientation',
+      dimensionIndex: 4,
+      items: [
+        {name: 'landscape', media: '(orientation: landscape)'},
+        {name: 'portrait',  media: '(orientation: portrait)'}
+      ]
+    }
+  ]
+});
+ga('require', 'outboundLinkTracker', {
+  events: ['click', 'auxclick']
+});
+ga('send', 'pageview');
+setTimeout(function() {
+  ga('send', 'event', 'Engagement', 'read', '15 seconds');
+},15000);
+</script>
+<script async="" src="./Blockchain_ the solution for supply chain transparency _ Provenance_files/analytics.js"></script>
+
+  <script>
+(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+mixpanel.init("b26c35a76cb1a3ffde6c50a5d7ee94b6", {'loaded':function(){
+
+}});
+</script>
+
+<script async="" src="./Blockchain_ the solution for supply chain transparency _ Provenance_files/modules.77cc7001be7f09ce805b.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+<body class="static_pages whitepaper not_signed_in marketing_page" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTDC6DS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <header>
+  <div class="Navbar is-transparent Headroom-animated headroom--top headroom--not-bottom" data-anonymous="anonymous">
+      
+<div class="Navbar-left">
+  <h1 class="is-visuallyHidden">Provenance</h1>
+
+  <div class="Chrome-burger HamburgerMenu " data-controller="hamburger">
+    <a class="Chrome-burgerInner" href="https://www.provenance.org/whitepaper#" data-action="hamburger#toggleMenu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" class="Chrome-burgerMedia">
+    <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-width="2">
+        <path d="M1 14.5h16M1 8h16M1 1.5h16"></path>
+    </g>
+</svg>
+
+    </a>
+  </div>
+
+  <div class="Navbar-wordmark">
+    <a class="Navbar-wordmarkInner" href="https://www.provenance.org/">
+      <svg xmlns="http://www.w3.org/2000/svg" height="36.851" viewBox="0 0 428.031 36.851" width="428.031" class="Navbar-wordmarkMedia">
+  <g>
+    <path d="M12.496 1.583H3.619a2.446 2.446 0 0 0-2.204 2.203v29.262a2.623 2.623 0 0 0 2.366 2.242 2.444 2.444 0 0 0 2.204-2.242v-8.23h6.511c.324.014.649.014.97 0 6.416-.268 11.402-5.686 11.135-12.102-.271-6.415-5.689-11.401-12.105-11.133zm7.118 11.608a7.077 7.077 0 0 1-7.077 7.076H5.985V6.113h6.552a7.079 7.079 0 0 1 7.077 7.078zM66 12.624a8.252 8.252 0 0 0-.008-.271c-.246-6.195-5.467-11.014-11.659-10.77H44.226a2.447 2.447 0 0 0-2.187 2.203v29.26a2.624 2.624 0 0 0 2.365 2.201 2.404 2.404 0 0 0 2.144-2.201v-9.16h7.987l6.067 10.312a2.347 2.347 0 0 0 2.021 1.213c.157.002.313-.018.465-.064.142-.039.749-.441.87-.441.465-.326.795-.807.933-1.355a2.555 2.555 0 0 0-.283-1.537l-5.419-9.078A11.083 11.083 0 0 0 66 12.624zm-4.526 0l-.004.146a6.84 6.84 0 0 1-7.073 6.589h-7.849V6.156h7.808a6.673 6.673 0 0 1 7.118 6.468zM100.072 1.157a13.805 13.805 0 0 0-.407 0c-9.458.11-17.034 7.871-16.922 17.329-.001.129-.001.258.001.387.134 9.438 7.893 16.979 17.328 16.844.129.002.258.002.387-.002 9.447-.066 17.051-7.781 16.982-17.229-.022-9.577-7.792-17.329-17.369-17.329zm.025 30.106c-7.058.002-12.781-5.715-12.784-12.775a13.348 13.348 0 0 1 0-.283c.079-6.969 5.791-12.555 12.76-12.475.095-.003.189-.003.281-.003 6.979.071 12.583 5.781 12.516 12.76-.003 7.053-5.719 12.774-12.773 12.776zM160.187 1.607a2.238 2.238 0 0 0-2.567 1.112l-10.938 25.192-10.698-25.192a2.731 2.731 0 0 0-2.932-.973 2.263 2.263 0 0 0-1.314 2.729v.121l12.901 30.333a2.187 2.187 0 0 0 2.021 1.23 2.459 2.459 0 0 0 1.98-1.432l13.225-30.33a2.69 2.69 0 0 0-1.678-2.79zM198.102 6.153a2.63 2.63 0 0 0 2.204-2.367 2.446 2.446 0 0 0-2.204-2.203h-17.393a2.444 2.444 0 0 0-2.184 2.203v29.262a2.443 2.443 0 0 0 2.184 2.242h17.393a2.626 2.626 0 0 0 2.204-2.35 2.446 2.446 0 0 0-2.204-2.203h-15.023V20.122h12.981a2.629 2.629 0 0 0 2.184-2.365 2.445 2.445 0 0 0-2.184-2.203h-12.981V6.153h15.023zM244.586 1.584a2.445 2.445 0 0 0-2.123 2.205v22.852L223.843 1.83a2.48 2.48 0 0 0-2.487-.789 2.5 2.5 0 0 0-1.56 2.021V33.05a2.632 2.632 0 0 0 2.308 2.201 2.442 2.442 0 0 0 2.204-2.201V10.157l18.604 24.792c.398.617 1.084.99 1.819.99.224-.027.442-.088.645-.182a2.478 2.478 0 0 0 1.577-2.02V3.79a2.63 2.63 0 0 0-2.367-2.206zM280.664 1.945a2.523 2.523 0 0 0-2.021-1.254 2.424 2.424 0 0 0-1.9 1.172v.145l-13.225 30.634a2.704 2.704 0 0 0 1.695 2.73c.188.029.379.029.566 0a2.294 2.294 0 0 0 2.026-1.357l3.354-7.785h14.983l3.354 7.846a2.714 2.714 0 0 0 2.935.99 2.238 2.238 0 0 0 1.173-1.152 2.22 2.22 0 0 0 0-1.639l-12.94-30.33zm-7.523 19.859l5.581-12.859 5.459 12.859h-11.04zM335.184 1.583a2.451 2.451 0 0 0-2.146 2.203v22.852L314.394 1.949a2.491 2.491 0 0 0-2.467-.91 2.485 2.485 0 0 0-1.577 2.023v29.986a2.63 2.63 0 0 0 2.285 2.203 2.444 2.444 0 0 0 2.204-2.203V10.155l18.684 24.811a2.181 2.181 0 0 0 1.82.973c.221-.025.439-.086.646-.186a2.5 2.5 0 0 0 1.561-2.02V3.786a2.63 2.63 0 0 0-2.366-2.203zM383.971 27.144a2.392 2.392 0 0 0-1.682.564 12.473 12.473 0 0 1-8.594 3.479c-.095.002-.188.002-.285.002-6.969-.035-12.59-5.711-12.555-12.68.033-7.067 5.778-12.774 12.84-12.762a12.241 12.241 0 0 1 8.492 3.195c.412.397.95.635 1.518.666a2.017 2.017 0 0 0 1.536-.625l.467-.566a2.36 2.36 0 0 0-.403-2.83 17.03 17.03 0 0 0-11.606-4.43c-9.588-.012-17.377 7.74-17.41 17.329-.001.129 0 .258.002.387.156 9.459 7.95 16.998 17.408 16.844a16.753 16.753 0 0 0 11.829-4.709 2.347 2.347 0 0 0 0-2.893 2.223 2.223 0 0 0-1.557-.971zM424.412 30.737h-15.021V20.122h12.979a2.63 2.63 0 0 0 2.188-2.365 2.452 2.452 0 0 0-2.188-2.203h-12.979V6.153h15.021a2.627 2.627 0 0 0 2.204-2.367 2.443 2.443 0 0 0-2.204-2.203h-17.391a2.446 2.446 0 0 0-2.204 2.203v29.262a2.443 2.443 0 0 0 2.204 2.242h17.391a2.623 2.623 0 0 0 2.204-2.35 2.444 2.444 0 0 0-2.204-2.203z"></path>
+  </g>
+</svg>
+
+    </a>
+  </div>
+</div>
+
+
+      <nav class="Navbar-right">
+  <ul class="Navbar-menu">
+    <li class="Navbar-menuItem Navbar-menuItem--desktop">
+      <a class="Navbar-menuItemInner Navbar-menuItemInner--arrow" href="https://www.provenance.org/business/platform">For Business</a>
+      <ul class="Navbar-menuSubMenu">
+        <li class="Navbar-menuSubMenuItem">
+          <a class="Navbar-menuSubMenuItemInner " href="https://www.provenance.org/business/platform">Platform</a>
+        </li>
+        <li class="Navbar-menuSubMenuItem">
+          <a class="Navbar-menuSubMenuItemInner " href="https://www.provenance.org/business/services">Services</a>
+        </li>
+          <li class="Navbar-menuSubMenuItem">
+            <a class="Navbar-menuSubMenuItemInner " href="https://www.provenance.org/pricing">Pricing</a>
+          </li>
+        <li class="Navbar-menuSubMenuItem">
+          <a class="Navbar-menuSubMenuItemInner " href="https://www.provenance.org/case_studies">Case Studies</a>
+        </li>
+      </ul>
+    </li>
+    <li class="Navbar-menuItem Navbar-menuItem--desktop">
+      <a class="Navbar-menuItemInner " href="https://www.provenance.org/shoppers">For shoppers</a>
+    </li>
+    <li class="Navbar-menuItem Navbar-menuItem--desktop">
+      <a class="Navbar-menuItemInner " href="https://www.provenance.org/technology">Technology</a>
+    </li>
+    <li class="Navbar-menuItem Navbar-menuItem--desktop">
+      <a class="Navbar-menuItemInner Navbar-menuItemInner--arrow" href="https://www.provenance.org/about">About</a>
+      <ul class="Navbar-menuSubMenu">
+        <li class="Navbar-menuSubMenuItem">
+          <a class="Navbar-menuSubMenuItemInner" href="https://www.provenance.org/about#mission">Mission</a>
+        </li>
+        <li class="Navbar-menuSubMenuItem">
+          <a class="Navbar-menuSubMenuItemInner" href="https://www.provenance.org/about#team">Team</a>
+        </li>
+        <li class="Navbar-menuSubMenuItem">
+          <a class="Navbar-menuSubMenuItemInner" href="https://www.provenance.org/about#contact">Contact</a>
+        </li>
+      </ul>
+    </li>
+    <li class="Navbar-menuItem Navbar-menuItem--desktop">
+      <a class="Navbar-menuItemInner" target="_blank" href="https://www.provenance.org/news">News</a>
+    </li>
+    <li class="Navbar-menuItem Navbar-menuItem--desktop">
+      <a class="Action Action--rounded Action--small Action--join" href="https://www.provenance.org/access_requests/new">Get started</a>
+    </li>
+    <li class="Navbar-menuItem">
+      <a class="Action Action--rounded Action--small Action--signIn" href="https://www.provenance.org/sign_in">Sign in</a>
+    </li>
+  </ul>
+</nav>
+
+  </div>
+
+
+    <div class="Navbar-menuSubMenuBackground"></div>
+
+  <div class="Chrome-spacer"></div>
+</header>
+
+  <nav class="Sidebar Sidebar--left Sidebar--anonymous Sidebar--marketing">
+  <div class="Sidebar-inner">
+    <ul class="Menu Menu--anonymous"><li class="Menu-item Menu-item--signUp" id="join_now"><a href="https://www.provenance.org/access_requests/new">Get started</a></li><li class="Menu-item Menu-item--signIn" id="sign_in"><a href="https://www.provenance.org/sign_in">Sign in</a></li></ul>
+    <div>
+      <div>
+        <ul class="Menu Menu--anonymous"><li class="Menu-item Menu-item--headingSubmenu" data-controller="submenu" id="for_business"><a class="Chrome-drawerNavItemInner--arrow" data-action="submenu#toggle" href="https://www.provenance.org/whitepaper#">For business</a><ul class="Chrome-drawerNavSubMenu" data-target="submenu.drawer"><li class="Menu-item Menu-item--sub" id="platform"><a href="https://www.provenance.org/business/platform">Platform</a></li><li class="Menu-item Menu-item--sub" id="services"><a href="https://www.provenance.org/business/services">Services</a></li><li class="Menu-item Menu-item--sub" id="case_studies"><a href="https://www.provenance.org/case-studies">Case Studies</a></li></ul></li><li class="Menu-item" id="for_shoppers"><a href="https://www.provenance.org/shoppers">For shoppers</a></li><li class="Menu-item" id="technology"><a href="https://www.provenance.org/technology">Technology</a></li><li class="Menu-item" id="about"><a href="https://www.provenance.org/about">About</a></li><li class="Menu-item" id="news"><a href="https://www.provenance.org/news">News</a></li></ul>
+      </div>
+      <div class="Sidebar-social">
+        <ul class="Chrome-socialLinks">
+    <li class="Chrome-socialLink">
+      <a class="Chrome-socialLinkInner #{anonymous_class}" rel="nofollow noopener" target="_blank" title="Follow Provenance on Instagram" href="https://instagram.com/provenanceHQ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" class="Chrome-socialLinkMedia">
+  <path d="M43.182 0H6.818C3.058 0 0 3.06 0 6.818V43.18C0 46.94 3.06 50 6.818 50h36.364c3.76 0 6.818-3.058 6.818-6.817V6.82C50 3.058 46.94 0 43.182 0m2.273 6.818v7.508H34.093v-9.78h9.09c1.253 0 2.272 1.018 2.272 2.272M25 15.91c5.014 0 9.09 4.077 9.09 9.09 0 5.014-4.076 9.09-9.09 9.09s-9.09-4.076-9.09-9.09 4.076-9.09 9.09-9.09m18.182 29.544H6.818c-1.254 0-2.272-1.02-2.272-2.272V20.338h7.656c-.533 1.457-.838 3.022-.838 4.66 0 7.52 6.117 13.638 13.636 13.638 7.52 0 13.637-6.117 13.637-13.637 0-2.206-.538-4.283-1.472-6.13h8.29v24.31c0 1.256-1.02 2.274-2.273 2.274"></path>
+</svg>
+
+</a>    </li>
+    <li class="Chrome-socialLink">
+      <a class="Chrome-socialLinkInner #{anonymous_class}" rel="nofollow noopener" target="_blank" title="Follow Provenance on Twitter" href="https://twitter.com/ProvenanceHQ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" class="Chrome-socialLinkMedia">
+  <path d="M44.884 14.804c.02.44.025.88.025 1.327 0 13.554-10.317 29.187-29.184 29.187-5.794 0-11.188-1.697-15.726-4.61.804.098 1.62.144 2.45.144 4.806 0 9.228-1.64 12.736-4.388-4.49-.083-8.277-3.048-9.58-7.124.623.12 1.27.185 1.93.185.934 0 1.84-.127 2.7-.36-4.693-.946-8.226-5.09-8.226-10.06v-.13c1.382.767 2.965 1.233 4.645 1.282-2.75-1.84-4.565-4.98-4.565-8.536 0-1.885.51-3.644 1.39-5.16C8.54 12.766 16.1 16.85 24.63 17.28c-.176-.75-.27-1.533-.27-2.338 0-5.666 4.594-10.257 10.258-10.257 2.95 0 5.62 1.245 7.492 3.236 2.335-.46 4.53-1.312 6.512-2.488-.765 2.396-2.393 4.406-4.51 5.676 2.073-.248 4.05-.8 5.89-1.617-1.377 2.06-3.114 3.864-5.116 5.314"></path>
+</svg>
+
+</a>    </li>
+    <li class="Chrome-socialLink">
+      <a class="Chrome-socialLinkInner #{anonymous_class}" rel="nofollow noopener" target="_blank" title="Follow Provenance on LinkedIn" href="https://www.linkedin.com/company/3105623">
+        <svg xmlns="http://www.w3.org/2000/svg" height="430.117" viewBox="0 0 430.117 430.117" width="430.117" class="Chrome-socialLinkMedia">
+  <path d="M430.117 261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707-25.473 0-40.632 17.142-47.301 33.724-2.432 5.928-3.058 14.179-3.058 22.477V420.56h-92.219s1.242-251.285 0-277.32h92.21v39.309c-.187.294-.43.611-.606.896h.606v-.896c12.251-18.869 34.13-45.824 83.102-45.824 60.673-.001 106.157 39.636 106.157 124.818zM52.183 9.558C20.635 9.558 0 30.251 0 57.463c0 26.619 20.038 47.94 50.959 47.94h.616c32.159 0 52.159-21.317 52.159-47.94-.606-27.212-20-47.905-51.551-47.905zM5.477 420.56h92.184V143.24H5.477v277.32z"></path>
+</svg>
+
+</a>    </li>
+    <li class="Chrome-socialLink">
+      <a class="Chrome-socialLinkInner #{anonymous_class}" rel="nofollow noopener" target="_blank" title="Follow Provenance on Pinterest" href="https://www.pinterest.com/provenanceHQ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" class="Chrome-socialLinkMedia">
+  <path d="M28.858 36.137c-3.1 0-6.017-1.676-7.014-3.58 0 0-1.67 6.617-2.022 7.893-1.243 4.514-4.9 9.03-5.184 9.4-.2.255-.635.175-.682-.166-.08-.575-1.012-6.27.085-10.913l3.694-15.65s-.914-1.832-.914-4.543c0-4.256 2.468-7.435 5.54-7.435 2.61 0 3.87 1.96 3.87 4.312 0 2.628-1.67 6.554-2.535 10.19-.718 3.048 1.53 5.534 4.534 5.534 5.437 0 9.103-6.99 9.103-15.27 0-6.293-4.237-11.006-11.95-11.006-8.708 0-14.14 6.498-14.14 13.755 0 2.5.74 4.268 1.896 5.632.53.628.604.88.41 1.6-.138.528-.452 1.8-.586 2.305-.19.727-.777.987-1.435.72-4.014-1.64-5.885-6.034-5.885-10.97C5.645 9.784 12.525 0 26.175 0c10.964 0 18.18 7.933 18.18 16.454 0 11.266-6.265 19.683-15.497 19.683"></path>
+</svg>
+
+</a>    </li>
+    <li class="Chrome-socialLink">
+      <a class="Chrome-socialLinkInner #{anonymous_class}" rel="nofollow noopener" target="_blank" title="Follow Provenance on Facebook" href="https://www.facebook.com/ProjectProvenance">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" class="Chrome-socialLinkMedia">
+  <path d="M35.748 25h-6.9v25H18.504V25h-5.17v-8.617h5.17v-5.17C18.504 4.18 21.424 0 29.714 0h6.898v8.617h-4.31c-3.228 0-3.442 1.206-3.442 3.452l-.013 4.313h7.817L35.748 25z"></path>
+</svg>
+
+</a>    </li>
+</ul>
+
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="Sidebar-mask"></div>
+
+  
+  
+  <main class="Main Main--transparentHeader  ">
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.provenance.org/whitepaper"
+  },
+  "headline": "Blockchain: the solution for transparency in product supply chains",
+  "name": "Blockchain: the solution for transparency in product supply chains",
+  "description": "This white paper is by social enterprise Project Provenance Ltd. and describes a prototype that uses blockchain technology to enable secure traceability of certifications and other salient information in supply chains. Provenance enables every physical product to come with a digital ‘passport’ that proves authenticity (Is this product what it claims to be?) and origin (Where does this product come from?), creating an auditable record of the journey behind all physical products. The potential benefits for businesses, as well as for society and the environment, are hard to overstate: preventing the selling of fake goods, as well as the problem of ‘double spending’ of certifications present in current systems. The Decentralized Application (Dapp) proposed in this paper is still in development and we welcome businesses and standards organizations to join our consortium and collaborate on this new approach to understanding our material world.",
+  "author": [
+    "@type": "Organization",
+    "name": "Project Provenance Ltd"
+  ],
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://assets.provenance.org/web-assets/modules/provenance-meta-coffee-cherries-1e789004055ef5901bc523561d86a7e7273c44a7b00b297bd16a5073a1c3676d.jpg",
+    "height": 630,
+    "width": 1200
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Project Provenance Ltd",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://assets.provenance.org/web-assets/modules/provenance-logo-ffdc46916a61c837551e607ff8c7b2cebf5aa4b45a52b118057649efbb14037b.png",
+      "height": 60,
+      "width": 600
+    }
+  },
+  "datePublished": "2015-11-21T00:00:00+00:00",
+  "dateModified": "2015-11-21T00:00:00+00:00"
+}
+</script>
+
+<article class="Whitepaper">
+
+  <header class="Whitepaper-header" id="Chrome-dark">
+
+    <div class="Whitepaper-particles" id="Whitepaper-particles"><canvas class="particles-js-canvas-el" width="1351" height="346" style="width: 100%; height: 100%;"></canvas></div>
+
+    <div class="Whitepaper-headerInner">
+
+      <div class="Whitepaper-title Copy Copy--white">
+        <h1>Blockchain: the solution for transparency in product supply chains</h1>
+      </div>
+
+    </div>
+
+    <div class="Whitepaper-headerDate Copy Copy--white">
+      <p class="small"><em>Published 21 November 2015</em></p>
+    </div>
+
+  </header>
+
+  <section class="Whitepaper-section">
+
+    <div class="Whitepaper-sectionInner">
+
+      <div class="Copy">
+
+        <blockquote>
+          <q><a href="http://blogs.worldbank.org/voices/next-frontier-open-data-open-private-sector" rel="noopener" target="_blank">Now, in the hyper-connected and ever evolving world, transparency is the new power</a>.</q>
+          <cite><em>Benjamin Herzberg, Program Lead, Private Sector Engagement for Good Governance at the World Bank Institute</em></cite>
+        </blockquote>
+
+        <p>This white paper is by social enterprise Project Provenance Ltd. and describes a prototype that uses blockchain technology to enable secure traceability of certifications and other salient information in supply chains. Provenance enables every physical product to come with a digital ‘passport’ that proves authenticity (Is this product what it claims to be?) and origin (Where does this product come from?), creating an auditable record of the journey behind all physical products. The potential benefits for businesses, as well as for society and the environment, are hard to overstate: preventing the selling of fake goods, as well as the problem of ‘double spending’ of certifications present in current systems. The Decentralized Application (Dapp) proposed in this paper is still in development and we welcome businesses and standards organizations to join our consortium and collaborate on this new approach to understanding our material world.</p>
+
+        <h2>Demand for transparency is increasing</h2>
+
+        <p>We know surprisingly little about most of the products we use every day. Even before reaching the end consumer, goods travel through an often vast network of retailers, distributors, transporters, storage facilities, and suppliers that participate in design, production, delivery, and sales, yet in almost every case these journeys remain an unseen dimension of our possessions.</p>
+
+        <blockquote>
+          <q>1,127 people die in Bangladesh garment factory collapse.</q>
+          <cite><em>Reuters, May 2013</em></cite>
+        </blockquote>
+
+        <p>The creation, exchange, and use of material things, however, has many potential negative consequences: environmental damage, exploitative extraction, unsafe work conditions, forgery, and the huge amounts of valuable material wasted at the end of product life. Our relationship with the material world is broken.</p>
+
+        <figure>
+          <div class="FlexEmbed FlexEmbed--3by2">
+            <div class="FlexEmbed-item">
+              <img alt="Meat processing" class="is-lazyAutosizes is-lazyLoaded" data-sizes="auto" data-srcset="https://assets.provenance.org/web-assets/modules/provenance-whitepaper-meat-small-d58b7ac0067a8d8caf7c171c6267783df5c70b81185cfb18671e84ce820dae03.jpg 480w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-meat-5a5205e8586d59d3a27276d1401a3e2fae4b6dd2d794fd1990f5352541fbd576.jpg 720w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-meat-large-c653afabd1a91b41ed078577b7fbd20984a28381ad62676682e6f8d4d9199f8a.jpg 960w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" sizes="720px" srcset="https://assets.provenance.org/web-assets/modules/provenance-whitepaper-meat-small-d58b7ac0067a8d8caf7c171c6267783df5c70b81185cfb18671e84ce820dae03.jpg 480w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-meat-5a5205e8586d59d3a27276d1401a3e2fae4b6dd2d794fd1990f5352541fbd576.jpg 720w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-meat-large-c653afabd1a91b41ed078577b7fbd20984a28381ad62676682e6f8d4d9199f8a.jpg 960w">
+            </div>
+          </div>
+          <figcaption>“50,000 tonnes of meat sold as beef found to contain horse DNA.” <em>BBC, April 2013</em></figcaption>
+        </figure>
+
+        <blockquote class="large">
+          <q>Without understanding the impacts of goods and services, we buy into systems that deplete natural resources, worsen environmental and social problems and endanger humans and ecosystems. Supply chains are conventionally held secret, limiting the stakeholders who can prevent environmental, social and health and safety&nbsp;problems.</q>
+          <cite><em>Leonardo Bonanni, Founder of Sourcemap</em></cite>
+        </blockquote>
+
+        <p>There is a growing rallying call by customers and governments demanding more transparency from brands, manufacturers, and producers throughout the supply chain. In the UK, <a href="http://onlinelibrary.wiley.com/doi/10.1002/sd.394/abstract" rel="noopener" target="_blank">30% of consumers</a> are concerned about issues regarding the origin of products but struggle to act on this through their purchasing decisions. The market for products of proven origin is <a href="http://www.futurebrand.com/images/uploads/studies/cbi/MADE_IN_Final_HR.pdf" rel="noopener" target="_blank">growing</a>. In the future, regulations like the <a href="http://ec.europa.eu/finance/accounting/non-financial_reporting/index_en.htm" rel="noopener" target="_blank">European directive on non-financial reporting</a> or the <a href="http://www.legislation.gov.uk/ukpga/2015/30/contents/enacted" rel="noopener" target="_blank">UK Modern Slavery Act</a> will require companies to transparently disclose reliable information about their business footprint.</p>
+
+        <p>Pioneering companies have long realized the competitive advantage of open, transparent supply chains and sustainable manufacturing. As an example, fish suppliers John West started including codes on their tuna cans to enable a consumer to trace the product back to the fisherman; this initiative alone <a href="https://www.lsnglobal.com/" rel="noopener" target="_blank">added £17m to the brand’s sales</a>. Sustainability standards and certification (e.g., Fairtrade, Forest Stewardship Council (FSC), Soil Association) have been an important tool to enable choice differentiation and conscientious consumption, yet in the end the outcome of certification is often just an image file or printed label on the packaging whose actual meaning is difficult to know and hard to verify. Guaranteeing the integrity of certificates is a costly process that, despite laborious audits, still struggles to assure the validity of the claims being made. Worldwide expansion of certification schemes in regions with levels of high corruptions further endangers credibility.</p>
+
+        <h2>Centralized systems can’t power transparency</h2>
+
+        <p>Despite various efforts, full “<a href="https://hbr.org/2013/05/preventing-another-bangladesh" rel="noopener" target="_blank">chains of custody</a>” that tell the stories of products remain largely rudimentary and difficult to verify. <a href="http://www.nepcon.net/newsroom/chain-custody-certification-myth" rel="noopener" target="_blank">Fragmentation of these efforts make them open to fraud</a>. To connect the dots, nominally neutral, not-for-profit or governmental entities are commissioned with the task of creating a centralized data storage to enable a flow of trusted information.</p>
+
+        <figure>
+          <div class="FlexEmbed FlexEmbed--3by2">
+            <div class="FlexEmbed-item">
+              <img alt="A typical server room" class="is-lazyLoad" data-sizes="auto" data-srcset="https://assets.provenance.org/web-assets/modules/provenance-whitepaper-servers-small-70aede1561a39e3988fc3fc00e925d0191386ac278db92993e452257c75b73f7.jpg 480w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-servers-bafc7aee1d0e21cbf5deae4f72a3b6e1d9d918f8fdbbf5cdf06b16fa97e0c05d.jpg 720w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-servers-large-995204b821ab7f3347f30b815d14422588dde4202709c6b953b8978fb77fabf7.jpg 1080w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            </div>
+          </div>
+          <figcaption>A typical server room storing company system data. In it’s current centralized format, there are many&nbsp;weaknesses.</figcaption>
+        </figure>
+
+        <p>In the face of these efforts, we must ask ourselves: can one organization be trusted to broker all data about every product’s supply chain? The truth is that <a href="http://www.nepcon.net/newsroom/tackling-fsc-fraud-will-online-claims-platform-fail-or-fly-0" rel="noopener" target="_blank">no single organization can</a>, and that relying on one party (or even a small collection of cooperating parties) creates an inherent bias and weakness in the system. If the party were the brand itself, or the most powerful actor in the supply chain, then it would be responsible ultimately for only its own bottom line; this could lead to selective disclosure or, worse, extortion. If the supply chain data were gathered by a third party, it would have to be both totally unbiased and properly incentivized to deliver the technical capability of running the system. Third parties like <a href="http://product.okfn.org/2013/10/16/who-is-hiding-behind-the-barcode/" rel="noopener" target="_blank">NGOs or industry associations</a>, however, rarely manage even one of these two, and even if they could, they would become a <a href="https://www.schneier.com/blog/archives/2014/12/lessons_from_th_4.html" rel="noopener" target="_blank">single point of weakness</a>; this would make them and their operations a vulnerable target for bribery, social engineering, or targeted hacking. Distributing the transaction platform among various third parties would add further difficulties, as the shared costs for its set up and operation would be difficult to apportion and agree on, as benefits to each party are not usually made transparent.</p>
+
+        <p>Despite these difficulties, the idea of using a centralized system with a governing third party was, until recently, the only conceivable way to achieve data and transaction transparency along supply chains. Today, however, a new technology called the <em>blockchain</em> presents a whole new approach. The blockchain is a recent development in the field of computer science, which uses a global peer-to-peer network to provide an open platform that can deliver neutrality, reliability and security. The basic mechanism was originally proposed as part of a solution for administering the shared accounting ledger underlying Bitcoin [“Bitcoin: A Peer-to-Peer Electronic Cash System”, <a href="https://bitcoin.org/bitcoin.pdf" rel="noopener" target="_blank">Satoshi Nakamoto, 2008</a>]. Beyond this initial financial application, blockchains can be generalized and used to implement an arbitrary set of rules that no one, neither the users nor the operators of the system, can break. They rely on a completely different system architecture — one that we will detail below — that makes them a unique platform for applications involving multiple parties with little trust in each other; for example, fragmented supply chains. We stress that our approach does not require any particular behavior on behalf of the participants; instead, the underlying technology guarantees the integrity of the system even in the face of dishonesty or idleness. In this way, we provide a technological solution to an organizational problem.</p>
+
+        <h2>Blockchain technology changes everything</h2>
+
+        <blockquote class="large">
+          <q>The practical consequence […is…] for the first time, a way for one Internet user to transfer a unique piece of digital property to another Internet user, such that the transfer is guaranteed to be safe and secure, everyone knows that the transfer has taken place, and nobody can challenge the legitimacy of the transfer. The consequences of this breakthrough are hard to overstate.</q>
+          <cite><em>Marc Andreessen, Inventor of the internet browser</em></cite>
+        </blockquote>
+
+        <p>To grasp the potential that applications built on top of blockchains can deliver, it is essential to understand the three key differences between blockchains and most existing computer designs. We present these below as <em>non-localization</em>, <em>security</em>, and <em>auditability</em>.</p>
+
+        <h3>Non-localization: A truly global computer running by consensus</h3>
+
+        <p>Personal computers (e.g., desktop PCs, laptops, and mobile phones) are limited by the physical world. Even though it may seem that modern applications run on several devices, to keep consistency an application’s core program is in fact executed on a single, centralized server, with the client device serving merely as a powerful display.</p>
+
+        <p>In contrast, there is no single machine that governs the business logic or the data on which a blockchain operates. Instead, the data on a blockchain is determined by <em>consensus</em>, which is a defined convention for how to execute and administer the business logic (e.g., to update the stock of a certain good). The magic of the blockchain and its surrounding incentive structure is such that users can then <em>unambiguously</em> discover the state of the system (e.g., the current level of stock or the origin of a particular certificate), not from a single particular authority but rather by independently applying common rules and publishing data openly.</p>
+
+      </div><!-- .Copy -->
+
+    </div>
+
+  </section>
+
+  <section class="Whitepaper-section Whitepaper-section--navy">
+    <figure class="Whitepaper-figure">
+      <div class="FlexEmbed FlexEmbed--2by1">
+        <div class="FlexEmbed-item">
+          <img alt="A diagram representing the web interfaces and applications of today and those using blockchains." class="Whitepaper-figureMedia is-lazyLoad" data-sizes="auto" data-srcset="https://assets.provenance.org/web-assets/modules/provenance-whitepaper-interfaces-small-eb948e0c39ce4f44ef77b35bf56419b98a533b6ef56d8f1c0f05ff9dc2186ebd.png 480w,
+                         https://assets.provenance.org/web-assets/modules/provenance-whitepaper-interfaces-0d4127f64921894ec54f1b71a262676c53c1c0eb0afa885289fdb3a342617f25.png 720w,
+                         https://assets.provenance.org/web-assets/modules/provenance-whitepaper-interfaces-large-0602a908cf6c06f0133767da13704045db9a60578770989276209249152a56ab.png 1080w,
+                         https://assets.provenance.org/web-assets/modules/provenance-whitepaper-interfaces-extra-large-6896fdca2ec0ba9310a3146aeecc284685365f245ce7e02b723928bb8b72df1d.png 1620w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+        </div>
+      </div>
+      <figcaption class="Whitepaper-figureCaption"><em>Above: The top row of blocks represent web interfaces and applications, the bottom layer(s) are data handling and storage. Today your data is stored in a silo. With blockchains your data will be stored (publically or pseudo anonymously) in a shared database. This diagram is adapted from a diagram by Nick Grossman, GM at Union Square ventures, however his also includes time.</em></figcaption>
+    </figure>
+  </section>
+
+  <section class="Whitepaper-section">
+
+    <div class="Whitepaper-sectionInner">
+
+      <div class="Copy">
+
+        <h3>A machine of unparalleled digital security</h3>
+
+        <p>Recent years have seen a surge in attacks undermining the protection mechanisms erected around centralized systems. While many attacks exist that directly target the hardware itself, the easiest way to circumvent the strongest security component is <a href="http://www.csoonline.com/article/2876707/social-engineering/social-engineering-stories-from-the-front-lines.html" rel="noopener" target="_blank">social engineering</a>, which targets the weakest <a href="https://medium.com/@N/how-i-lost-my-50-000-twitter-username-24eb09e026dd" rel="noopener" target="_blank">human</a> component. By leveraging those with the most elevated access rights, an attack that targets IT and operational support administrators could eventually lead to the system being fully compromised (which is why there are often anti-coercion procedures in place for sensitive financial systems).</p>
+
+        <p>With the blockchain, security is different: it does not matter who or where the user is, because all information provided to the blockchain is accepted only if it is <em>authenticated</em>. This authentication is provided in the form of an unforgeable digital signature: a cryptographic mechanism that — in a manner analogous to a physical signature but significantly more secure — allows someone to prove their identity without enabling someone else to impersonate them in the future (see call-out box for more details). Thus, it does not matter what your job is or what your access capabilities happen to be, as you simply cannot interact with the blockchain unless you provide the digital “key” required for the interaction that you own (e.g., unless you cryptographically prove the ownership of your account, there is no way for anybody else to change its balance). This means that elevated privilege levels are curbed or removed entirely, and the security risk of the weakest link — in the form of operators and IT administrators — is drastically reduced.</p>
+
+        <h3>A perfectly auditable system</h3>
+
+        <p>In any deterministic system, it is possible to strictly verify and audit the actions within the system as correct; indeed, the inputs and outputs of the system serve as a record of the various interactions (e.g., automated bank transfers in the case of a payroll system or ordering additional components in the case of a stock control system) that have led the system into its present state. While this is true in theory, to perform this audit in practice comes with one proviso: <em>all</em> information concerning <em>all</em> inputs must be provided. In traditional systems, this is expensive, impractical, or impossible. The inputs to a business system typically include heterogenous types of data coming from a wide variety of sources, and the auditing itself, which would essentially require “playing back” such inputs, would be technically challenging. Furthermore, auditing may require strong knowledge and assurance of operator identity, which can often be compromised or flawed in a system with many actors.</p>
+
+        <p>A blockchain is different, as by design it is perfectly auditable. Each individual operation or interaction, such as the provision of a new employee or the recording of outgoing stock, is perfectly recorded and archived. Auditing is thus as simple as joining the blockchain network, as this allows one to “replay” the operations of the past in order to build a correct model of the present. Combined with the absolute guarantees of authenticity for every interaction, strong and agile data systems can be facilitated that are at their core resilient to coercion and human factors.</p>
+
+        <h2>Implementing supply chain certification on the blockchain</h2>
+
+        <p>At Provenance, we believe that the use of blockchain technology provides a number of truly unprecedented breakthroughs for certain public-interest information, such as the supply chains of consumer products. By using blockchains, we can create a system that allows an incremental, piecemeal adoption model, gracefully building in utility as adoption increases, but without an inhibiting cost/benefit ratio in the initial stages of usage.</p>
+
+        <p>Roughly speaking, the blockchain works much like any datasystem: it takes inputs (for example, the amount of material with a certain grade and the intended recipient) and carries out actions based upon these inputs, changing the database in a manner perfectly determined according to its program (in the same example, the values in the database would be the amount of material of a certain grade resting with each account). The outcome of these alterations may then be inspected and real-world decisions made accordingly.</p>
+
+        <p>As an example, we propose an alternative approach to the certification and chain-of-custody challenge in sustainable supply chains: a system to <em>assign</em> and <em>verify</em> certifications of certain properties of physical products; e.g., organic or fair trade. We will outline a model of the various materials and components from initial production through manufacture and assembly to the final customer. At each point in time, the prototype of our model details four key properties concerning all materials and consumables it covers: the nature (what it is), the quality (how it is), the quantity (how much of it there is) and the ownership (whose it is at any moment). Key attributes may be read and linked from pre-existing datasets such as barcodes, or newly ascribed along the way.</p>
+
+        <p>The blockchain removes the need for a trusted central organization that operates and maintains this system. Using blockchains as a shared and secure platform, we are able to see not only the final state (which mimics the real world in assigning the materials for a given product under the ownership of the final customer), but crucially, we are able to overcome the weaknesses of current systems by allowing one to securely audit all transactions that brought this state of being into effect; i.e., to inspect the <em>uninterrupted</em> chain of custody from the raw materials to the end sale.</p>
+
+        <p>The blockchain also gives us an unprecedented level of certainty over the fidelity of the information. We can be sure that all transfers of ownership were explicitly authorized by their relevant controllers without having to trust the behavior or competence of an incumbent processor. Interested parties may also audit the production and manufacturing avatars and verify that their “on-chain” persona accurately reflects reality.</p>
+
+      </div><!-- .Copy -->
+
+    </div>
+
+  </section>
+
+  <section class="Whitepaper-section Whitepaper-section--navy">
+    <figure class="Whitepaper-figure">
+      <div class="FlexEmbed FlexEmbed--2by1">
+        <div class="FlexEmbed-item">
+          <img alt="With blockchains data can be accessed and verified by all actors, rather than solely by the original certifier." class="Whitepaper-figureMedia is-lazyLoad" data-sizes="auto" data-srcset="https://assets.provenance.org/web-assets/modules/provenance-whitepaper-blockchains-small-84ebb7a6f941cd453408bae4af08839dae93682e38447fbdaafe6adbeca0eca3.png 480w,
+                         https://assets.provenance.org/web-assets/modules/provenance-whitepaper-blockchains-fbe7e9970b5f7a674c69611d1eacac5fc88c5085d9114e134f9ad63a023bd4c6.png 720w,
+                         https://assets.provenance.org/web-assets/modules/provenance-whitepaper-blockchains-large-d9cf854ba52126ed5d5c4f3d4042c9d630b49db0a52e644ae03223235688dab5.png 1080w,
+                         https://assets.provenance.org/web-assets/modules/provenance-whitepaper-blockchains-extra-large-f59cb44c4c01bb28f886b2ebfcc0edec82c3f376a015dc7c186ef6539b919b56.png 1620w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+        </div>
+      </div>
+      <figcaption class="Whitepaper-figureCaption"><em>With blockchains data can be accessed and verified by all actors, rather than solely by the original certifier.</em></figcaption>
+    </figure>
+  </section>
+
+  <section class="Whitepaper-section">
+
+    <div class="Whitepaper-sectionInner">
+
+      <div class="Copy">
+
+        <h2>Information architecture for a certification and chain-of-custody system on the blockchain</h2>
+
+        <p>Here we show how existing certifications and audits of supply chains can take on a new guise implemented on the blockchain. There are six different types of actors involved in our exemplar set-up:</p>
+
+        <ol>
+          <li><strong>Producers (e.g., a cotton grower);</strong></li>
+          <li><strong>Manufacturers (e.g., a maker of fabric or jeans);</strong></li>
+          <li><strong>Registrars, which are organizations that provide credentials and a unique identity to actors (e.g., an accreditation service);</strong></li>
+          <li><strong>Standards organizations, which define the rules of a certain scheme (e.g., Fairtrade);</strong></li>
+          <li><strong>Certifiers and auditors, which are agents — usually separate agents, to maximize security — that inspect producers and manufacturers and verify certain standards, like annual production capacity; and</strong></li>
+          <li><strong>Customers, the buyers of products all along a supply chains, including the end consumer.</strong></li>
+        </ol>
+
+        <p>Below we explain the principal architecture. The architecture consists of a number of modular programs. Each program is deployed on the blockchain and controlled independently, but because they work within the same blockchain system they are able to interact without friction.</p>
+
+        <h3>Registration program</h3>
+
+        <figure>
+          <div class="FlexEmbed FlexEmbed--5by3">
+            <div class="FlexEmbed-item">
+              <img alt="Mockup of a Provenance profile" class="is-lazyLoad" data-sizes="auto" data-srcset="https://assets.provenance.org/web-assets/modules/provenance-whitepaper-profile-small-9990e1f1ed543b31e10680e3b46c0f65ee835775e6776306706d030c1a227030.jpg 480w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-profile-30a6b53c1297a3069104784f3dc086e0ce15f808ee09954049ede4d33bfbe596.jpg 720w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-profile-large-11d5bd2a7a5c46a4915a9a87e548e5cf16317b3338e69b82449bfb3f5e554efb.jpg 1080w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            </div>
+          </div>
+          <figcaption><em>On Provenance everyone has a profile accessible with a private key. Profiles can be public or private depending on use case and permissions. Some are rich with information, whilst others simply contain an anonymous ID.</em></figcaption>
+        </figure>
+
+        <p>It is this program alone that forms the fundamental trust relationship between the customer and the system as a whole. All other programs derive their “trustability” through their own reputation (which may be imported through their real-world name). This program will initially be deployed by the registrar, who implements a process for the registration of named participants (i.e. certifiers, auditors, producers, and manufacturers). Such participants may request registration of their digital identity (for details, see the “Public- Key Infrastructure” box), which links their real-world identity with their blockchain-based digital identity, thus allowing them to interact with the blockchain using their real-world identity. Upon request, the registration authority verifies their identity and records the result in the blockchain, available for all to inspect.</p>
+
+        <p>Importantly, the system could allow participants to remain anonymous, at the cost of opacity at the stage of the supply chain at which that actor operates (although information about earlier stages can remain retrievable). The exception is certifiers, who need to register and identify themselves in order to make the system work.</p>
+
+        <h3>Standards programs</h3>
+
+        <figure>
+          <div class="FlexEmbed FlexEmbed--3by2">
+            <div class="FlexEmbed-item">
+              <img alt="Some of the many marks and certifications that are printed on today’s consumer products." class="is-lazyLoad" data-sizes="auto" data-srcset="https://assets.provenance.org/web-assets/modules/provenance-whitepaper-certifications-small-30b9917866d56453251f979a9f9c3eb1bb123deddf3be74565b027571071ceae.jpg 480w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-certifications-505d6682fffc6a96c7c0c148338a817d7bf26bbd9521a2ef5c67afa55a3880a7.jpg 720w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-certifications-large-23654c1bd022d8d0986de9e7fcb7211bce867b67351f36e641887c87669dfe29.jpg 1080w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            </div>
+          </div>
+          <figcaption><em>Marks and certifications that are printed on today’s consumer products and shown at the point of sale. On the blockchain certifications can be linked to their real meaning and information verifying their status.</em></figcaption>
+        </figure>
+
+        <p>These programs represent the implementation of schemas for proper recognition of a standard (e.g. no animal testing, biodynamic, fair labor). Through these programs, standards organizations provide for the creation of compliant production or manufacturing programs (see below), allowing instances or batches of goods and materials to be added to or processed on the blockchain. Such producers or manufacturers may require inspection by a certifier or auditor of their facilities and processes to be able to obtain and operate a certified program. Successful verification results in the deployment of a production or manufacturing program that is both registered with the certification program and authenticated by an auditor, and allows a producer to create the digitally tradeable equivalent of a good (i.e., a token that shadows the real-world material or product), which acts as its blockchain-based avatar.</p>
+
+        <h3>Production programs</h3>
+
+        <figure>
+          <div class="FlexEmbed FlexEmbed--3by2">
+            <div class="FlexEmbed-item">
+              <img alt="From cotton growers to gold miners the blockchain presents a method for securely documenting and transferring key information about a raw material." class="is-lazyLoad" data-sizes="auto" data-srcset="https://assets.provenance.org/web-assets/modules/provenance-whitepaper-auction-small-26b980b43c0e801aaa8ceed26eaba3ee0d874e85ce175ce7e93e4c0d4c26781e.jpg 480w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-auction-fbb86b80f97baea3f1333b35cd3626dc9ce411e58f2ce74c40c69686f5fcad28.jpg 720w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-auction-large-18b5ff8e0b1128c91b5259576688c01f7af125c4072b5a0f2c47ab0324693d83.jpg 1080w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            </div>
+          </div>
+          <figcaption><em>From cotton growers to gold miners the blockchain presents a method for securely documenting and transferring key information about a raw material.</em></figcaption>
+        </figure>
+
+        <p>Deployed following successful certification, these programs are used by producers to prove the creation of materials or primary goods. The program specifies and implements the parameters for each production facility, including:</p>
+
+        <ul>
+          <li>the certification of the production capacity for the production of the good (e.g., 500t of cotton/year);</li>
+          <li>a taxonomical description of the good, which would include a detailed description of the output, together with any additional “tags” to help identify specific attributes (e.g., fair trade, fair labor, organic);</li>
+          <li>the production accounting; i.e., the registration of created produce up to the maximum annual capacity, as well as the registration of their sales.</li>
+        </ul>
+
+        <p>These parameters can be adjusted according to desired guidelines by certifiers or following the inspection by an auditor, and in case of an unsuccessful audit, the program can be easily (temporarily) revoked if necessary. Since they are principally responsible for the creation of goods, producer programs are the root for the traceability of finished goods, which then link back to the identity provided by the registrar.</p>
+
+        <h3>Manufacturing programs</h3>
+
+        <figure>
+          <div class="FlexEmbed FlexEmbed--3by2">
+            <div class="FlexEmbed-item">
+              <img alt="Information from the producer is securely cascaded to the manufacturer on receipt." class="is-lazyLoad" data-sizes="auto" data-srcset="https://assets.provenance.org/web-assets/modules/provenance-whitepaper-manufacturing-small-338eb36744d8a00efd95edf36bf70d5295410717e218a2c86a491fb98a84d1ea.jpg 480w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-manufacturing-0523bbfa517fb2df35fe47df005b16774ef7e69240c48da9f2562d2f5353c4eb.jpg 720w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-manufacturing-large-16a3a2446866bdcfc6a1b8c7462e923b08d8fa92f2340b06a8c022d77873dc92.jpg 1080w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            </div>
+          </div>
+          <figcaption><em>Information from the producer is securely cascaded to the manufacturer on receipt.</em></figcaption>
+        </figure>
+
+        <p>These programs implement the transformation of input goods from production into output goods. Much as with production programs, once deployed by the certifier the programs are operated by manufacturers, but with one additional constraint: input goods must be “used” for any output to be created, just as in the physical world. For example, the registration of a certain amount of organic cotton fabric requires as input the appropriate amount of raw organic cotton, and after this usage the raw organic cotton should no longer be usable. Because of its auditability, the blockchain provides the same cast-iron guarantee as in the physical world; namely, that creation of an output good can happen if and only if the required input is used.</p>
+
+        <h3>Tagging — establishing secure links between the digital and the physical world</h3>
+
+        <figure>
+          <div class="FlexEmbed FlexEmbed--3by2">
+            <div class="FlexEmbed-item">
+              <img alt="Label with a unique cryptographic QR code and NFC tag that links to the Provenance of the material, ingredient or product to the physical item." class="is-lazyLoad" data-sizes="auto" data-srcset="https://assets.provenance.org/web-assets/modules/provenance-whitepaper-tagging-small-c89ef5329d16d55cb0a737dabced9f78ecc6cf2c9802976f259a2f0a8393043f.jpg 480w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-tagging-4cccff53564f8ddd29e470b8a8b4657bf469858a5f5bb7ab455effccb2cef2a3.jpg 720w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-tagging-large-b159d09c246131e00570aa93a18053ffda681783a7aee0625b9471442a8c1a9d.jpg 1080w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            </div>
+          </div>
+          <figcaption><em>Label with a unique cryptographic QR code and NFC tag that links to the Provenance of the material, ingredient or product to the physical item.</em></figcaption>
+        </figure>
+
+        <p>Beyond the implementation of the fundamental business logic on the blockchain as described above, a method to securely link physical goods to their digital counterparts is also necessary, as well as a user interface that enables informed purchases both along the supply chain and for the customer.</p>
+
+        <h3>Linking</h3>
+
+        <p>The technologies by which the physical goods and materials are identified and linked with their digital representation on the blockchain (e.g., serial numbers, bar codes, digital tags like RFID and NFC, genetic tags) is crucial in uniquely identifying a physical good with its digital counterpart. At Provenance we are exploring many new and existing technologies; <a href="https://hbr.org/2010/10/the-transparent-supply-chain" rel="noopener" target="_blank">an overview of recent technologies can be found here</a>. Identities are recorded in production and manufacturing programs, and for simplicity and easy adoption we expect them to take the form of existing barcodes and serial numbers which are linked to blockchain identifiers using a secure hash.</p>
+
+        <h3>User-facing applications facilitate access to the blockchain</h3>
+
+        <figure>
+          <div class="FlexEmbed FlexEmbed--3by2">
+            <div class="FlexEmbed-item">
+              <img alt="The final owner of the product has access to secure information about the product’s supply chain, without having access to identification details." class="is-lazyLoad" data-sizes="auto" data-srcset="https://assets.provenance.org/web-assets/modules/provenance-whitepaper-purchases-small-84b9019ed6238c6377ce8ca560c5add360bff873277e2bd9e38f5bb901ab5cfe.jpg 480w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-purchases-0493ee214fcaf4216c12fe593f80f6a96f5b82bb19126c31f8dfd2eadb7db42d.jpg 720w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-purchases-large-b42fbec270421c94e55e3dfdd42cb9db857b337ec5bb8aa6a1d8288f9d4352d8.jpg 1080w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            </div>
+          </div>
+          <figcaption><em>The final owner of the product has access to secure information about the product’s supply chain, without having access to identification details.</em></figcaption>
+        </figure>
+
+        <p>By design, every transaction along a supply chain on the blockchain is fully auditable. By inspecting the blockchain, smartphone applications can aggregate and display information to customers in a real-time manner; furthermore, due to the strong integrity properties of the blockchain, this information can be genuinely trusted. A thoughtful user interface that sheds light on the digital journey of a product can empower better purchases by giving users a true choice that they can exercise.</p>
+
+        <p>There are substantial broad effects of bringing near-frictionless transparency to consumer purchase decisions and product identity; clearly there is likely to be an additional “virtuous” component in purchase decisions, especially among mid-level purchases where a marginal increase of <a href="https://www.bcgperspectives.com/content/articles/consumer_products_sustainability_when_social_responsibility_leads_growth/" rel="noopener" target="_blank">20% to the price</a> does not affect the willingness to buy. Additional levels of guarantee over genuine articles is a high-value use case. While an initial introduction of this technology may be in the form of a discrete and removable label, easily verified through a smartphone-readable QR-code, a more progressive possibility would be a conspicuous hologramatic or RFID tag, embedded in the brand label, allowing the owner to prove the authenticity of the product at any time by accessing the data on the blockchain through the tag.</p>
+
+        <h3>Early extensions of the proposed certification system</h3>
+
+        <p>Interoperability allowing arbitrary schemes to interact with each other could massively reduce the level of trust required for the implementation of a joint system as well as help against concerns regarding adverse cost–benefit trade-offs and privacy. Additional features could securely provide crowd-sourced scrutiny as a complement the formal certification process; e.g., workers themselves could report from farms and factories about the operational processes if they obtain a secure identity in the system.</p>
+
+        <h2>Public-Private Key Infrastructure</h2>
+
+        <p>Public/private key infrastructure allows us to mimic a physical signature by way of provably registering our identity with a digital document or instruction without at any time giving others the ability to further produce such signatures for other instructions or documents.</p>
+
+        <p>Notionally, physical signatures are difficult to reproduce, especially on demand, leading to their common usage as a way of proving that a counterparty is engaged under a particular agreement. In the digital age where facsimiles are trivial to create and face-to-face engagement no longer the norm for most transactions, they no longer serve their purpose: access to a signature generally leads to ability to reproduce the signature.</p>
+
+        <p>Mathematics, however, has provided a fully digital alternative by way of cryptography. Through the use of functions with special properties, it is possible to hold a small piece of data known as a secret (or private key), and use it to demonstrate that you have explicitly sanctioned a particular piece of information (a document, image, order or other such digital item) without ever uncovering that secret to another party. To do so, the secret is combined with the document in question (using a special mathematical function) to produce a signature. This may be freely distributed (usually, but not necessarily, with the document). All secrets have a counterpart public key, which may be published by the secret holder as their identity. When a third party recombines the document with the signature, they are able to retrieve not the secret, but rather the secret’s public counterpart, the public key and the secret holder’s published identity. This allows them to be sure that the document was sanctioned by the secret holder without ever knowing their secret and thus compromising the fidelity of future signatures.</p>
+
+        <h2>Anonymity and protection of sensitive business information</h2>
+
+        <figure>
+          <div class="FlexEmbed FlexEmbed--3by2">
+            <div class="FlexEmbed-item">
+              <img alt="The information that’s accessible to consumers all along the supply chain depends on the privacy permissions granted. With the blockchain even if the identity of the farmer is not revealed you can still feel secure that verified information is trustworthy." class="is-lazyLoad" data-sizes="auto" data-srcset="https://assets.provenance.org/web-assets/modules/provenance-whitepaper-anonymity-small-b6100a18de99f245840db8cd3baeec6af8ef943af7caca889f1b2d9f38760235.jpg 480w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-anonymity-4779c3009562b5d5e05a438671100803155d76ab1e729467e322b8e95ae9a7e7.jpg 720w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-anonymity-large-3c75a50449f78cb54647d2840ca81bcb9734ee8515d6ae37df2b844c315a6942.jpg 1080w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            </div>
+          </div>
+          <figcaption><em>The information that’s accessible to consumers all along the supply chain depends on the privacy permissions granted. With the blockchain even if the identity of the farmer is not revealed you can still feel secure that verified information is trustworthy.</em></figcaption>
+        </figure>
+
+        <p>The success of the proposed systems relies on the registration of identities and recording of transactions and information. This enables actors on the supply chain to carry and prove the defining attributes of their material products to any actor further along the chain. Certain users, however, might be concerned about their privacy or the privacy of their suppliers further up the chain. Technologically, it is possible for identities to be protected in a blockchain-based system, while still transferring other salient information. For example, manufacturers in the middle of the supply chain could securely pass a certificate with full authenticity downstream while keeping their identity private. For customers, the described system provides the ability to check important attributes of purchased goods without necessarily seeing the full intricacies of the supply chain that created them. The system also allows for the trusted proof of ownership thanks to Public-Private Key Infrastructure (see above) without revealing their the identity of owners to the system. In fact, customers could even use the system to sell a good on a secondary market, allowing the chain to continue post sale throughout the product lifecycle.</p>
+
+      </div><!-- .Copy -->
+
+    </div>
+
+  </section>
+
+  <section class="Whitepaper-section Whitepaper-section--navy">
+
+    <div class="Whitepaper-sectionInner">
+
+      <div class="Copy Copy--white">
+
+        <h2>The blockchain brings significant operational benefits</h2>
+
+        <h3>Interoperable</h3>
+        <p>A modular, interoperable platform that eliminates the possibility of double spending</p>
+
+        <h3>Auditable</h3>
+        <p>An auditable record that can be inspected and used by companies, standards organizations, regulators, and customers alike</p>
+
+        <h3>Cost-efficient</h3>
+        <p>A solution to drastically reduce costs by eliminating the need for “handling companies” to be audited</p>
+
+        <h3>Real-time and agile</h3>
+        <p>A fast and highly accessible sign-up means quick deployment</p>
+
+        <h3>Public</h3>
+        <p>The openness of the platform enables innovation and could achieve bottom-up transparency in supply chains instead of burdensome top-down audits</p>
+
+        <h3>Guaranteed continuity</h3>
+        <p>The elimination of any central operator ensures inclusiveness and longevity</p>
+
+      </div><!-- .Copy -->
+
+    </div>
+
+  </section>
+
+  <section class="Whitepaper-section">
+
+    <div class="Whitepaper-sectionInner">
+
+      <div class="Copy">
+
+        <h2>Further use cases: From fraud prevention to powering the circular economy</h2>
+
+        <p>We illustrated a certification example above, but there are many other settings where our blockchain-based system can be applied to provide surprising new benefits. The logging of chain-of-custody on the blockchain, touched on above, can be applied to prevent all kinds of fraud by proving the origins and ownership history of any physical object. Counterfeit goods have had a significant detrimental effect on the global economy for some time: The UK economy alone has lost £30bn and 14,800 jobs, and customers face potentially serious consequences (in, e.g. buying counterfeit medication). As an example, a luxury watch retailer may use the programs described above to prove to buyers that a watch is authentic, or create an “owner’s program” where attributes such as age, repairs, insurance, and valuation can be logged on the blockchain to provide an information log when the watches are handed down or resold.</p>
+
+        <figure>
+          <div class="FlexEmbed FlexEmbed--16by9">
+            <div class="FlexEmbed-item">
+              <img alt="Electronic waste component reclamation in China: The niche industry employs tens of thousands of people, many of them in small, family-run workshops. Photo by Chien Min Chung." class="is-lazyLoad" data-sizes="auto" data-srcset="https://assets.provenance.org/web-assets/modules/provenance-whitepaper-electronic-waste-small-1287681f2282e96f1c5fbc053bf40e81de30d447861fd6bc4cb979b213ef4c1d.jpg 480w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-electronic-waste-7494298e1c02b3a4c08a81bc8caf7bcc3faeced6d1bfc7a417150ffc94df2b43.jpg 720w,
+                             https://assets.provenance.org/web-assets/modules/provenance-whitepaper-electronic-waste-large-82635d2ea374d2822329d29fe914e4752415e94c119d69511dfdfec8dea175b3.jpg 1080w" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            </div>
+          </div>
+          <figcaption><em>Electronic waste component reclamation in China: The niche industry employs tens of thousands of people, many of them in small, family-run workshops. Photo by Chien Min Chung.</em></figcaption>
+        </figure>
+
+        <p>In general, the afterlife of goods can be dramatically changed through the existence of a full lifecycle record, which could help to power broader efforts such as the Circular Economy. This initiative considers the recycling, (re)manufacturing, and leasing (e.g., Zipcar and Rent the Runway) of existing products, and the <a href="http://www.ellenmacarthurfoundation.org/business/reports" rel="noopener" target="_blank">Ellen MacArthur Foundation Report on Circular Economy</a> demonstrated that “designing and using durable goods, such as cars and vans, washing machines, and mobile telephones, in accordance with circular principles offers materials savings in Europe that could be worth USD 380 billion in an initial transition period and up to USD 630 billion with full adoption.” All these systems rely on the tracking of the attributes of material things not only during their creation but also their usage. The system proposed in this paper would not only allow the creation (including all materials, grades, processes etc) and lifecycle (use, maintenance etc) to be logged on the blockchain, but this would also make it easy to access this information when products are returned to be assessed and remanufactured into a new item.</p>
+
+      </div><!-- .Copy -->
+
+    </div>
+
+  </section>
+
+  <section class="Whitepaper-section Whitepaper-section--navy">
+
+    <div class="Whitepaper-sectionInner">
+
+      <div class="Copy Copy--white">
+
+        <h1>Conclusion</h1>
+
+        <blockquote>
+          <q>Beyond the age of information, is the age of choices.</q>
+          <cite><em>Charles&nbsp;Eames</em></cite>
+        </blockquote>
+
+        <p>By design, the blockchain enforces the transparency, security, authenticity, and auditability necessary to make tracing the chain of custody and attributes of products possible, which in turn allows customers to derive the high-quality information needed to make more informed choices. Implementing supply-chain transparency on the blockchain dramatically reduces the high initial cost/benefit ratio for participants, and its naturally distributed design frees a central organization from costly and error-prone operational duties. In the system we have described, the role of the anchoring core organization has been reduced to providing registration and linkage between “blockchain” and “real-world” identities.</p>
+
+      </div><!-- .Copy -->
+
+    </div>
+
+  </section>
+
+  <section class="Whitepaper-section">
+
+    <div class="Whitepaper-sectionInner Whitepaper-sectionInner--last">
+
+      <div class="Copy">
+
+        <p>The choices we make in the marketplace determine which business practices thrive. From a diamond in a mine to a tree in a forest, it is the deepest darkest ends of supply chains that damage so much of the planet and its livelihood. This new system could be a unanimous source of connected information, secure and incorruptible, to allow the purchasing decisions throughout supply chains and by end consumers to be smarter. The premium cost of ‘Fair trade labour’ and ‘sustainably farmed’, and other socially and environmentally beneficial product and business affordances, are intangible, but increase the value of goods: With Provenance, they can be understood, carried and trusted as they travel the most complex chain of custody.</p>
+
+        <p><em>This paper was written by Project Provenance Ltd. To contact us please submit our <a href="https://www.provenance.org/contact_requests/new">contact form</a> or tweet <a href="http://twitter.com/ProvenanceHQ" rel="nofollow noopener" target="_blank">@ProvenanceHQ</a>. Thanks to Dr. Gavin Wood at Ethereum, Dr Sarah Meiklejohn, Aeron Buchanan, Christopher Brewster, Hugh Laughlin, Nicole Green and Patrick Mallet.</em></p>
+
+        <p class="u-textCenter"><em>Published 21 November 2015</em></p>
+
+      </div>
+
+      <div class="Whitepaper-shareLinks">
+        <div class="ShareLinks" data-mixpanel-event-name="Share whitepaper" id="share">
+    <div class="ShareLinks-blockTitle">
+      <div class="BlockTitle BlockTitle--withLines">
+        <h3 class="BlockTitle-inner">Share this white paper</h3>
+      </div>
+    </div>
+  <div class="ShareLinks-list">
+    <ul class="ShareLinks-listInner">
+      <li class="ShareLinks-item">
+        <button class="Action Action--backgroundIcon Action-backgroundIconCopy Action-social" data-controller="share-copy" data-share-copy-url="https://www.provenance.org/whitepaper" data-share-copy-title="Provenance" data-share-copy-text="Blockchain: the solution for transparency in product supply chains on @ProvenanceHQ" title="Copy to clipboard"> 
+          Copy to clipboard
+        </button>
+      </li>
+      <li class="ShareLinks-item">
+        <a class="Action Action-newTab Action--backgroundIcon Action--twitter Action--backgroundIconTwitter Action-social" href="https://twitter.com/intent/tweet?text=Blockchain%3A%20the%20solution%20for%20transparency%20in%20product%20supply%20chains%20on%20%40ProvenanceHQ&amp;url=https%3A%2F%2Fwww.provenance.org%2Fwhitepaper" rel="nofollow noopener" target="_blank" title="Share on Twitter">Share on Twitter</a>
+      </li>
+      <li class="ShareLinks-item ">
+        <a class="Action Action-newTab Action--backgroundIcon Action--pinterest Action--backgroundIconPinterest Action-social" href="https://www.pinterest.com/pin/create/share/?url=https%3A%2F%2Fwww.provenance.org%2Fwhitepaper&amp;description=Blockchain%3A%20the%20solution%20for%20transparency%20in%20product%20supply%20chains%20on%20Provenance&amp;amp;media=https%3A%2F%2Fassets.provenance.org%2Fweb-assets%2Fmodules%2Fprovenance-meta-coffee-cherries-1e789004055ef5901bc523561d86a7e7273c44a7b00b297bd16a5073a1c3676d.jpg" rel="nofollow noopener" target="_blank" title="Share on Pinterest">Share on Pinterest</a>
+      </li>
+      <li class="ShareLinks-item">
+        <a class="Action Action-newTab Action--backgroundIcon Action--facebook Action--backgroundIconFacebook Action-social" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.provenance.org%2Fwhitepaper" rel="nofollow noopener" target="_blank" title="Share on Facebook">Share on Facebook</a>
+      </li>
+    </ul>
+  </div>
+  <div id="Snackbar--copy" class="Snackbar BodyUI--emphasis">Copied to clipboard</div>
+</div>
+
+      </div>
+
+      <div class="Copy">
+
+        <h3>Quick Key Definitions</h3>
+
+        <p><strong>Bitcoin</strong> The first decentralized application suggested in 2008, a peer-to-peer electronic cash system</p>
+
+        <p><strong>Dapp (Decentralized application)</strong> A program implemented on the blockchain that executes the rules of a particular business application. Usually the term Dapp encompasses both the program’s backend as well as (various) user facing web frontends</p>
+
+        <p><strong>Provenance</strong> Social enterprise building a system for product supply chain and lifecycle transparency using the blockchain</p>
+
+        <p><strong>Ethereum</strong> Name of a project and their blockchain platform designed with great generality to allow for easy implementation of arbitrary decentralized applications</p>
+
+      </div><!-- .Copy -->
+
+    </div>
+
+  </section>
+
+</article><!-- .Whitepaper -->
+
+    <div class="MarketingContact">
+  <div class="MarketingContact-copy MarketingContact-copy--first Copy Copy--tightMargin">
+    <h6>Contact us</h6>
+<p class="sans">We’re a friendly team based in London,<br>so let us know if you’d like to chat.</p>
+
+  </div>
+  <div class="MarketingContact-action">
+    <a class="Action Action--inline" href="https://www.provenance.org/contact_requests/new" title="Get in touch">Get in touch</a>
+  </div>
+  <div class="MarketingContact-copy Copy">
+    <h6>Connect with us</h6>
+  </div>
+  <ul class="MarketingContact-socialIcons">
+    <li class="MarketingContact-socialIcon">
+      <a class="MarketingContact-socialIconInner" href="https://instagram.com/provenanceHQ" rel="nofollow noopener" target="_blank" title="Follow Provenance on Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" class="MarketingContact-socialIconMedia">
+  <path d="M43.182 0H6.818C3.058 0 0 3.06 0 6.818V43.18C0 46.94 3.06 50 6.818 50h36.364c3.76 0 6.818-3.058 6.818-6.817V6.82C50 3.058 46.94 0 43.182 0m2.273 6.818v7.508H34.093v-9.78h9.09c1.253 0 2.272 1.018 2.272 2.272M25 15.91c5.014 0 9.09 4.077 9.09 9.09 0 5.014-4.076 9.09-9.09 9.09s-9.09-4.076-9.09-9.09 4.076-9.09 9.09-9.09m18.182 29.544H6.818c-1.254 0-2.272-1.02-2.272-2.272V20.338h7.656c-.533 1.457-.838 3.022-.838 4.66 0 7.52 6.117 13.638 13.636 13.638 7.52 0 13.637-6.117 13.637-13.637 0-2.206-.538-4.283-1.472-6.13h8.29v24.31c0 1.256-1.02 2.274-2.273 2.274"></path>
+</svg>
+
+      </a>
+    </li>
+    <li class="MarketingContact-socialIcon">
+      <a class="MarketingContact-socialIconInner" href="https://twitter.com/ProvenanceHQ" rel="nofollow noopener" target="_blank" title="Follow Provenance on Twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" class="MarketingContact-socialIconMedia">
+  <path d="M44.884 14.804c.02.44.025.88.025 1.327 0 13.554-10.317 29.187-29.184 29.187-5.794 0-11.188-1.697-15.726-4.61.804.098 1.62.144 2.45.144 4.806 0 9.228-1.64 12.736-4.388-4.49-.083-8.277-3.048-9.58-7.124.623.12 1.27.185 1.93.185.934 0 1.84-.127 2.7-.36-4.693-.946-8.226-5.09-8.226-10.06v-.13c1.382.767 2.965 1.233 4.645 1.282-2.75-1.84-4.565-4.98-4.565-8.536 0-1.885.51-3.644 1.39-5.16C8.54 12.766 16.1 16.85 24.63 17.28c-.176-.75-.27-1.533-.27-2.338 0-5.666 4.594-10.257 10.258-10.257 2.95 0 5.62 1.245 7.492 3.236 2.335-.46 4.53-1.312 6.512-2.488-.765 2.396-2.393 4.406-4.51 5.676 2.073-.248 4.05-.8 5.89-1.617-1.377 2.06-3.114 3.864-5.116 5.314"></path>
+</svg>
+
+      </a>
+    </li>
+    <li class="MarketingContact-socialIcon">
+      <a class="MarketingContact-socialIconInner" href="https://www.linkedin.com/company/3105623" rel="nofollow noopener" target="_blank" title="Follow Provenance on LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" height="430.117" viewBox="0 0 430.117 430.117" width="430.117" class="MarketingContact-socialIconMedia">
+  <path d="M430.117 261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707-25.473 0-40.632 17.142-47.301 33.724-2.432 5.928-3.058 14.179-3.058 22.477V420.56h-92.219s1.242-251.285 0-277.32h92.21v39.309c-.187.294-.43.611-.606.896h.606v-.896c12.251-18.869 34.13-45.824 83.102-45.824 60.673-.001 106.157 39.636 106.157 124.818zM52.183 9.558C20.635 9.558 0 30.251 0 57.463c0 26.619 20.038 47.94 50.959 47.94h.616c32.159 0 52.159-21.317 52.159-47.94-.606-27.212-20-47.905-51.551-47.905zM5.477 420.56h92.184V143.24H5.477v277.32z"></path>
+</svg>
+
+      </a>
+    </li>
+    <li class="MarketingContact-socialIcon">
+      <a class="MarketingContact-socialIconInner" href="https://www.pinterest.com/provenanceHQ" rel="nofollow noopener" target="_blank" title="Follow Provenance on Pinterest">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" class="MarketingContact-socialIconMedia">
+  <path d="M28.858 36.137c-3.1 0-6.017-1.676-7.014-3.58 0 0-1.67 6.617-2.022 7.893-1.243 4.514-4.9 9.03-5.184 9.4-.2.255-.635.175-.682-.166-.08-.575-1.012-6.27.085-10.913l3.694-15.65s-.914-1.832-.914-4.543c0-4.256 2.468-7.435 5.54-7.435 2.61 0 3.87 1.96 3.87 4.312 0 2.628-1.67 6.554-2.535 10.19-.718 3.048 1.53 5.534 4.534 5.534 5.437 0 9.103-6.99 9.103-15.27 0-6.293-4.237-11.006-11.95-11.006-8.708 0-14.14 6.498-14.14 13.755 0 2.5.74 4.268 1.896 5.632.53.628.604.88.41 1.6-.138.528-.452 1.8-.586 2.305-.19.727-.777.987-1.435.72-4.014-1.64-5.885-6.034-5.885-10.97C5.645 9.784 12.525 0 26.175 0c10.964 0 18.18 7.933 18.18 16.454 0 11.266-6.265 19.683-15.497 19.683"></path>
+</svg>
+
+      </a>
+    </li>
+    <li class="MarketingContact-socialIcon">
+      <a class="MarketingContact-socialIconInner" href="https://www.facebook.com/ProjectProvenance" rel="nofollow noopener" target="_blank" title="Follow Provenance on Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" class="MarketingContact-socialIconMedia">
+  <path d="M35.748 25h-6.9v25H18.504V25h-5.17v-8.617h5.17v-5.17C18.504 4.18 21.424 0 29.714 0h6.898v8.617h-4.31c-3.228 0-3.442 1.206-3.442 3.452l-.013 4.313h7.817L35.748 25z"></path>
+</svg>
+
+      </a>
+    </li>
+  </ul>
+  <div class="MarketingContact-newsletter">
+    <div class="MarketingContact-copy Copy Copy--tightMargin">
+      <h6>Newsletter</h6>
+<p class="sans">Stay up-to-date with monthly news and&nbsp;updates</p>
+
+    </div>
+    <div class="MarketingContact-newsletterForm">
+      
+<form action="https://provenance.us7.list-manage.com/subscribe/post" class="Form Form--mailchimp is-enhanced" data-domain="provenance" data-label="Provenance Shoppers Newsletter" method="post" name="mc-embedded-subscribe-form" rel="nofollow noopener" target="_blank" novalidate="">
+  <div class="Form-flexInner">
+    <input type="hidden" name="u" value="e08f647f7bb650fd7d9158bee">
+    <input type="hidden" name="id" value="0b1c51961a">
+    <input class="Form-control Form-control--white" name="EMAIL" placeholder="Enter your email..." type="email" value="">
+    <div style="position: absolute; left: -5000px;">
+      <input type="text" name="b_e08f647f7bb650fd7d9158bee_0b1c51961a" tabindex="-1" value="">
+    </div>
+    <div class="Form-actions">
+        <input class="Action Action--backgroundIcon Action--backgroundIconEmail" name="subscribe" type="submit" value="Sign Up">
+    </div>
+  </div>
+  <div class="Form-message"></div>
+</form>
+
+    </div>
+  </div>
+</div>
+
+  </main>
+  <div class="">
+      
+      <footer class="Footer Footer--marketingPage">
+  <div class="Footer-flag">
+  <a class="Footer-flagInner" href="https://www.provenance.org/">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.2 168.2" class="Footer-flagMedia">
+  <g>
+    <path d="M17.4 124.8c-6.3 0-8.9-3.9-10.5-7.2-.8-1.8 0-3.8 1.7-4.6s3.8 0 4.6 1.7c1.3 2.9 2.3 3.2 4.1 3.2 1.9 0 3.5 1.6 3.5 3.5s-1.5 3.4-3.4 3.4zM63.1 103.4c-4.3 0-8.5-.9-12.3-2.6-1.7-.8-2.5-2.9-1.7-4.7.8-1.7 2.8-2.5 4.6-1.7 8.8 4 17.8 1.2 27.4-1.8 4.8-1.7 9.7-2.9 14.7-3.7 6.1-.8 12.3.6 16.9 2.1V50.2c-4.7-1.7-10.8-3.5-16.2-2.8-4.6.8-9.1 1.9-13.5 3.4-10.4 3.2-21.2 6.6-32.4 1.5-1.7-.8-2.5-2.9-1.7-4.7.8-1.7 2.8-2.5 4.6-1.7 8.8 4 17.8 1.2 27.4-1.8 4.8-1.6 9.7-2.9 14.7-3.7 7.8-1.1 16.2 1.8 21.9 4 1.3.5 2.2 1.8 2.2 3.2v48.3c0 1.9-1.6 3.5-3.5 3.5-.5 0-1-.1-1.4-.3-3.8-1.7-11.2-4.5-18.1-3.5-4.6.8-9.1 1.9-13.6 3.5-6.5 2.2-13.1 4.3-20 4.3z"></path>
+    <path d="M84.1 168.2h-.3C37.3 168.1-.3 130.4-.2 84S37.7-.1 84.1 0h.3c46.5.1 84.1 37.8 84 84.2s-37.8 84.1-84.3 84zM84.1 7C41.5 6.9 6.9 41.4 6.9 84s34.4 77.2 77 77.2h.2c42.6.1 77.2-34.4 77.2-77C161.4 41.6 127 7.1 84.4 7h-.3z"></path>
+    <path d="M52.1 140.7c-1.9 0-3.5-1.6-3.5-3.5V47.8c0-1.9 1.6-3.5 3.5-3.5s3.5 1.6 3.5 3.5v89.4c0 1.9-1.6 3.5-3.5 3.5z"></path>
+    <path d="M52.1 124.8H12.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5h39.5c1.9 0 3.5 1.6 3.5 3.5s-1.6 3.5-3.5 3.5z"></path>
+    <path d="M155.7 124.8H53.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5h102.2c1.9 0 3.5 1.6 3.5 3.5s-1.6 3.5-3.5 3.5zM14.8 129c-1.2 0-2.4-.6-3-1.7-1.2-2-1.3-4.5-.2-6.5 1.1-1.9 3.1-3 5.2-3 1.9 0 3.5 1.6 3.5 3.5 0 1.4-.9 2.7-2.2 3.3.4 1.5-.2 3.2-1.6 4-.4.2-1 .4-1.7.4z"></path>
+    <path d="M150.9 124.8c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 2.8-.3 4.1-3.2c.8-1.8 2.9-2.5 4.6-1.7 1.8.8 2.5 2.9 1.7 4.6-1.5 3.4-4.1 7.3-10.4 7.3z"></path>
+    <path d="M153.3 129c-1.9 0-3.5-1.6-3.5-3.5 0-.3 0-.7.1-1-1.8-.7-2.6-2.8-1.9-4.6.5-1.3 1.8-2.2 3.2-2.2 2.2 0 4.2 1.1 5.2 3 1.1 2.1 1.1 4.6-.2 6.5-.5 1.2-1.6 1.8-2.9 1.8zM52.1 129.4c-1.9 0-3.5-1.6-3.5-3.5 0-.3 0-.7-.1-1-.3-.1-.7-.1-1-.1-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5c5.2 0 8.1 2.9 8.1 8.1 0 1.9-1.6 3.5-3.5 3.5zm-3.4-4.5z"></path>
+    <path d="M52.1 129.4c-1.9 0-3.5-1.6-3.5-3.5 0-5.2 2.9-8.1 8.1-8.1 1.9 0 3.5 1.6 3.5 3.5s-1.6 3.5-3.5 3.5c-.3 0-.7 0-1 .1-.1.3-.1.7-.1 1 0 1.9-1.6 3.5-3.5 3.5zM58 102.9c-.3 0-.6 0-.9-.1-4.4-1.2-8.5-3.3-8.5-11.7 0-1.9 1.6-3.5 3.5-3.5s3.5 1.6 3.5 3.5c0 4 .8 4.2 3.3 4.9 1.9.5 3 2.4 2.5 4.3-.4 1.5-1.8 2.6-3.4 2.6zM52.1 59.1c-1.9 0-3.5-1.6-3.5-3.5 0-3.7 1.6-5.7 2.9-6.7s3.8-2.1 7.6-1.1c1.9.5 3 2.4 2.5 4.2s-2.4 3-4.2 2.5c-.5-.2-1-.2-1.6-.1-.1.4-.2.8-.2 1.2 0 1.9-1.6 3.5-3.5 3.5zM116.2 57.3c-1.9 0-3.5-1.6-3.5-3.5 0-2.3-2.1-4.3-4.1-4.9-1.8-.6-2.8-2.6-2.1-4.5.6-1.8 2.5-2.7 4.3-2.2 5.3 1.7 9 6.5 9 11.6 0 1.9-1.6 3.5-3.6 3.5zM112.3 97.7c-1.3 0-2.6-.3-3.8-.7-1.8-.6-2.8-2.6-2.2-4.5.6-1.8 2.6-2.8 4.5-2.2.5.2 1.1.3 1.7.3.1-.5.2-1 .2-1.4 0-1.9 1.6-3.5 3.5-3.5s3.5 1.6 3.5 3.5c0 4.1-1.7 6.2-3.1 7.2-1.3.8-2.8 1.3-4.3 1.3z"></path>
+  </g>
+</svg>
+
+  </a>
+</div>
+
+  <ul class="Footer-links">
+    <li class="Footer-linkItem">
+      <a class="Footer-linkItemInner" href="https://www.provenance.org/about">About</a>
+    </li>
+    <li class="Footer-linkItem">
+      <a class="Footer-linkItemInner" href="https://www.provenance.org/careers" rel="noopener" target="_blank">Careers</a>
+    </li>
+    <li class="Footer-linkItem">
+      <a class="Footer-linkItemInner" href="https://www.provenance.org/partners">Partnerships</a>
+    </li>
+    <li class="Footer-linkItem">
+      <a class="Footer-linkItemInner" href="https://www.provenance.org/terms">Terms</a>
+    </li>
+    <li class="Footer-linkItem">
+      <a class="Footer-linkItemInner" href="https://www.provenance.org/privacy">Privacy</a>
+    </li>
+    <li class="Footer-linkItem">
+      <a class="Footer-linkItemInner" href="https://www.provenance.org/ethics">Ethics</a>
+    </li>
+  </ul>
+  
+<p class="Footer-copy">Copyright © 2013-2019 Project Provenance Ltd.<br> PROVENANCE® is a registered trade mark in the EU and US of Project Provenance Ltd.<br> All Rights Reserved.<br></p>
+
+</footer>
+
+
+  </div>
+
+  <div id="ModalHolder"></div>
+  <div class="Cookiebanner-outer">
+  <div class="CookieBanner is-visible" data-controller="cookie-banner" id="CookieBanner">
+    <div class="CookieBanner-inner">
+      <div class="CookieBanner-left"><p class="CookieBanner-message">Welcome to Provenance! To make interactions with our website easy and meaningful, we use Cookies. By continuing to use this site, you consent to this <a class="CookieBanner-link" href="https://www.provenance.org/privacy#cookies" rel="noopener" target="_blank">policy</a>.</p>
+</div>
+      <div class="CookieBanner-right">
+        <button class="Action Action--inline" data-action="cookie-banner#close">Accept cookies</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="./Blockchain_ the solution for supply chain transparency _ Provenance_files/application-4e2528f29d8f39432e14.js"></script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1991638284462009");fbq("set","agent","tmgoogletagmanager","1991638284462009");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1991638284462009&amp;ev=PageView&amp;noscript=1"></noscript>
+
+
+
+
+<iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="./Blockchain_ the solution for supply chain transparency _ Provenance_files/box-74dcf4e32eff343c96838bf3a780ac1d.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><div id="shadowMeasureIt"></div><div id="divCoordMeasureIt"></div><div id="divRectangleMeasureIt"><div id="divRectangleBGMeasureIt"></div></div><div id="eJOY__extension_root" style="all: unset;"></div></body></html>

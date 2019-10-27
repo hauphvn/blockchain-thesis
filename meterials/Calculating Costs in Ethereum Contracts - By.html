@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://hackernoon.com/ether-purchase-power-df40a38c5a2f -->
+<html lang="en" class="gr__hackernoon_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <link rel="icon" type="image/png" href="https://hackernoon.com/favicon.png">
+  <link rel="canonical" href="https://hackernoon.com/ether-purchase-power-df40a38c5a2f">
+  <link rel="icon" type="image/png" href="https://hackernoon.com/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculating Costs in Ethereum Contracts - By </title>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@hackernoon">
+  
+  <meta name="twitter:creator" content="@dannyryan">
+  
+  <meta property="og:url" content="https://hackernoon.com/ether-purchase-power-df40a38c5a2f">
+  <meta property="og:title" content="Calculating Costs in Ethereum Contracts">
+  
+  <meta property="og:image" content="https://hackernoon.com/hn-images/1*q3WWzT8MQIUCB9n-wuj8Cw.jpeg">
+  
+
+  <link rel="stylesheet" href="./Calculating Costs in Ethereum Contracts - By_files/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
+  <link href="./Calculating Costs in Ethereum Contracts - By_files/base.css" rel="stylesheet">
+  <link href="./Calculating Costs in Ethereum Contracts - By_files/story.css" rel="stylesheet">
+  <link href="./Calculating Costs in Ethereum Contracts - By_files/prism.css" rel="stylesheet">
+  <link href="./Calculating Costs in Ethereum Contracts - By_files/subscribe-form.css" rel="stylesheet">
+
+  <script type="text/javascript" async="" src="./Calculating Costs in Ethereum Contracts - By_files/snippet.js"></script><script type="text/javascript" async="" src="./Calculating Costs in Ethereum Contracts - By_files/js"></script><script type="text/javascript" async="" src="./Calculating Costs in Ethereum Contracts - By_files/analytics.js"></script><script async="" src="./Calculating Costs in Ethereum Contracts - By_files/gtm.js"></script><script src="./Calculating Costs in Ethereum Contracts - By_files/vue.min.js"></script>
+  <script src="./Calculating Costs in Ethereum Contracts - By_files/content.js"></script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WGQVQ44');</script>
+  <!-- End Google Tag Manager -->
+<style>div.desktop-nav>a:nth-of-type(4)>button{background-color: rgb(0, 68, 0)}</style><style>div.desktop-nav>a:nth-of-type(4)>button{color: rgb(0, 255, 0)}</style><style>i.fa-calendar-star{color: rgb(0, 255, 0)}</style><style>i.fa-calendar-star{margin: 0 5px 0 0}</style><style>i.fa-calendar-star{font-size: 16px}</style><style type="text/css">#mc_embed_signup input.mce_inline_error { border-color:#6B0505; } #mc_embed_signup div.mce_inline_error { margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff; }</style><link rel="stylesheet" href="./Calculating Costs in Ethereum Contracts - By_files/snippet.css"></head>
+
+<body data-gr-c-s-loaded="true" cz-shortcut-listen="true" style="zoom: 1;">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGQVQ44"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
+  <div id="root">
+    <header id="header"><nav><a href="https://hackernoon.com/"><img src="./Calculating Costs in Ethereum Contracts - By_files/logo-hn.png" height="40" class="logo"></a> <div class="desktop-nav"><div class="spacer"></div> <div class="search-container"><input class="search-input"> <i class="fas fa-search"></i></div> <a href="https://twitter.com/hackernoon" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://www.facebook.com/hackernoon" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://www.youtube.com/hackernoon" target="_blank"><i class="fab fa-youtube"></i></a> <a href="https://hackernoon.com/ether-purchase-power-df40a38c5a2f#subscribe-embed"><button class="outline"><i class="fas fa-calendar-star"></i> Subscribe</button></a> <!----> <!----></div></nav></header>
+
+    <div id="top"><div class="subnav"><a href="https://hackernoon.com/tagged/ai" class="">
+          AI
+        </a><a href="https://hackernoon.com/tagged/cryptocurrency" class="">
+          Crypto
+        </a><a href="https://hackernoon.com/tagged/coding" class="">
+          Coding
+        </a><a href="https://hackernoon.com/tagged/futurism" class="">
+          Futurism
+        </a><a href="https://hackernoon.com/tagged/startups" class="">
+          Startups
+        </a><a href="https://hackernoon.com/about" class="">
+          About
+        </a><a href="https://community.hackernoon.com/" class="">
+          Community
+        </a><a href="https://sponsor.hackernoon.com/" class="">
+          Sponsors
+        </a><a href="http://bit.ly/2Pr5wgH" class="">
+          Limited Edition Tees
+        </a> <div class="dropdown active"><div class="category"><div class="section"><div class="heading"><div class="line"></div> <a href="https://hackernoon.com/tagged/artificial-intelligence">Artificial Intelligence</a></div> <ul class="links"><li><a href="https://hackernoon.com/tagged/data-science">Data Science</a></li><li><a href="https://hackernoon.com/tagged/deep-fakes">Deep Fakes</a></li><li><a href="https://hackernoon.com/tagged/deep-learning">Deep Learning</a></li><li><a href="https://hackernoon.com/tagged/machine-learning">Machine Learning</a></li></ul></div><div class="section"><div class="heading"><div class="line"></div> <a href="https://hackernoon.com/tagged/future">The Future of AI</a></div> <ul class="links"><li><a href="https://hackernoon.com/ai-in-five-fifty-and-five-hundred-years-part-one-e630058b547f">In 5 Years</a></li><li><a href="https://hackernoon.com/ai-in-five-fifty-and-five-hundred-years-part-two-fifty-years-1deeb7c5408c">In 50 Years</a></li><li><a href="https://hackernoon.com/ai-in-five-fifty-and-five-hundred-years-part-three-five-hundred-years-10198c00c7c7">In 500 Years</a></li></ul></div></div><div class="category"><div class="section"><div class="heading"><div class="line"></div> <a href="https://hackernoon.com/tagged/crypto">Coin</a></div> <ul class="links"><li><a href="https://hackernoon.com/tagged/bitcoin">Bitcoin</a></li><li><a href="https://hackernoon.com/tagged/ethereum">Ethereum</a></li><li><a href="https://hackernoon.com/tagged/ripple">Ripple</a></li><li><a href="https://hackernoon.com/tagged/cryptocurrency">More</a></li></ul></div><div class="section"><div class="heading"><div class="line"></div> <a href="https://hackernoon.com/tagged/blockchain">Blockchain</a></div> <ul class="links"><li><a href="https://hackernoon.com/tagged/blockchain-adoption">Adoption</a></li><li><a href="https://hackernoon.com/tagged/blockchain-application">Application</a></li><li><a href="https://hackernoon.com/tagged/blockchain-development">Development</a></li><li><a href="https://hackernoon.com/tagged/smart-contracts">Smart Contracts</a></li><li><a href="https://hackernoon.com/tagged/blockchain-technology">Technology</a></li></ul></div><div class="section"><div class="heading"><div class="line"></div> <a href="https://hackernoon.com/tagged/bitcoin">Bitcoin</a></div> <ul class="links"><li><a href="https://hackernoon.com/hacker-noons-bitcoin-manifesto-w32cb30s0">Manifesto</a></li><li><a href="https://hackernoon.com/tagged/bitcoin-spotlight">Bitcoin Spotlight</a></li><li><a href="https://hackernoon.com/tagged/bitcoin">All Bitcoin Stories</a></li></ul></div></div><div class="category"><div class="section"><div class="heading"><div class="line"></div> <a href="https://hackernoon.com/tagged/engineering">Engineering</a></div> <ul class="links"><li><a href="https://hackernoon.com/tagged/architecture">Architecture</a></li><li><a href="https://hackernoon.com/tagged/coding">Coding</a></li><li><a href="https://hackernoon.com/tagged/programming">Programming</a></li><li><a href="https://hackernoon.com/tagged/engineering-management">Engineering Management</a></li><li><a href="https://hackernoon.com/tagged/software-development">Software Development</a></li><li><a href="https://hackernoon.com/tagged/agile">Agile</a></li><li><a href="https://hackernoon.com/tagged/scrum">Scrum</a></li><li><a href="https://hackernoon.com/tagged/tdd">Test Driven Development</a></li></ul></div><div class="section"><div class="heading"><div class="line"></div> <a href="https://hackernoon.com/tagged/languages">Languages</a></div> <ul class="links"><li><a href="https://hackernoon.com/tagged/javascript">Javascript</a></li><li><a href="https://hackernoon.com/tagged/nodejs">NodeJS</a></li><li><a href="https://hackernoon.com/tagged/python">Python</a></li><li><a href="https://hackernoon.com/tagged/react">React</a></li><li><a href="https://hackernoon.com/tagged/vim">Vim</a></li></ul></div><div class="section"><div class="heading"><div class="line"></div> <a href="https://hackernoon.com/tagged/security">Security</a></div> <ul class="links"><li><a href="https://hackernoon.com/tagged/cybersecurity">Cybersecurity</a></li><li><a href="https://hackernoon.com/tagged/encryption">Encryption</a></li><li><a href="https://hackernoon.com/tagged/infosec">Info Sec</a></li><li><a href="https://hackernoon.com/tagged/privacy">Privacy</a></li></ul></div></div><div class="category"><div class="section"><div class="heading"><div class="line"></div> <a href="https://hackernoon.com/tagged/technology-trends">Effect of Tech</a></div> <ul class="links"><li><a href="https://hackernoon.com/tagged/automation">Automation</a></li><li><a href="https://hackernoon.com/tagged/big-data">Big Data</a></li><li><a href="http://hackernoon.com/tagged/economics">Economics</a></li><li><a href="https://hackernoon.com/tagged/future">Future</a></li><li><a href="https://hackernoon.com/tagged/robotics">Robotics</a></li><li><a href="https://hackernoon.com/tagged/space">Space</a></li></ul></div><div class="section"><div class="heading"><div class="line"></div> <a href="https://www.startengine.com/hackernoon">Framing Realities</a></div> <ul class="links"><li><a href="https://hackernoon.com/tagged/augmented-reality">Augmented Reality</a></li><li><a href="https://hackernoon.com/tagged/mixed-reality">Mixed Reality</a></li><li><a href="https://hackernoon.com/open-letters/home">Open Tech Letters</a></li><li><a href="https://hackernoon.com/tagged/virtual-reality">Virtual Reality</a></li><li><a href="https://hackernoon.com/tagged/wtf">WTF</a></li></ul></div></div><div class="category"><div class="section"><div class="heading"><div class="line"></div> <a href="https://hackernoon.com/tagged/startup-advice">Startups Advice</a></div> <ul class="links"><li><a href="https://hackernoon.com/tagged/entrepreneurship">Entrepreneurship</a></li><li><a href="https://hackernoon.com/tagged/funding">Funding</a></li><li><a href="https://hackernoon.com/tagged/marketing">Marketing</a></li><li><a href="https://hackernoon.com/tagged/pitching">Pitching</a></li><li><a href="https://hackernoon.com/tagged/scaling">Scaling</a></li></ul></div><div class="section"><div class="heading"><div class="line"></div> <a href="https://hackernoon.com/tagged/faagm">FAAGM</a></div> <ul class="links"><li><a href="https://hackernoon.com/tagged/facebook">Facebook</a></li><li><a href="https://hackernoon.com/tagged/amazon">Amazon</a></li><li><a href="https://hackernoon.com/tagged/apple">Apple</a></li><li><a href="https://hackernoon.com/tagged/google">Google</a></li><li><a href="https://hackernoon.com/tagged/microsoft">Microsoft</a></li></ul></div></div><div class="category"><div class="section"><div class="heading"><div class="line"></div> <a href="http://help.hackernoon.com/">Get Help</a></div> <ul class="links"><li><a href="https://help.hackernoon.com/app/page/1fWmAG6zSc-EuxBhHYt-tUIR0wfefRxkmpVRD46byKTw">Account Creation Troubleshooting</a></li><li><a href="https://help.hackernoon.com/app/page/1lDCt9BDTNOQDV7XsOchDBXsmnicvdwa8hw5EFopkDS4">Connect Medium to Hackernoon</a></li><li><a href="https://help.hackernoon.com/app/page/1HNTGwm_UAfdEv9nEKmZHjQHRJtYgLnMIEZ6Vw_ZRZvQ">Create Your Own CTA</a></li></ul></div><div class="section"><div class="heading"><div class="line"></div> <a href="http://contribute.hackernoon.com/">Start Writing</a></div> <ul class="links"><li><a href="https://help.hackernoon.com/app/page/1gRbkfKlrfqztzZDQzHGp4v2U0G36alVmE7iODP4d9rg">Complete Writing Guide</a></li><li><a href="https://help.hackernoon.com/app/page/1-wg7bxonxAFWdTYl5G4gJwvWLo0iWfBi-XKbdjcYva0">Submit a Story</a></li><li><a href="https://help.hackernoon.com/app/page/1J5kyBvyWGTELUy4vbK1GrMyPQxaT9KshmduZ4mOH6_A">Write Better Headlines</a></li></ul></div></div><div class="category"><div class="section"><div class="heading"><div class="line"></div> <a href="https://community.hackernoon.com/categories">Browse by Category</a></div> <ul class="links"><li><a href="https://community.hackernoon.com/">Start a Discussion!</a></li><li><a href="https://community.hackernoon.com/c/ama">AMA</a></li><li><a href="https://community.hackernoon.com/c/code-pong">Code Pong</a></li><li><a href="https://community.hackernoon.com/c/crypto">Crypto</a></li><li><a href="https://community.hackernoon.com/c/editorial">Editorial</a></li><li><a href="https://community.hackernoon.com/c/general">General</a></li><li><a href="https://community.hackernoon.com/c/product">Product</a></li><li><a href="https://community.hackernoon.com/c/podcast">Podcast</a></li><li><a href="https://community.hackernoon.com/c/random">Random</a></li><li><a href="https://community.hackernoon.com/c/Software-Development">Software Development</a></li><li><a href="https://community.hackernoon.com/c/technology">Technology</a></li></ul></div><div class="section"><div class="heading"><div class="line"></div> <a href="https://community.hackernoon.com/top">Top Discussions</a></div> <ul class="links"><li><a href="https://community.hackernoon.com/top/daily">Daily</a></li><li><a href="https://community.hackernoon.com/top/weekly">Weekly</a></li><li><a href="https://community.hackernoon.com/top/monthly">Monthly</a></li><li><a href="https://community.hackernoon.com/top/quarterly">Quarterly</a></li><li><a href="https://community.hackernoon.com/top/yearly">Yearly</a></li><li><a href="https://community.hackernoon.com/top/all">All Time</a></li></ul></div></div><div class="category"><div class="section active"><div class="heading"><div class="line"></div> <a href="https://sponsor.hackernoon.com/">Sponsorship Options</a></div> <ul class="links"><li><a href="https://sponsor.hackernoon.com/#brandasauthor">Brand As Author</a></li><li><a href="https://sponsor.hackernoon.com/#billboard">Sitewide Billboard</a></li><li><a href="https://sponsor.hackernoon.com/#newsletter">Newsletter</a></li><li><a href="https://jobs.hackernoon.com/">Job Posting</a></li></ul></div><div class="section active"><div class="heading"><div class="line"></div> <a href="https://sponsor.hackernoon.com/">Top Deals</a></div> <ul class="links"><li><a href="http://bit.ly/2mdsomY">Be seen in a new Tech Job</a></li><li><a href="http://bit.ly/2kBrHDL">Help your dev team ship 20% faster</a></li><li><a href="http://bit.ly/2mmpe0R">Monetize Not Advertise, Earn Crypto</a></li><li><a href="https://amzn.to/2pcHX05">Hacker Noon Recommends</a></li></ul></div></div><div class="category"></div></div></div> <div class="ads"><a href="http://bit.ly/2mdsomY" target="_blank" class="sponsor"><img src="./Calculating Costs in Ethereum Contracts - By_files/seen_white_cropped.png" alt="Seen by Indeed" class="image">
+          Be seen in a new tech job.
+        </a></div></div>
+
+    <div class="story story-container">
+      
+      <div class="author">
+        <div class="avatar" style="background-image: url(&#39;https://hackernoon.com/archive-avatars/djrtwo&#39;)"></div>
+        <div class="name">
+          <strong><a href="https://hackernoon.com/@djrtwo">Danny Ryan</a></strong>
+          
+          <p>@djrtwo</p>
+          
+          <div class="links">
+            
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/dannyryan"><i class="fab fa-twitter"></i></a>
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+      
+
+      <h1 class="title">Calculating Costs in Ethereum Contracts</h1>
+      
+      <div class="story-meta">
+        <div class="date">October 14th 2019</div>
+        <div class="share">
+          
+          
+          
+          
+          
+          
+          <a class="twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=Calculating%20Costs%20in%20Ethereum%20Contracts&amp;url=https%3A%2F%2Fhackernoon.com%2Fether-purchase-power-df40a38c5a2f&amp;via=dannyryan&amp;hashtags=ethereum,blockchain,decentralization"><i class="fab fa-twitter"></i> Tweet This</a>
+        </div>
+      </div>
+      <div class="content" v-pre="">
+        <div class="section-inner sectionLayout--insetColumn"><p><strong><em>GAS PRICE PSA</em></strong><em> (2017–08–23): The median gas price at the time of writing this article was 28 Gwei, and continues to be in the realm of 20 Gwei. This is far greater than the typical average and safe-low found on </em><a href="http://ethgasstation.info/" target="_blank"><em>EthGasStation</em></a><em> (4 and 0.5 Gwei respectively). The median is so high because of bad gas-price defaults found in many wallets. I </em><strong><em>highly recommend</em></strong><em> using EthGasStation’s average gas-price or lower in order to not pay high fees and to help drive down the market rate for gas-price.</em></p><p><strong><em>UPDATE </em></strong><em>(2017–09–6): I ported the Google Spreadsheet of OPCODES to a </em><a href="https://github.com/djrtwo/evm-opcode-gas-costs" target="_blank"><em>github repo</em></a><em>. This repo will be maintained and updated as the </em><a href="http://yellowpaper.io/" target="_blank"><em>yellow paper</em></a><em> evolves.</em></p><p>What are users storing when they hold Ether? In one sense, they are storing the ability to perform computation on the Ethereum <a href="https://hackernoon.com/tagged/network" target="_blank">network</a>. This computation is done in a decentralized fashion:</p><blockquote name="2a0b" id="2a0b" class="graf graf--blockquote graf-after--p">A miner executes the computation associated with each transaction being included in a block, resulting in an updated state. Upon successfully mining a block, a miner broadcasts the block to the network. Each of the other miners and non-mining nodes verify the validity of the transactional computation and resulting state change before accepting the block as valid, incorporating the block into their copy of the <a href="https://hackernoon.com/tagged/blockchain" target="_blank">blockchain</a>, and moving on to the next block.</blockquote><p>You may have noticed that there is incredible amount of redundancy for every bit of computation on the network. Namely, each node verifies the results of each transaction — read: <em>every node runs all of the computation</em>.</p><p>I’ve been researching Ethereum and other blockchain application platforms for a long time now, and rarely, if ever, do people outright say this. Once you get into the more technical side of things, it becomes an obvious feature of the system, but to the less initiated this is not so obvious. Wouldn’t this be far more costly than just running the computation on a server? Yes, by the nature of the protocol, it has to be. The following is likely a fundamental principle of economics or computation or both:</p><blockquote name="8c9f" id="8c9f" class="graf graf--blockquote graf-after--p">More machines running code == More money spent on running code</blockquote><p>We must remember that executing code and updating state on Ethereum is far different than doing the same on a simple server. The resulting state changes in Ethereum have different properties than that of a server — namely: immutability and public verifiability. Let’s first take a look at how much computation actually costs on the network and then we can try to decide if it’s worth it.</p><h3>How much does it&nbsp;cost?</h3><h4>Gas</h4><p>Each low level operation available in the EVM (Ethereum Virtual Machine) is called an OPCODE. These include operations such as ADD — adding two integers together, BALANCE — getting the balance of an account, and CREATE — creating a new contract with supplied code. Each of these OPCODEs has a number called “gas” associated with it. <em>Gas</em> is an abstract number that represents the relative complexity of operations. For example, ADD uses 3 gas while MUL (multiply two integers) uses 5 gas, so MUL is more complex than ADD.</p><p>I’ve compiled the gas required for each OPCODE in the EVM (Ethereum Virtual Machine) <a href="https://docs.google.com/spreadsheets/d/1n6mRqkBz3iWcOlRem_mO09GtSKEKrAsfO7Frgx18pNU/edit?usp=sharing" target="_blank">here</a>. This information is pulled from the most recent version of the <a href="https://ethereum.github.io/yellowpaper/paper.pdf" target="_blank">Ethereum Yellow Paper</a> (EIP-150 Revision)— the formal specification of the Ethereum Protocol.</p><p>It is important to note that all transactions cost 21000 gas as a base. So if you are just transferring funds and not interacting with a contract, your transaction takes 21000 gas. If you are interacting with a contract, your transaction takes 21000 gas plus any gas associated with running the contract.</p><h4>Gas Price</h4><p>While gas is fixed per operation, the amount a user pays per gas — <em>gas price — </em>is dynamic and dictated by market conditions. Gas price is a value representing how much Ether the user is willing to pay per gas. When a user sends a transaction, they specify the gas price in Gwei/Gas (1 Gwei equals 0.000000001 ETH), and the total fee that they pay is equal to <em>gas_price * gas_used. </em>Miners are paid out this fee and so they prioritize transactions with a higher gas price. The higher gas price you are willing to pay, the faster your transaction will be processed.</p><p><a href="http://ethgasstation.info/index.php" target="_blank">ETH Gas Station</a> is a great resource for understanding the current gas market conditions. “Recommended User Gas Prices” shows the range of gas prices you might pay and the expected transaction times.</p><h3>No Really, how much does it&nbsp;cost?</h3><p>Operations in Ethereum cost gas_price * gas_used, but what does this translate to in both ether and dollars? I’ve compiled a <a href="https://docs.google.com/spreadsheets/d/1KeWKkn0BYhOt1p6lM6BDQAWLin-2JQmGpwswU3kPw9c/edit?usp=sharing" target="_blank">spreadsheet</a> of some example operations and associated costs at the current median gas price (28 Gwei) and current USD/ETH exchange rate ($295/ETH). Each line shows a task, the gas required for the task, the cost in ETH and USD, the number of this task you can perform with 1 ETH and 1 USD, the number of tasks you can perform per block, and the number of blocks it takes to perform this task.</p><h4>Adding Numbers</h4><p>The following is a sample from the spreadsheet. This shows the costs associated with adding or subtracting two integers.</p><figure><div class="aspectRatioPlaceholder is-locked"><div class="aspectRatioPlaceholder-fill"></div><img data-image-id="1*q3WWzT8MQIUCB9n-wuj8Cw.jpeg" data-width="2544" data-height="164" data-action="zoom" data-action-value="1*q3WWzT8MQIUCB9n-wuj8Cw.jpeg" src="./Calculating Costs in Ethereum Contracts - By_files/1_q3WWzT8MQIUCB9n-wuj8Cw.jpeg"></div><figcaption class="imageCaption">Cost of Adding&nbsp;Integers</figcaption></figure><p>We can see here that it costs 0.09 ETH or $26.55 to add two numbers together 1 million times. Compared to running on a local computer or cloud server this seems pretty high. Let’s do a quick price comparison to AWS.</p><p>I can <a href="https://gist.github.com/djrtwo/434a3b0e9eaf785cdd7dec70ec561ff3" target="_blank">add two numbers together 1 million times in python</a> in 0.04 seconds. Amazon charges $0.0059/hour for their cheapest EC2 instance — t2.nano. This costs $0.000001639/second or $0.000000066 for the operation. Compared to $26.55, this is about 400Million times more expensive (or 40Million if you are willing to pay a low gas price). Whoa!</p><h4>Storing Data</h4><p>Another common operation we might be interested in is storing data whether it be storing a single value such as the number of days until a contract expires or something a bit more ambitious such as the contents of a short story.</p><figure><div class="aspectRatioPlaceholder is-locked"><div class="aspectRatioPlaceholder-fill"></div><img data-image-id="1*CpjOxAH0eZ1AlaqIEFOlqw.jpeg" data-width="2452" data-height="214" data-action="zoom" data-action-value="1*CpjOxAH0eZ1AlaqIEFOlqw.jpeg" src="./Calculating Costs in Ethereum Contracts - By_files/1_CpjOxAH0eZ1AlaqIEFOlqw.jpeg"></div><figcaption class="imageCaption">Cost of Storing&nbsp;Data</figcaption></figure><p>We can see from the above snippet that storing data to the blockchain is extremely expensive, but for good reason! When you store data in the blockchain, you store data into an immutable database replicated across 10s of thousands of nodes. Doing operations like uploading your favorite movie to the blockchain is and should be entirely cost prohibitive to keep the growth of the blockchain manageable. This intuition is captured by the fact that storing a single 256-bit word requires 20000 gas, over 6000 times more expensive than adding two numbers together.</p><p>Another bottleneck of storing large amounts of data is the current Block Gas Limit of approximately 4700000 gas/block. At this cap of gas per block, it would take over 132 blocks to write 1 MB of data to the blockchain, and that is assuming you can manage to hog all of the gas per block and that there are no other operations required!</p><h3>What does it&nbsp;mean?</h3><p>To be fair, adding two numbers together 1 million times is a bit contrived. A well written contract would likely move such computational complexity off-chain and deal more with updating state in the contract. Storing vast amounts of data to the blockchain is also not an ordinary task. Depending on the task, a user would likely store a cryptographic reference (a hash) of the data on-chain and keep the rest of the data off-chain.</p><p>That said, we as developers need to be aware of these costs, and design dApps accordingly. We need to find the balance between on-chain and off-chain complexity, while still leveraging the decentralized capabilities of the blockchain.</p><p>We also need to understand that at the end of the day we are comparing apples to oranges. With the increased cost and inefficiencies of the blockchain, we gain guarantees of open, censorship resistant code execution and publicly available, immutable data. We have never had such properties in computation before, and we do not yet fully understand the financial and societal gains that we might see.</p><p>Over the next year, I expect increased adoption and hopefully some long-awaited launches on the Ethereum blockchain. Only when we get significant activity on the blockchain will we truly be able to assess the costs and benefits.</p></div><div class="section-inner sectionLayout--insetColumn"><figure><div class="aspectRatioPlaceholder is-locked"><div class="aspectRatioPlaceholder-fill"></div></div></figure></div>
+        
+        <div class="archive-tags">
+          
+          
+          
+          <a class="tag" href="https://hackernoon.com/tagged/ethereum">Ethereum</a>
+          
+          
+          
+          <a class="tag" href="https://hackernoon.com/tagged/blockchain">Blockchain</a>
+          
+          
+          
+          <a class="tag" href="https://hackernoon.com/tagged/decentralization">Decentralization</a>
+          
+          
+          
+          <a class="tag" href="https://hackernoon.com/tagged/cryptocurrency">Cryptocurrency</a>
+          
+        </div>
+        
+
+        <div class="twitter-discussion">
+          <a target="_blank" href="https://twitter.com/search?q=https%3A%2F%2Fhackernoon.com%2Fether-purchase-power-df40a38c5a2f">Continue the discussion <i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      
+    </div>
+
+
+    <div class="more">
+      
+      <div class="divider-title">
+        <div class="divider"></div>
+        <h1 class="more-heading">More by Danny Ryan</h1>
+        <div class="divider"></div>
+      </div>
+
+      <div class="more-content">
+        
+        
+        <div class="story-card">
+          <a href="https://hackernoon.com/costs-of-a-real-world-ethereum-contract-2033511b3214">
+            
+            
+            <div class="img" style="background-image: url(&#39;https://hackernoon.com/Devimg/story-image-default.png&#39;)"></div>
+          </a>
+          <div class="excerpt">
+            <div class="title">
+              <a href="https://hackernoon.com/costs-of-a-real-world-ethereum-contract-2033511b3214">Costs of a Real World Ethereum Contract</a>
+            </div>
+            <div class="bio">
+              <div class="flex">
+                <div class="avatar" style="background-image: url(&#39;https://hackernoon.com/archive-avatars/djrtwo&#39;)"></div>
+                <div>
+                  <a href="https://hackernoon.com/@djrtwo" class="name">Danny Ryan</a>
+                  <div class="published"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          
+          
+          <a class="tag" href="https://hackernoon.com/tagged/ethereum">Ethereum</a>
+          
+        </div>
+        
+        
+        
+        
+        
+        <div class="story-card">
+          <a href="https://hackernoon.com/motivating-proof-of-stake-a-dialogue-3a6d76bd08d">
+            
+            
+            <div class="img" style="background-image: url(&#39;https://hackernoon.com/Devimg/story-image-default.png&#39;)"></div>
+          </a>
+          <div class="excerpt">
+            <div class="title">
+              <a href="https://hackernoon.com/motivating-proof-of-stake-a-dialogue-3a6d76bd08d">Motivating Proof of Stake, a dialogue</a>
+            </div>
+            <div class="bio">
+              <div class="flex">
+                <div class="avatar" style="background-image: url(&#39;https://hackernoon.com/archive-avatars/djrtwo&#39;)"></div>
+                <div>
+                  <a href="https://hackernoon.com/@djrtwo" class="name">Danny Ryan</a>
+                  <div class="published"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          
+          
+          <a class="tag" href="https://hackernoon.com/tagged/ethereum">Ethereum</a>
+          
+        </div>
+        
+        
+        
+        <div class="story-card">
+          <a href="https://hackernoon.com/nothing-at-stake-a-dialogue-2ded91318cb9">
+            
+            
+            <div class="img" style="background-image: url(&#39;https://hackernoon.com/hn-images/1*993cdAbxfkUm7IHYTITsYg.jpeg&#39;)"></div>
+          </a>
+          <div class="excerpt">
+            <div class="title">
+              <a href="https://hackernoon.com/nothing-at-stake-a-dialogue-2ded91318cb9">Nothing at Stake, a dialogue</a>
+            </div>
+            <div class="bio">
+              <div class="flex">
+                <div class="avatar" style="background-image: url(&#39;https://hackernoon.com/archive-avatars/djrtwo&#39;)"></div>
+                <div>
+                  <a href="https://hackernoon.com/@djrtwo" class="name">Danny Ryan</a>
+                  <div class="published">Nov 26</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          
+          
+          <a class="tag" href="https://hackernoon.com/tagged/proof-of-stake">Proof Of Stake</a>
+          
+        </div>
+        
+        
+        <div class="story-spacer"></div>
+        <div class="story-spacer"></div>
+      </div>
+      
+
+      <div id="subscribe-embed">
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+          <img class="signup-image" src="./Calculating Costs in Ethereum Contracts - By_files/0b8733f3-c1e1-4a69-9dc4-57b3407f333f.png" alt="">
+          <form action="https://hackernoon.us19.list-manage.com/subscribe/post?u=b48b0ec2173fecf2586c00e80&amp;id=fa796741e6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+            <div class="subscribe-header">
+              <h2>Hackernoon Newsletter curates great stories by real tech professionals</h2>
+              <p>Get solid gold sent to your inbox. Every week!</p>
+            </div>
+            <div class="mc-field-group">
+        
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address *" aria-required="true">
+            </div>
+            <div class="fields-group">
+              <div class="mc-field-group">
+                <input type="text" value="" name="MMERGE1" class="" id="mce-MMERGE1" placeholder="First Name">
+              </div>
+              <div class="mc-field-group">
+                <input type="text" value="" name="MMERGE2" class="" id="mce-MMERGE2" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="mc-field-group input-group topics-list">
+              <strong>Topics of interest </strong>
+              <ul><li class="checkbox"><input checked="" type="checkbox" value="1" name="group[3757][1]" id="mce-group[3757]-3757-0"><label for="mce-group[3757]-3757-0">Software Development</label></li>
+                <li class="checkbox"><input checked="" type="checkbox" value="2" name="group[3757][2]" id="mce-group[3757]-3757-1"><label for="mce-group[3757]-3757-1">Blockchain Crypto</label></li>
+                <li class="checkbox"><input checked="" type="checkbox" value="4" name="group[3757][4]" id="mce-group[3757]-3757-2"><label for="mce-group[3757]-3757-2">General Tech</label></li>
+                <li class="checkbox"><input checked="" type="checkbox" value="8" name="group[3757][8]" id="mce-group[3757]-3757-3"><label for="mce-group[3757]-3757-3">Best of Hacker Noon</label></li>
+              </ul>
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b48b0ec2173fecf2586c00e80_fa796741e6" tabindex="-1" value=""></div>
+            <div class="submit-btn"><input type="submit" value="Get great stories by email" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+      </div>
+
+      
+      <div class="divider-title">
+        <div class="divider"></div>
+        <h1 class="more-heading">More Related Stories</h1>
+        <div class="divider"></div>
+      </div>
+
+      <div class="more-content">
+        
+        <div class="story-card">
+          <a href="https://hackernoon.com/%C2%B5raiden-micropayments-for-ethereum-f0756cd400b3">
+            
+            
+            <div class="img" style="background-image: url(&#39;https://hackernoon.com/hn-images/1*0iDcNsqL4thxJ6D02bnfLw.jpeg&#39;)"></div>
+          </a>
+          <div class="excerpt">
+            <div class="title">
+              <a href="https://hackernoon.com/%C2%B5raiden-micropayments-for-ethereum-f0756cd400b3">µRaiden: Micropayments for Ethereum</a>
+            </div>
+            <div class="bio">
+              <div class="flex">
+                <div class="avatar" style="background-image: url(&#39;https://hackernoon.com/archive-avatars/raiden_network&#39;)"></div>
+                <div>
+                  <a href="https://hackernoon.com/@raiden_network" class="name">Raiden Network</a>
+                  <div class="published">Sep 19</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <a class="tag" href="https://hackernoon.com/tagged/ethereum">Ethereum</a>
+          
+        </div>
+        
+        <div class="story-card">
+          <a href="https://hackernoon.com/01-02-2018-biggest-stories-in-the-cryptosphere-549958230499">
+            
+            
+            <div class="img" style="background-image: url(&#39;https://hackernoon.com/Devimg/story-image-default.png&#39;)"></div>
+          </a>
+          <div class="excerpt">
+            <div class="title">
+              <a href="https://hackernoon.com/01-02-2018-biggest-stories-in-the-cryptosphere-549958230499">01/02/2018: Biggest Stories in the Cryptosphere</a>
+            </div>
+            <div class="bio">
+              <div class="flex">
+                <div class="avatar" style="background-image: url(&#39;https://hackernoon.com/archive-avatars/BlockEx&#39;)"></div>
+                <div>
+                  <a href="https://hackernoon.com/@BlockEx" class="name">BlockEx</a>
+                  <div class="published"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <a class="tag" href="https://hackernoon.com/tagged/bitcoin">Bitcoin</a>
+          
+        </div>
+        
+        <div class="story-card">
+          <a href="https://hackernoon.com/06-03-2018-biggest-stories-in-the-cryptosphere-91598dd6e24b">
+            
+            
+            <div class="img" style="background-image: url(&#39;https://hackernoon.com/Devimg/story-image-default.png&#39;)"></div>
+          </a>
+          <div class="excerpt">
+            <div class="title">
+              <a href="https://hackernoon.com/06-03-2018-biggest-stories-in-the-cryptosphere-91598dd6e24b">06/03/2018: Biggest Stories in the Cryptosphere</a>
+            </div>
+            <div class="bio">
+              <div class="flex">
+                <div class="avatar" style="background-image: url(&#39;https://hackernoon.com/archive-avatars/BlockEx&#39;)"></div>
+                <div>
+                  <a href="https://hackernoon.com/@BlockEx" class="name">BlockEx</a>
+                  <div class="published"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <a class="tag" href="https://hackernoon.com/tagged/blockchain">Blockchain</a>
+          
+        </div>
+        
+        <div class="story-card">
+          <a href="https://hackernoon.com/0-to-1-million-in-5-months-for-our-cryptocurrency-startup-3c66fd370298">
+            
+            
+            <div class="img" style="background-image: url(&#39;https://hackernoon.com/hn-images/1*ATeNxfF1Bb4o1Zg9oUKU8w.png&#39;)"></div>
+          </a>
+          <div class="excerpt">
+            <div class="title">
+              <a href="https://hackernoon.com/0-to-1-million-in-5-months-for-our-cryptocurrency-startup-3c66fd370298">0 to $1 Million in 5 Months for Our Cryptocurrency Startup</a>
+            </div>
+            <div class="bio">
+              <div class="flex">
+                <div class="avatar" style="background-image: url(&#39;https://hackernoon.com/archive-avatars/alex_wang1&#39;)"></div>
+                <div>
+                  <a href="https://hackernoon.com/@alex_wang1" class="name">Alex Wang</a>
+                  <div class="published">Mar 28</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <a class="tag" href="https://hackernoon.com/tagged/cryptocurrency">Cryptocurrency</a>
+          
+        </div>
+        
+        <div class="story-spacer"></div>
+        <div class="story-spacer"></div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="subnav footer">
+    <a href="https://www.hackernoon.com/"><img class="footer__logo" src="./Calculating Costs in Ethereum Contracts - By_files/hn-logo.png" width="45" height="45"></a>
+    <div>
+      <div class="footer__links">
+        <a href="http://help.hackernoon.com/">Help</a>
+        <a href="https://hackernoon.com/hacker-noon-faqs-with-six-word-answers-aw1ls3z1q">About</a>
+        <a href="https://community.hackernoon.com/session/sso?return_path=https%3A%2F%2Fapp.hackernoon.com">Start Writing</a>
+        <a class="footer__sponsor" href="http://sponsor.hackernoon.com/">Sponsor:</a>
+        <a class="footer__sponsor-type" href="https://sponsor.hackernoon.com/#brandasauthor">Brand-as-Author</a>
+        <a class="footer__sponsor-type" href="https://sponsor.hackernoon.com/#billboard">Sitewide Billboard</a>
+      </div>
+      <div class="footer__privacy-links">
+        <a href="mailto:support@hackernoon.com">Contact Us</a>
+        <a href="http://privacy.hackernoon.com/">Privacy</a>
+        <a href="http://terms.hackernoon.com/">Terms</a>
+      </div>
+    </div>
+    <div>
+      <a href="https://twitter.com/hackernoon" rel="noopener noreferrer" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/hackernoon" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.linkedin.com/company/hackernoon/" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/hackernoon" rel="noopener noreferrer" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+
+  <script src="./Calculating Costs in Ethereum Contracts - By_files/firebase-app.js"></script>
+  <script src="./Calculating Costs in Ethereum Contracts - By_files/firebase-auth.js"></script>
+  <script src="./Calculating Costs in Ethereum Contracts - By_files/firebase-firestore.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCjRAcAgsxlffnuZNIr4zOGaIsEKKEaJCg",
+    authDomain: "hackernoon-app.firebaseapp.com",
+    databaseURL: "https://hackernoon-app.firebaseio.com",
+    projectId: "hackernoon-app",
+    storageBucket: "hackernoon-app.appspot.com",
+    messagingSenderId: "521962009898"
+  };
+  firebase.initializeApp(config);
+  </script>
+  <script src="./Calculating Costs in Ethereum Contracts - By_files/js.cookie.min.js"></script>
+
+  <script src="./Calculating Costs in Ethereum Contracts - By_files/interact-archive.js"></script>
+  <script src="./Calculating Costs in Ethereum Contracts - By_files/prism.js"></script>
+  <script>window.upsettings = {'api_key': '24b4421e-81ec-0b84b6a2'}</script><script>(function(){var w=window;var up=w.Upscribe;if(typeof up==="function"){up('reattach_activator');up('update',upsettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Upscribe=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://upscri.be/js/snippet.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if( w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="./Calculating Costs in Ethereum Contracts - By_files/js(1)"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-65623566-4', { 'optimize_id': 'GTM-NR267TL'});
+  </script>
+  <script async="" src="./Calculating Costs in Ethereum Contracts - By_files/services.js"></script>
+  <script src="./Calculating Costs in Ethereum Contracts - By_files/subscribeform.js"></script>
+  <script async="" src="./Calculating Costs in Ethereum Contracts - By_files/mc-validate.js"></script>
+
+
+<script src="./Calculating Costs in Ethereum Contracts - By_files/annotate.js"></script><div id="shadowMeasureIt"></div><div id="divCoordMeasureIt"></div><div id="divRectangleMeasureIt"><div id="divRectangleBGMeasureIt"></div></div><div id="eJOY__extension_root" style="all: unset;"></div></body></html>

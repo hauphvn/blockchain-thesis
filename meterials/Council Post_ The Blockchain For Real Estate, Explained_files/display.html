@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- saved from url=(0146)https://aax.forbes.com/display.html?&_otarOg=https%3A%2F%2Fwww.forbes.com&_cpub=AAXQJ1RH7&_csvr=2019102110_699&_cgdpr=0&_cgdprconsent=0&_cmnetax=0 -->
+<html data-adblockkey="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAMLlOP3Rke738aeqtDCGp0IgSY5XBv7c+brDMmurbYvOFgakGw6sUG8fwt6VkjnOX9s9Kba1Drg2M9Bye/F3x7MCAwEAAQ==_jTZRheZ9L21Dm3mt0VjzwohOCfexZPFEPq+TEMKT1+LI0HCKpFvsHyzafsPXoFt6no8hRIpQEO0e4W0ZFASwhA=="><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+        function isDisplayIframe(type) {
+            return type;
+        }
+
+        function isPrefetchIframe(type) {
+            return type === "prefetch_frame";
+        }
+
+        function buildDisplayUrl(srcUrl, type) {
+            srcUrl = srcUrl + "&type=" + type;
+            if (isPrefetchIframe(type)) {
+                srcUrl = "";
+            }
+            return srcUrl;
+        }
+
+        function getScriptUrl(srcUrl) {
+            if (window.name !== '') {
+                try {
+                    var iframeParams = JSON.parse(window.name);
+                    if (isDisplayIframe(iframeParams.type)) {
+                        srcUrl = buildDisplayUrl(srcUrl, iframeParams.type);
+                    }
+                } catch (e) {
+                }
+            }
+            return srcUrl;
+        }
+
+        function loadScript(scriptUrl) {
+            if (scriptUrl === "") {
+                return;
+            }
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = scriptUrl;
+            var placeTag = document.getElementsByTagName("script")[0];
+            placeTag.parentNode.insertBefore(script, placeTag);
+        }
+
+        window.aax = window.aax || {};
+        window.aax["__conf"] = {"tarOg":"https://www.forbes.com","referer":"https://www.forbes.com/sites/forbesrealestatecouncil/2018/04/23/the-blockchain-for-real-estate-explained/"};
+        scriptUrl = getScriptUrl("https://c.aaxads.com/aaxd.js?pub=AAXQJ1RH7&svr=2019102110_699&gdpr=0&gdprconsent=0&mnetax=0");
+        loadScript(scriptUrl);
+    </script>
+</head>
+<body marginwidth="0" marginheight="0">
+
+<div id="eJOY__extension_root" style="all: unset;"></div></body></html>
