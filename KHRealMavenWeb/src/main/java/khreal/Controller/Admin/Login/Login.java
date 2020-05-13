@@ -31,6 +31,7 @@ public class Login extends HttpServlet {
 //            Authentication.CheckL ogin(strUserLogin.trim(),strPassword.trim())
             if(true){//Do chua ket noi dc voi mysql
                 HttpSession httpSession = request.getSession();
+
                 httpSession.setAttribute("isMember", "true");
                 response.sendRedirect("/managementReal");
             }else{
