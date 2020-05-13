@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://myhsts.org/ethereum-financial-app-with-java-and-web3j-api-through-blockchain-oracles.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Building Ethereum Financial Applications With Java And Web3j API Through Oracles | Blockchain Developer Guide
+</title>
+	
+<meta name="description" content="Learn how to build and deploy blockchain Ethereum financial applications with java and web3j API through blockchain Oracles step-by-step. Along the way, learn advance topics for Ethereum dev.
+">
+		<meta name="keywords" content="blockchain, oracles, ethereum with java, web3j api">
+<meta name="rating" content="General">
+<meta name="expires" content="never">
+<meta name="language" content="english, EN">
+<meta name="distribution" content="Global">
+<meta name="robots" content="index, folow">
+<meta name="revisit-after" content="3 Days">
+<meta name="email" content="info@weg2g.com">
+<meta name="author" content="https://dcwebmakers.com/">
+<meta name="copyright" content="HSTS 2015. All Rights Reserved.">
+<meta name="Geography" content="3165 Mt Pleasant St NW DC, 20010, United States">
+<meta http-equiv="CACHE-CONTROL" content="PUBLIC">
+<meta name="Designer" content="DC Web Makers">
+<meta name="Publisher" content="DC Web Makers">
+<meta name="zipcode" content="20010">
+<meta name="city" content="Washington DC">
+<meta name="state" content="District of Columbia">
+<meta name="phone" content="1-240-200-6131">
+<meta name="country" content="US">
+<meta name="website" content="https://myhsts.org">
+<meta name="DC.title" content="High School Technology Services in Washington DC">
+<meta name="DC.description" content="DC-based technology company">
+<meta name="DC.date" content="2014-15-05">
+<meta name="DC.format" content="text/html">
+<meta name="DC.contributor" content="DC Web Makers">
+<meta name="DC.language" content="en">
+<meta name="geo.region" content="US-DC">
+<meta name="geo.placename" content="Washington DC">
+<meta name="geo.position" content="38.902672">
+<meta name="ICBM" content="38.902672;-77.037319">
+
+  <!-- Custom fonts for this theme -->
+  <link href="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/all.min.css" rel="stylesheet">
+  <link href="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/css" rel="stylesheet">
+  <link href="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/css(1)" rel="stylesheet">
+
+  <!-- Plugin styles -->
+  <link href="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/jquery.fancybox.min.css" rel="stylesheet">
+  <link href="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/device-mockups.min.css" rel="stylesheet">
+  <link href="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/slick.css" rel="stylesheet">
+
+  <!-- Custom styles for this theme -->
+  <link href="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/theme-default.css" rel="stylesheet">
+  <!-- Alternate color schemes: uncomment to use! -->
+  <!-- <link href="css/theme-blue.css" rel="stylesheet"> -->
+  <!-- <link href="css/theme-green.css" rel="stylesheet"> -->
+  <!-- <link href="css/theme-yellow.css" rel="stylesheet"> -->
+  <!-- <link href="css/theme-orange.css" rel="stylesheet"> -->
+  <!-- <link href="css/theme-purple.css" rel="stylesheet"> -->
+  <!-- <link href="css/theme-turquoise.css" rel="stylesheet"> -->
+  <!-- <link href="css/theme-pink.css" rel="stylesheet"> -->
+  <!-- <link href="css/theme-brown.css" rel="stylesheet"> -->
+
+</head>
+
+<body id="page-top">
+
+  <!-- * * * * * * * * -->
+  <!-- * Navigation * -->
+  <!-- * * * * * * * * -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar-main">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="https://myhsts.org/index.html">
+      Home
+      <!---
+        <img class="navbar-brand-logo" src="img/logo-navbar.svg" alt="">
+        ---->
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav ml-auto">
+        <!--
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          --->    <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://myhsts.org/ethereum-financial-app-with-java-and-web3j-api-through-blockchain-oracles.html#" id="camp" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Courses
+            </a>
+            <div class="dropdown-menu shadow border-0" aria-labelledby="camp">
+              <a class="dropdown-item js-scroll-trigger" href="https://myhsts.org/courses.html">All Classes</a>
+              <a class="dropdown-item js-scroll-trigger" href="https://myhsts.org/web-design.html">Web Design</a>
+              <a class="dropdown-item js-scroll-trigger" href="https://myhsts.org/mobile-app-development.html">Mobile App</a>
+              <a class="dropdown-item js-scroll-trigger" href="https://myhsts.org/software-engineering.html">Software Engineering</a>
+              <a class="dropdown-item js-scroll-trigger" href="https://myhsts.org/blockchain.html">Blockchain</a>
+              <a class="dropdown-item js-scroll-trigger" href="https://myhsts.org/system-admin.html">System Admin</a>
+              <a class="dropdown-item js-scroll-trigger" href="https://myhsts.org/cms-classes.html">CMS Classes</a>              
+<a class="dropdown-item js-scroll-trigger" href="https://myhsts.org/online_self-learning_classes.html">Self-learning Classes</a>
+            </div>
+          </li>
+		  
+		  
+		  <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://myhsts.org/ethereum-financial-app-with-java-and-web3j-api-through-blockchain-oracles.html#" id="camp" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Bootcamps
+            </a>
+            <div class="dropdown-menu shadow border-0" aria-labelledby="camp">
+              <a class="dropdown-item js-scroll-trigger" href="https://myhsts.org/summer-coding-bootcamp.php">Teenagers</a>
+              <a class="dropdown-item js-scroll-trigger" href="http://coding-bootcamps.com/" target="_blank">Adults</a>
+              
+            </div>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://myhsts.org/free-coding-and-technology-recipes.html">Recipes</a>
+          </li>
+           <!---
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#process">Process</a>
+          </li>
+          --->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://myhsts.org/ethereum-financial-app-with-java-and-web3j-api-through-blockchain-oracles.html#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About
+            </a>
+            <div class="dropdown-menu shadow border-0" aria-labelledby="portfolioDropdown">
+              <a class="dropdown-item js-scroll-trigger" href="https://myhsts.org/about.html">Our instructors</a>
+              <a class="dropdown-item js-scroll-trigger" href="https://myhsts.org/services.html">Services</a>
+              <a class="dropdown-item js-scroll-trigger" href="https://myhsts.org/partners.html">Partners</a>
+              
+              
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://myhsts.org/testimonials.html">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://myhsts.org/index.html#contact">Contact</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://myhsts.org/blog.php">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- * * * * * * * -->
+  <!-- * Masthead * -->
+  <!-- * * * * * * * -->
+
+  <header class="masthead masthead-full text-white">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col text-center">
+         
+         
+          <div class="masthead-title">Ethereum Blockchain Application Dev with Java and Web3J API</div>
+          <hr class="primary small">
+          
+          <div class="masthead-subtitle">Develop Ethereum Financial App with Java and Web3J API through Oracles</div>
+          <hr class="primary small">
+        </div>
+      </div>
+    </div>
+    <div class="masthead-scroll">
+      <a href="https://myhsts.org/ethereum-financial-app-with-java-and-web3j-api-through-blockchain-oracles.html#about" class="masthead-scroll-btn js-scroll-trigger">
+        <i class="fas fa-angle-down"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- * * * * * * * * * -->
+  <!-- * About Section * -->
+  <!-- * * * * * * * * * -->
+
+  <section class="page-section text-center" id="about">
+    <div class="container-fluid" align="left">
+      <h1 class="page-section-heading text-uppercase" align="center">Recipe for Building Ethereum Financial App With Java &amp; Web3j API via Oracles</h1>
+         
+         <p>Ethereum is a general-purpose blockchain that is  more suited to describing business logic, through advanced scripts, also known  as smart contracts. Ethereum was designed with a broader vision, as a  decentralized or world computer that attempts to marry the power of the  blockchain, as a trust machine, with a Turing-complete contract engine.  Although Ethereum borrows many ideas that were initially introduced by bitcoin,  there are many divergences between the two.<br>
+  The Ethereum virtual machine and smart contracts  are key elements of Ethereum, and constitute its main attraction. In Ethereum,  smart contracts represent a piece of code written in a high-level language  (Solidity, LLL, Viper) and stored as bytecode in the blockchain, in order to  run reliably in a stack-based virtual machine (Ethereum Virtual Machine), in  each node, once invoked. The interactions with smart contract functions happen  through transactions on the blockchain network, with their payloads being  executed in the Ethereum virtual machine, and the shared blockchain state being  updated accordingly.</p>
+
+<p>If you are not  familiar with blockchain technology reading <a href="https://myhsts.org/tutorial-history-and-evolution-of-blockchain-technology-from-bitcoin.php">History  and Evolution of Blockchain Technology from Bitcoin</a> article is highly recommended. </p>
+<p>If you like  to learn more Ethereum blockchain development (with Solidity programming), <a href="https://myhsts.org/tutorial-learn-about-ethereum-blockchain-development-with-dapps-and-ethereum-vm.php">Blockchain  Developer Guide- Introduction to Ethereum Blockchain Development with DApps and  Ethereum VM</a>, <a href="https://blockchain.dcwebmakers.com/work-with-distributed-storage-ipfs-and-swarm-in-ethereum.html" target="_blank">Harness the Power of Distributed  Storage IPFS and Swarm in Ethereum Blockchain Applications</a>, and <a href="https://blockchain.dcwebmakers.com/blockchain-as-a-service-apps-using-ethereum-and-quorum.html" target="_blank">Building  Enterprise Blockchain-as-a-Service Applications Using Ethereum and Quorum</a> are  highly recommended. </p>
+
+<p>If you have  followed and finished our previous recipes, you should thoroughly know by now  how to write smart contracts with Solidity, and how to build a complete DApp  using web3.js and Drizzle. We focused on building a decentralized web  application on Ethereum using a set of tools, such as Remix or Truffle. In this  walkthrough, we will learn how to harness a powerful language, such as Java, to  build an Ethereum desktop or mobile application. Along the way, we will  discover new concepts in Solidity, such as calling third-party APIs in your  smart contracts or libraries. </p>
+<p>We will  break into finance and build a financial project that manages a futures smart  contract using Java (SE). Throughout this interesting use case, we will go over  the following points: </p>
+<ul>
+  <li>Building futures solidity contract </li>
+  <li>Introducing oracles </li>
+  <li>Introducing the web3j API </li>
+</ul>
+<p>&nbsp;</p>
+<p>Another benefit  of this recipe is that building a futures smart contract will help you to  understand the disruptive force of the blockchain and how smart contracts can  alter the financial industry (for example, futures trading market) by  automating payments and facilitating business processes. </p>
+<h4>Project  presentation</h4>
+<p>I know you're a  developer and not a financial nerd. Hence, I will try to introduce the futures concept  in the easiest terms. Futures  contracts (more colloquially, futures) are legal agreements to buy or sell a given quantity of commodity or asset (barrel  of oil, gold,  and silver) at a predetermined price  at a specified time in the future,  hence the name futures. </p>
+<p>For the sake of  ease and clarity, let's consider an oversimplified version of a real futures  contract from the financial industry. Let's suppose that an airline company wants  to lock in the fuel price to manage their exposure to risk and to avoid any  unpleasant surprises. <br>
+  Instead of buying  the oil and storing it until they need it, they buy a futures contract for oil  with a specific date of delivery and price per gallon. For example, an airline  company can agree on a futures contract to buy 1,000,000 gallons of fuel,  taking delivery 60 days in the future, at a price of $3 per gallon. </p>
+<p>In this example,  the airline company is considered as hedger while the seller might be considered  as a speculator. As the futures contracts may become more valuable if the price  goes up, the owner of that contract could sell that contract for more to  someone else. That said, we will build a smart contract that implements the  logic described here and defines the futures contract's details (asset,  quantity, unitary price, and delivery date) along with holding the funds. We  will also build a Java application enabling a third party (exchange market  authority) to define a futures contract between the other two parties. </p>
+<p>The smart  contract will also enable the speculator to sell the futures contract to  another speculator and calculate its investment offset by comparing the market  price to the futures contract price. </p>
+<p>This will be a  straightforward contract with only a few main abilities and minimalist design. </p>
+<p>&nbsp;</p>
+<h4>Futures smart  contract</h4>
+<p>As usual, we kick  off the recipe by writing the smart contract code. First, create a directory  called FuturesWeb3j (in your home  folder) and initiate an empty Truffle project <br>
+  using truffle init. </p>
+<br clear="all">
+
+  <p>Afterward, in the contracts/ folder, create a Futures.sol file with the following code: <br>
+    contract CFutures { address user; address  hedger; address speculator; struct asset{<br>
+    uint id;<br>
+    uint Quantity; uint price; address seller;  address buyer; uint date;<br>
+    } <br>
+    asset TradedAsset;<br>
+    event  DepositEv(uint amount, address sender); function CFutures(<br>
+    uint assetID, uint Quantity, uint price,  address buyer, address seller,<br>
+    uint date) public { TradedAsset.id = assetID;  TradedAsset.Quantity = Quantity; TradedAsset.price = price; TradedAsset.seller  = seller; speculator = seller;<br>
+    hedger = buyer; TradedAsset.buyer = buyer;  TradedAsset.date = date;<br>
+    } </p>
+  <p>function deposit() public payable returns(bool)  {<br>
+    require(msg.value == TradedAsset.Quantity *  TradedAsset.price); DepositEv(msg.value,msg.sender);<br>
+    return true;<br>
+    } </p>
+  <p>modifier onlyhedger() { require(msg.sender ==  hedger);<br>
+    _;<br>
+    } </p>
+  <p>function sellcontract(address newhedger) public  onlyhedger returns(bool){</p>
+  <p>hedger = newhedger; return true;<br>
+  } </p>
+  <p>function  getpaid() public returns(bool){<br>
+    require(now &gt;= TradedAsset.date &amp;&amp;  address(this).balance &gt; 0); speculator.transfer(address(this).balance);<br>
+    return true;<br>
+    } <br>
+    } </p>
+  <p>This is the  shortened version of a futures smart contract code. I assume you're now  familiar with the Solidity language and you can develop the code for adding  advanced features. </p>
+  <p>As you can see,  the starting point is to define a constructor that will determine the  contract's details, namely: asset ID, agreed quantity to buy, unit price,  buyer's address, seller's address, and delivery date. </p>
+  <p>We'll also define a few functions: </p>
+  <ul>
+    <li>deposit():  The hedger (airlines) will call this function to deposit the agreed  funds. </li>
+    <li>sellcontract(): The speculator  can sell the contract to another investor. getpaid(): The contract will release the funds to the oil vendor at the delivery date. </li>
+    <li>onlyhedger(): This is a modifier that restricts actions  to the initial buyer (the hedger). </li>
+  </ul>
+  <p>&nbsp;</p>
+  <h4>Blockchain oracles</h4>
+  <p>At this level,  the previous contract enables basic operations to lock and unlock funds against  commodities delivery. Nevertheless, once the contract expires, we want the  contract to calculate the offset benefit (savings) or loss made by the futures  deal – in other words,  how much the hedger has economized or lost. <br>
+    In this case, at  settlement time, the smart contract needs a solid and reliable source of  information to determine the underlying commodity (oil) price to calculate the  offset. But a question arises here: is the contract able to know by itself what  the oil market price is? </p>
+  <p>As we introduced in a previous recipe, the smart contract  is deterministic code executed in an isolated VM without direct connection to  an outside source of information! </p>
+  <p>However, there is a workaround for that situation:  oracles. </p>
+  <p>Oracles are  trusted agents or data suppliers that read and send requested information to  the smart contract from reliable external data sources. We have a few providers  of this type of service in the blockchain space, such as Chainlink, Link,  Blocksense, and Oraclize. In our example, we will use Oraclize (http://www.oraclize.it/) as it is an  industry leader in oracle servicing. </p>
+  <p>Let's see how we  can connect our contract to an oracle contract. In our previous code, we have  to bring in the following changes: </p>
+  <p>pragma solidity ^0.4.24;<br>
+    import  "./oraclizeAPI_0.5.sol"; contract CFutures is usingOraclize {<br>
+    uint  public fuelPriceUSD;</p>
+  <p>event NewOraclizeQuery(string description);  event NewDieselPrice(string price);</p>
+  <p>function CFutures( uint assetID, uint Quantity,  uint price, address buyer, address seller,<br>
+    uint date) public {<br>
+    … // keep it as defined previously<br>
+    } <br>
+    function<u> </u>callback(bytes32 myid, string  result) public { require(msg.sender == oraclize_cbAddress()); NewDieselPrice(result);<br>
+    fuelPriceUSD = parseInt(result, 2);<br>
+    } </p>
+  <p>function updateprice() public payable {<br>
+    NewOraclizeQuery("Oraclize query was sent,  standing by for the answer..");  oraclize_query("URL","xml(https://www.fueleconomy.gov/ws/rest/fuelprices).f uelPrices.diesel");<br>
+    } <br>
+    } <br>
+    In result we end up with a simple  contract using the Oraclize service to request Fuelprice <br>
+    (let's consider fuel as equivalent to oil). </p>
+  <p>As you can see, we start by importing the Oraclize API: import  "./oraclizeAPI_0.5.sol";. <br>
+    Then, we inherit the usingOraclize contract  to access the library methods. <br>
+    Next, to help the compiler resolve the  import, we need to download the Oraclize API contract and libraries into  Truffle's contracts/ folder by running wget https://raw.githubusercontent.com/oraclize/ethereum-api/master/oraclize API_0.5.sol. <br>
+    In the Oracle code part, we defined, along with fuelPriceUSD, two new  functions: updateprice() and<u> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u>callback. <br>
+    The first one uses oraclize_query to send a query to the Oraclize's smart contract with two arguments: the type of request  (URL, WolframAlpha, IPFS multihash) and the requested information (a specific  property in the XML response). The updateprice function is declared  as payable because  the Oraclize service  isn't free, and this function should accept ether to  be able to pay for the Oraclize service. However, the first query made by a contract  is free, so we include  a call for the updateprice() function without sending ether in our constructor. </p>
+  <p>On the other  hand, the second function,<u> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u>callback is defined by the API and, as its name indicates, it's a callback function  executed once Oracle sends back the response. Its first parameter is the id  of  the request, while the second parameter is the result of your request. In this example, we use the parseInt function, which is defined  by the Oraclize API file, to  set the number precision. In the preceding  example, $3.20 will be returned  as 320 cents. </p>
+  <p>The following  diagram represents the interaction between the initial contract and the data  source using Oraclize: </p>
+
+<br clear="all">
+
+  <p>&nbsp;</p>
+  <p><img src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/ethereum-blockchain-application-dev-with-java1.jpg" alt="Ethereum blockchain dev with Java" width="553" height="277"></p>
+  <p>Lastly, let's  implement the offset() method that will calculate the offset profit the hedger  made by taking this futures contract based on the price variation: </p>
+  <p>function offset() public view returns (uint) {<br>
+    return  TradedAsset.Quantity * (fuelPriceUSD - TradedAsset.price);<br>
+  } </p>
+  <p>Now that the contract  is complete, compile  the contract using truffle compile  and check whether there are any errors. </p>
+  <p>&nbsp;</p>
+  <h4>Web3j</h4>
+  <p>Web3j is a real treat for Java lovers  who want to make their  first steps in the new blockchain  environment. It represents a lightweight Java and Android API for integration  with Ethereum clients. It enables you to build a decentralized Java application  easily based on Ethereum. You can find all the details about the project at  their official website: https:// web3j.io/. </p>
+
+<br clear="all">
+
+  <h4>Prerequisites</h4>
+  <p>To get the most  out of the following sections, you need to have a basic knowledge of Java. You  should also have the following elements installed to build the application: </p>
+  <ul>
+    <li>Java 8 JDK</li>
+    <li>Eclipse and Maven – for coding and development </li>
+  </ul>
+  <p>&nbsp;</p>
+  <h4>Setting up the Web3J  Maven project</h4>
+  <p>If you have  already downloaded the code from GitHub, you can import it in Eclipse.  Otherwise, if you want to build the project from scratch, you have to create a  new Maven project, as follows: </p>
+  <ul>
+    <li>In the Eclipse IDE, navigate to <strong>File </strong><strong>| </strong><strong>New </strong><strong>| </strong><strong>Other </strong>to bring up the project- creation wizard. </li>
+    <li>Scroll to the Maven folder,  open it, and choose <strong>Maven Project</strong>. Then choose <strong>Next</strong>. </li>
+    <li>Keep passing the  dialogue forms by pressing next until you get the following form: </li>
+  </ul>
+  <p><img src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/ethereum-blockchain-application-dev-with-java2.gif" alt="Ethereum blockchain dev with Java" width="392" height="325"><br clear="ALL">
+  </p>
+
+<br clear="all">
+
+  <p>Here, you will need to enter information regarding the  Maven project you are creating. Choose the names you want and press <strong>Finish</strong>. The following is what your  sample project structure will look like at the end of the Maven  project-creation process: <br>
+    <img src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/ethereum-blockchain-application-dev-with-java3.gif" alt="Ethereum blockchain dev with Java" width="232" height="223"><br clear="ALL">
+  </p>
+  <p>Then, in the Maven  POM file (pom.xml), we'll  need to add the following  lines in the corresponding POM tags: </p>
+  <p>&lt;properties&gt;<br>
+    &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;<br>
+    &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;<br>
+    &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;<br>
+    &lt;/properties&gt;<br>
+    &lt;plugins&gt;<br>
+    &lt;plugin&gt;<br>
+    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;<br>
+    &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;<br>
+    &lt;version&gt;3.7.0&lt;/version&gt;<br>
+    &lt;configuration&gt;<br>
+    &lt;source&gt;1.8&lt;/source&gt;<br>
+    &lt;target&gt;1.8&lt;/target&gt;<br>
+    &lt;/configuration&gt;<br>
+    &lt;/plugin&gt;<br>
+    &lt;/plugins&gt;<br>
+    &lt;dependency&gt;<br>
+    &lt;groupId&gt;org.slf4j&lt;/groupId&gt;<br>
+    &lt;artifactId&gt;slf4j-simple&lt;/artifactId&gt;<br>
+    &lt;version&gt;1.7.21&lt;/version&gt;<br>
+    &lt;/dependency&gt;</p>
+  <p>After editing the Maven POM file, we have to update the  project to download the necessary dependencies. Right-click on <strong>Project</strong>, click on <strong>Maven</strong>, then choose <strong>Update  Project...</strong>: <br>
+    <img src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/ethereum-blockchain-application-dev-with-java4.gif" alt="Ethereum blockchain dev with Java" width="420" height="146"><br clear="ALL">
+  </p>
+  <p>&nbsp;</p>
+  <h4>Installing web3j</h4>
+  <p>Web3j provides a  command-line tool distributed as a portable .jar. In a few steps,  you can start using the web3j command line, so no installation is required. In  your home folder. <br>
+    run wget <br>
+    https://github.com/web3j/web3j/releases/download/v3.4.0/web3j-3.4.0.tar<br>
+    .</p>
+  <p>Unzip the downloaded TAR file: </p>
+  <p><strong>tar&nbsp; xvf web3j-3.4.0</strong></p>
+  <p>Then add the resultant folder to the system's path: </p>
+  <p><strong>export PATH=$PATH:~/web3j-3.4.0/bin</strong></p>
+  <p>You're all set.  Now, you can create Ethereum accounts or generate wrapper classes for your smart contracts. </p>
+  <p>&nbsp;</p>
+  <h4>Wallet creation</h4>
+  <p>The web3j  command-line tools allow us, among other features, to create wallets or send  transactions. </p>
+  <p>To create a new Ethereum  account, run web3j wallet  create. You'll be asked to provide  a password (don't forget it) and then a location where you want to back up your  account (wallet JSON file).  At the end, you'll get a JSON file with a long name (you can change  this) that carries lots of information, including the account address  and private key: <br>
+    <img src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/ethereum-blockchain-application-dev-with-java5.gif" alt="Ethereum blockchain dev with Java" width="570" height="157"><br clear="ALL">
+  </p>
+  <p>Alternatively,  instead of using web3j, you can export one of your Testnet accounts created in MetaMask  or Geth. </p>
+  <p>In this project,  we will be running our contract in the Testnet, therefore we need to supply  test ethers to our freshly created account. To do that, we can use MetaMask to  get free ethers and send them to our new account's address. Be careful, you  should add 0x and wait until the transaction is  confirmed, as shown here: <br>
+    <img src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/ethereum-blockchain-application-dev-with-java6.gif" alt="Ethereum blockchain dev with Java" width="260" height="247"><br clear="ALL">
+  </p>
+  <p>The account's  address is saved inside the wallet's JSON file created earlier, with the  address being the last part of the file's name. </p>
+
+<br clear="all">
+<h4>Java client</h4>
+<p>As introduced  earlier in this recipe, we are building a simple Java application using web3j.  Let's understand briefly the mechanics behind this API. </p>
+<p>Web3j is the Java  port of Ethereum's web3 API, which manages communication (JSON- RPC) between  Ethereum clients and the network. For each smart contract, web3j generates a  wrapper class, simplifying the access and smart contract interaction with  Ethereum. Thus, all complexities will be hidden  and you will not be forced to initiate RPC calls on your own. The following diagram (from the  official documentation) depicts the interaction flow between web3j and Ethereum: <br>
+  <img src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/ethereum-blockchain-application-dev-with-java7.gif" alt="Ethereum blockchain coding with Java EE" width="570" height="292"><br clear="ALL">
+</p>
+<p>&nbsp;</p>
+<h4>The wrapper generator</h4>
+<p>Before using  web3j, we need to build the Java wrapper class for our smart contract. The  web3j command-line tool supports the autogeneration of Java smart contract  function wrappers directly from Truffle's contract schema, as follows: </p>
+<p><strong>web3j truffle generate  ~/FuturesWeb3j/build/contracts/CFutures.json -o</strong><br>
+  <strong>~/eclipse-workspace/futures/src/main/java/ -p  org.recipe6.futures</strong></p>
+<br clear="all">
+
+  <p>The first argument is the build  file compiled by Truffle for  the CFutures contract, and the second is  the path of your Java project destination where the class wrapper will be  generated. In addition, the -p parameter should be the Java packaging structure for the generated class: <br>
+    <img src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/ethereum-blockchain-application-dev-with-java8.gif" alt="ethereum with java" width="570" height="293"><br clear="ALL">
+<br clear="ALL">
+  </p>
+  <p>This will result in creating a CFutures.java file with a new class with the same name as  the smart contract: </p>
+  <p>public class CFutures extends Contract {<br>
+    private  static final String BINARY = "0x60606040523415600e576...";<br>
+    } </p>
+  <p>As you can see,  the BINARY string represents  your compiled contract (bytecode). Remove the \ and \n, if there are  any. You'll find in this class a Java implementation for all of your smart contract  methods. </p>
+  <p>Remember that if  you make any changes, you'll have to compile the smart contract and then  generate the new ABI, bytecode, and web3j wrapper as we did previously. </p>
+  <p>Now that we have  our smart contract class wrapper, let's move on and write our Futures main  class. We have to write a Java class that deploys and interacts with the Cfutures smart contract using the Futures class  wrapper. </p>
+
+<br clear="all">
+
+  <h4>Initializing  web3j</h4>
+  <p>Let's now focus on the App.java file  created in the Maven project. <br>
+    The first  step is to initialize a web3j object.  We do that by passing  in a provider (for example, the endpoint of a third-party or local Ethereum  node) to the web3j build function: </p>
+  <p>Web3j web3j = Web3j.build(new  HttpService("https://ropsten.infura.io"));</p>
+  <p>In this example, we will use the Infura  gateway (https://infura.io/) to access the Testnet  network. If you remember, in Ethereum, we always need an entry point, which is  an RPC/HTTP provider (node) that carries the orders or actions dispatched by  the user to the network. Normally, the end user should have a local RPC client  connected to the network. However, we directly use an online provider (used  also by MetaMask) to avoid needless instructions and to keep communication with  the oracle straightforward. </p>
+  <p>Remember that if you want to use a  private network instead, you'll need to use the Ethereum-Bridge API (https://github.com/oraclize/ethereum-bridge) to keep using  the Oraclize service. </p>
+  <p>&nbsp;</p>
+  <h4>Setting up  Ethereum accounts</h4>
+  <p>To interact with  the blockchain network, we need to build transactions, thus we need to have a  wallet. We can use an existing one, as follows: </p>
+  <p>Credentials credentials =  WalletUtils.loadCredentials("PASSWORD",  "/path/to/walletfile.json");</p>
+  <p>Or, we can create a new wallet:  WalletUtils.generateNewWalletFile("PASSWORD",  new File("/path/to/destination"),  true);. <br>
+    Once loaded or  created, you can check the current balance of your wallet using the following: </p>
+  <p>EthGetBalance AccountBalance =  web3j.ethGetBalance(credentials.getAddress(),<br>
+    DefaultBlockParameterName.LATEST).sendAsync().get();  log.info("The accounts balance " + AccountBalance);</p>
+  <h4>Deploying  the contract</h4>
+  <p>As the wallet  credentials are defined and the web3 is initialized, we can construct and  deploy our Cfutures contract using the deploy method: <br>
+    CFutures CFuture_ = CFutures.deploy(web3j,  credentials, CUSTOM_GAS_PRICE, GAS_LIMIT, assetID,<br>
+    Quantity, price, buyer, seller, date).send();</p>
+  <p>The first four  arguments are needed to construct the deployment transaction, while the rest  are the arguments needed by the contract's constructor. </p>
+  <p>Among these four  parameters, we need to define the gas limit and the gas price. In this example,  I have defined them as global variables, as follows: </p>
+  <p>private static final BigInteger GAS_LIMIT =  BigInteger.valueOf(4_700_000); private static final BigInteger CUSTOM_GAS_PRICE  = Convert.toWei("140",<br>
+    Convert.Unit.GWEI).toBigInteger();</p>
+  <p>Here, we define a  gas limit of 47,00,000 units of gas and a gas price of 140 GWei. Web3j  uses&nbsp; a default price of 22 GWei – feel free to  define your own values. To choose the right value,&nbsp; you can check the current gas price for  Ropsten at https://ropsten.etherscan.io/chart/gasprice. <br>
+    Once the deploy()  function  is executed, it will result in creating a new instance of the CFutures  smart  contract on the Ethereum blockchain using the supplied credentials and  constructor parameter values. If, for any reason, the deployment transaction  isn't validated within 600 seconds, an exception will be raised. </p>
+  <p>At any time, you  can visit the Ropsten explorer to examine whether the contract has been  deployed using the link printed by the log here: </p>
+  <p>String  CFuturesAddress=CFuture_.getContractAddress(); log.info("View contract at  https://ropsten.etherscan.io/address/" +  CFuturesAddress);</p>
+  <p>&nbsp;</p>
+  <h4>Interacting with smart  contracts</h4>
+  <p>If you  wish to construct an instance of a smart  contract wrapper with  an existing smart contract, simply pass in its address  to the predefined load function: </p>
+  <p>CFutures CFutureInstance =  CFutures.load("contract_address", web3j, credentials,<br>
+    CUSTOM_GAS_PRICE, GAS_LIMIT);</p>
+  <p>Once you instantiate a new CFuture object  (using deploy or load), Eclipse  will help you with the autocompletion feature to  choose the functions to call or to access contract proprieties: <br>
+    <img src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/ethereum-blockchain-application-dev-with-java9.gif" alt="Ethereum blockchain coding with Java EE" width="570" height="178"><br clear="ALL">
+  </p>
+  <p>&nbsp;</p>
+  <h4>Calling a contract  function</h4>
+  <p>In our example,  once the contract is loaded for the first time, we need to deposit the amount  both parties agreed on. Hence, we need to execute the deposit  function  along with sending the contract value in ethers. </p>
+  <p>In web3j, all  methods are defined identically to their equivalent Solidity methods and take  the same parameters. To transact with a Cfutures function, we  invoke the equivalent object's method using dot notation, as follows: </p>
+  <p>BigInteger Quantity =  BigInteger.valueOf(120000); BigInteger Price = BigInteger.valueOf(300);</p>
+  <p>TransactionReceipt DepositReceipt =  CFutureInstance.deposit(Price.multiply(Quantity)).send();</p>
+  <p>As you can see, the argument passed to  the deposit function is a BigInteger (price *  quantity), not an integer or int, and so all variables should be declared as BigInteger in web3j. </p>
+  <p>For the sake of preserving our testing ethers, we will  make a deposit in wei and we will assume that a wei is worth a cent (I know  it's unrealistic). We suppose here that at the agreement time, an oil gallon  costs 300 cents (300 wei). The quantity and price are declared as separated  variables. </p>
+  <p>If you look at the wrapper  class in CFutures.java, you'll  find a defined Java function  for each function defined  in the smart contract. For instance, you'll find the following: </p>
+  <p>public RemoteCall&lt;TransactionReceipt&gt;  deposit(BigInteger weiValue) {<br>
+    …<br>
+    return  executeRemoteCallTransaction(function, weiValue);<br>
+    } </p>
+  <p>You can see that  the function definition has changed, as the original doesn't accept any parameters: </p>
+  <p>deposit()  payable returns(bool) {}</p>
+  <p>Web3j defines  this new argument  for payable functions to make it possible to pass in the  amount of Wei to send. </p>
+  <p>It's worth noting that, <strong>as stated in the official documentation </strong>(https://web3j. readthedocs.io/en/latest/smart_contracts.html), transactional  calls do not return any values, regardless of the return type specified on the  method. Hence, for all transactional methods, the transaction receipt (https://github.com/ethereum/wiki/wiki/JSON-  RPC#eth_gettransactionreceipt) associated with the transaction is returned. </p>
+  <p>The transaction receipt is useful for two reasons: </p>
+  <ul>
+    <li>It provides details of the mined block that the transaction resides in </li>
+    <li>Solidity events that are called will be logged as part of  the transaction, which can then be extracted </li>
+  </ul>
+
+<br clear="all">
+
+  <p>&nbsp;</p>
+  <p>For example, we can get from the transaction receipt the  transaction hash and examine the corresponding transaction on Etherscan as  shown in the picture below: <br>
+    <img src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/ethereum-blockchain-application-dev-with-java10.gif" alt="Ethereum blockchain coding with Java EE" width="570" height="451"><br clear="ALL">
+  </p>
+  <p>&nbsp;</p>
+  <h4>Calling view methods</h4>
+  <p>For view methods  (which only read a value in a smart contract), they are invoked using an  ordinary method call,  except they will not return  a TransactionReceipt as no transaction will be initiated (no cost associated). In our smart  contract, we have a view <br>
+    method, offset(), that can be invoked as follows: <br>
+    BigInteger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Offset=CFutureInstance.offset().send();  log.info("your offset is "+Offset.intValue());</p>
+
+<br clear="all">
+<p>In the same manner, it is possible to query the public  states of a smart contract, for instance to read the last fuelPriceUSD state's value: <br>
+  BigInteger LastfuelPrice =  CFutureInstance.fuelPriceUSD().send(); Integer fuelPriceUSD =  LastfuelPrice.intValue();<br>
+log.info("Last fuel Price Fuel price  According to the Oracle is: " + fuelPriceUSD);</p>
+<p>But, to update the fuelPriceUSD to  the current price, we need to go through two steps. <br>
+  The first is to  update the price, which we request from the oracle. The second is to wait for  the event informing us of the oracle's response to read the new value: </p>
+<p>BigInteger txcost =  Convert.toWei("0.01", Convert.Unit.ETHER).toBigInteger();  TransactionReceipt UpdateReceipt = CFutureInstance.updateprice(txcost).send();<br>
+  for (CFutures.NewDieselPriceEventResponse event  : CFutureInstance.getNewDieselPriceEvents(UpdateReceipt)) {<br>
+  log.info("The oil price has been  updated:" + event.price);<br>
+  } </p>
+<p>Keep in mind,  when you call the oracle, you are initiating an asynchronous exchange, which  means there will be a delay between the query and the response (request and a  callback transaction). Thus, in our Java code, we will need to update the price  by listening for the NewDieselPrice event  before calling the  offset() method to give us an accurate value. </p>
+<p>Notice that we used Convert.toWei("0.01",  Convert.Unit.ETHER) to convert from ethers to wei  while calling updateprice(), to cover the call charges. </p>
+<p>&nbsp;</p>
+<h4>Web3j events</h4>
+<p>In the smart  contract, we have defined a few events. Each one will be represented in the  smart contract wrapper with a method named identically, which takes the  transaction receipt and returns a decoded result (event parameters) in an  instance of the <br>
+  EventValues object.  Given that, here's  how to get the event data and display its content in our console: </p>
+<p>for (CFutures.DepositEvEventResponse event : CFutureInstance.getDepositEvEvents(DepositReceipt))  {<br>
+  log.info("Depoist event detected:" +  event.amount+"wei has been deposited");</p>
+<p>log.info("The funds has been sent by:  " + event.sender);<br>
+} </p>
+<p>Alternatively, you can use Observables (RxJava's observables), which will listen for events associated with the smart contract. Then use an EthFilter object  to filter your observable, as follows: </p>
+<p>EthFilter filter = new  EthFilter(DefaultBlockParameterName.EARLIEST, DefaultBlockParameterName.LATEST,<br>
+  CFutureInstance.getContractAddress());  web3j.ethLogObservable(filter).subscribe(Clog -&gt; {<br>
+  log.info("contract log"+  Clog.toString());<br>
+  });</p>
+<p>For EthFilter, we specify the  topics that we wish to apply to the filter, including the contract address. We  can also provide specific topics (only for indexed Solidity event parameters) to filter using: filter.addSingleTopic(EventEncoder.encode(event));<br>
+  At the time of writing, listening  for events (filters/subscriptions) is supported by Infura  only using  websocket endpoints on mainnet, Ropsten, and Rinkeby. However, web3j doesn't yet support  websockets, so we can't use filters in web3j while using Infura. <br>
+  This was the last web3J feature we needed  to cover in this recipe – it's time to test  the code by importing and running the project in  Eclipse. </p>
+<p>&nbsp;</p>
+<h4>Enhancement</h4>
+<p>The last thing to  consider is adding a textual or a graphical menu to this application to help  the user make their choices. To avoid bloating the project with irrelevant code  to our purpose, I have opted for a simple text-based menu: </p>
+<p>input = new Scanner(System.in); CFutures  CFutureInstance = null;<br>
+  System.out.println("Please make your  choice:"); System.out.println("1 – Deploy New Cfutures contract.");  System.out.println("2 – Load contract"); System.out.println("3  – Make deposit");  System.out.println("4 – current Fuel price");  System.out.println("5 – Update Fuel price");  System.out.println("6 – Investment offset");  System.out.println("0 - exit");<br>
+  int  selection;<br>
+  choice:  while(input.hasNextInt()) {</p>
+<p>selection = input.nextInt(); switch (selection)  {<br>
+  case 0:<br>
+  break choice;<br>
+  …<br>
+  } <br>
+} </p>
+<p>Great, now run your APP.java file to check whether everything is working as expected.  You should see message logs detailing the execution steps, similar to the following: <br>
+  <img src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/ethereum-blockchain-application-dev-with-java11.gif" alt="Ethereum blockchain coding with Java EE" width="570" height="177"><br clear="ALL">
+</p>
+<p>You might get the  event results in arbitrary order, as they are executed asynchronously in  parallel and their results are later captured. Therefore, it would be  preferable to use a CompletableFuture class  to wrap your web3j methods  and handle these asynchronous  calls. </p>
+<p>&nbsp;</p>
+<h4>Conclusion</h4>
+<p>In this recipe,  we have scratched the surface of working with the Ethereum blockchain using  your beloved language, Java. Indeed, it was a gentle introduction to web3j by  building an Oracle-based application, opening the door to build complex  Ethereum applications in Java. From now on, all you need is to dive deep into  the web3j documentation. You will find a number of smart contract examples in  their main project repository (https://github.com/web3j/web3j/tree/master/codegen/src/test/  resources/solidity). </p>
+<p>To enrich your  knowledge, you can also explore EthereumJ, which is a Java  implementation of the Ethereum protocol, or Ethereum Harmony. To step outside  of the Java world, you can explore Web3py (https://github.com/ethereum/web3.py), which is a complete Python implementation of web3js. </p>
+<p>&nbsp;</p>
+<p>If you like  to explore blockchain development with an alternative platform like Hyperledger  or learn about the projects of Hyperledger like Sawtooth or Iroha, visit <a href="https://myhsts.org/tutorial-comprehensive-blockchain-hyperledger-developer-guide-for-all-professional-programmers.php">Comprehensive Hyperledger Training  Tutorials</a> page to  get the outline of our Hyperledger articles.<br>
+  To conclude  this recipe, we like to recommend <a href="https://myhsts.org/course-blockchain-hyperledger-development-with-government-blockchain-association-certification.php">Blockchain  Hyperledger Development in 30 hours</a>, <a href="https://myhsts.org/course-blockchain-ethereum-development-with-government-blockchain-association-certification.php">Learn  Hands-on Blockchain Ethereum Development &amp; Get Certified in 30 Hrs</a>, and <a href="https://myhsts.org/course-security-architect-for-blockchain-applications-and-blockchain-cybersecurity.php">Become  Blockchain Certified Security Architect in 30 hours</a> courses to those interested in pursuing a blockchain  development career. This recipe is written by Brian Wu who is our senior Blockchain  instructor &amp; consultant in Washington DC. His books (<a href="https://www.amazon.com/Blockchain-Example-Decentralized-applications-Hyperledger/dp/1788475682">Blockchain  By Example</a> &nbsp;and <a href="https://www.amazon.com/Hyperledger-Cookbook-implementing-blockchain-frameworks-ebook/dp/B07Q4DD8TN">Hyperledger  Cookbook</a>) are highly recommended for  learning more about blockchain development.</p>
+  
+  <h4>Related Training Courses</h4>
+<p>
+  <a href="https://myhsts.org/course-learn-how-to-code-using-Node-in-JS-lanaguage.php">Hands-on Node.JS, MongoDB and Express.js Training</a><br>
+  <a href="https://myhsts.org/course-Advance-JavaScript-jQuery-JSON-and-Ajax-hands-on-training.php">Advance JavaScript, jQuery Using JSON and Ajax</a><br>
+ <a href="https://myhsts.org/course-blockchain-ethereum-development-with-government-blockchain-association-certification.php">Learn  Hands-on Blockchain Ethereum Development &amp; Get Certified in 30 Hrs</a><br>
+ <a href="https://myhsts.org/course-blockchain-hyperledger-development-with-government-blockchain-association-certification.php">Learn  Blockchain Hyperledger Development &amp; Get Certified in 30 Hrs</a><br>
+  <a href="https://myhsts.org/course-security-architect-for-blockchain-applications-and-blockchain-cybersecurity.php">Become  Blockchain Certified Security Architect in 30 hours</a><br> 
+ <a href="https://myhsts.org/course-blockchain-certified-solution-architect-for-technical-leaders.php">Blockchain Certified Solution Architect in 30 hours</a><br> 
+  <a href="https://myhsts.org/course-introduction-to-Pythan-programming-for-beginners.php">Introduction to Python Programming</a><br>
+    <a href="https://myhsts.org/course-object-oriented-analysis-and-design-with-unified-modeling-language-training.php">Object Oriented Programming with UML</a> <br>
+  </p>  
+
+                 
+         
+         
+         
+         
+         
+      <hr class="primary small mb-5">
+      
+    </div>
+    
+
+    
+    
+    
+    
+  </section>
+
+  <!-- * * * * * * * * * * * * * * -->
+  <!-- * Team Section - Carousel * -->
+  <!-- * * * * * * * * * * * * * * -->
+
+
+  <!-- * * * * * * * * * * * * * * -->
+  <!-- * Callout Section - Full * -->
+  <!-- * * * * * * * * * * * * * * -->
+
+
+  <!-- * * * * * * * * * * -->
+  <!-- * Process Section * -->
+  <!-- * * * * * * * * * * -->
+
+  <!-- * * * * * * * * * * * * * * * * * -->
+  <!-- * Portfolio Section - Carousel * -->
+  <!-- * * * * * * * * * * * * * * * * * -->
+
+  <!-- Portfolio Modal - 1 -->
+
+
+  <!-- Portfolio Modal - 2 -->
+ 
+
+  <!-- Portfolio Modal - 3 -->
+
+
+  <!-- Portfolio Modal - 4 -->
+
+  <!-- * * * * * * * * * * * * * * * -->
+  <!-- * Portfolio Section - Grid * -->
+  <!-- * * * * * * * * * * * * * * * -->
+
+  <!-- * * * * * * * * * * * * * * * -->
+  <!-- * Callout Section - Signup * -->
+  <!-- * * * * * * * * * * * * * * * -->
+
+
+
+  <!-- * * * * * * * * * * -->
+  <!-- * Contact Section * -->
+  <!-- * * * * * * * * * * -->
+
+
+
+  <!-- * * * * * * * * * * * * * * * -->
+  <!-- * Callout Section - Button * -->
+  <!-- * * * * * * * * * * * * * * * -->
+
+   <a href="https://myhsts.org/courses.html" class="btn btn-callout btn-block">View Our Classes!</a>
+
+
+  <!-- * * * * * * -->
+  <!-- * Footer * -->
+  <!-- * * * * * * -->
+
+  <footer class="footer text-center text-white-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h5 class="text-uppercase">
+          <i class="fas fa-mobile-alt fa-fw"></i>
+          Call
+        </h5>
+          <a class="text-white-50" href="https://myhsts.org/ethereum-financial-app-with-java-and-web3j-api-through-blockchain-oracles.html#">240-200-6131</a>
+        </div>
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h5 class="text-uppercase">
+          <i class="fas fa-map-marker-alt fa-fw"></i>
+          Visit</h5>
+          <div>
+            3165 Mt Pleasant St NW
+            <br>
+            Washington DC, 20010
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="text-uppercase">
+          <i class="fas fa-envelope fa-fw"></i>
+          Email
+        </h5>
+          <!-- Make sure to change the mailto address below! -->
+          <a class="text-white-50" href="mailto:mail@example.com">info@myhsts.org</a>
+        </div>
+      </div>
+      <div class="footer-social">
+        <!-- Footer Social Link - Facebook -->
+        <a class="px-3 text-white-50" rel="nofollow" href="https://www.facebook.com/myhsts">
+          <i class="fab fa-facebook-f fa-2x fa-fw"></i>
+        </a>
+        <!-- Footer Social Link - Twitter -->
+        <a class="px-3 text-white-50" rel="nofollow" href="https://twitter.com/myhsts">
+          <i class="fab fa-twitter fa-2x fa-fw"></i>
+        </a>
+        <!-- Footer Social Link - LinkedIn -->
+        <a class="px-3 text-white-50" rel="nofollow" href="https://www.linkedin.com/company/high-school-technology-services">
+          <i class="fab fa-linkedin-in fa-2x fa-fw"></i>
+        </a>
+      </div>
+      <div class="footer-copyright">
+        © <a target="_blank" href="https://weg2g.com/application/weg2g_central/weg2g_companies.php">WEG2G LLC</a><br>
+       Designed by <a href="https://dcwebmakers.com/" target="_blank"> DC Web Makers</a>  
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/jquery.min.js.download"></script>
+  <script src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/bootstrap.bundle.min.js.download"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/jquery.fancybox.min.js.download"></script>
+  <script src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/jquery.easing.min.js.download"></script>
+  <script src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/slick.min.js.download"></script>
+
+  <!-- Custom scripts for this theme -->
+  <script src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/contact.js.download"></script>
+  <script src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/validation.js.download"></script>
+  <script src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/core.js.download"></script>
+
+
+
+
+<iframe id="nr-ext-rsicon" style="position: absolute; display: none; width: 50px; height: 50px; z-index: 2147483647; border-style: none; background: transparent;" src="./Huong dan maven voi web3js Building Ethereum Financial Applications With Java And Web3j API Through Oracles _ Blockchain Developer Guide_files/saved_resource.html"></iframe><div id="eJOY__extension_root" style="all: unset;"></div></body></html>
