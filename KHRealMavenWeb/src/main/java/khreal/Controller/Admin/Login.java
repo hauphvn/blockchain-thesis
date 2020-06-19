@@ -1,4 +1,4 @@
-package khreal.Controller.Admin.Login;
+package khreal.Controller.Admin;
 
 import khreal.Controller.Authentication.Authentication;
 import khreal.Utils.DbConfig;
@@ -17,7 +17,6 @@ import java.io.IOException;
 public class Login extends HttpServlet {
     @Override
     public void init(ServletConfig config) throws ServletException {
-        DbConfig.driver = config.getInitParameter("db.driver");
         DbConfig.username = config.getInitParameter("db.user");
         DbConfig.password = config.getInitParameter("db.password");
         DbConfig.host = config.getInitParameter("db.url");
@@ -25,12 +24,19 @@ public class Login extends HttpServlet {
 
     protected void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         response.setContentType("text/html;charset=UTF-8");
+        HttpSession session = request.getSession();
         try {
-            String strUserLogin = request.getParameter("username");
-            String strPassword = request.getParameter("password");
+            if(session.getAttribute("isAdmin") != null){
+
+            }else{
+                response.sendRedirect("/adminLogin.html");
+            }
+
+
 //            Authentication.CheckL ogin(strUserLogin.trim(),strPassword.trim())
             if(true){//Do chua ket noi dc voi mysql
                 HttpSession httpSession = request.getSession();
+
                 httpSession.setAttribute("isMember", "true");
                 response.sendRedirect("/managementReal");
             }else{

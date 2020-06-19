@@ -6,7 +6,6 @@ public class ConnectionDB {
     public static Connection openConnection() {
         Connection conn = null;
         try {
-            Class.forName(DbConfig.driver);
             conn = DriverManager.getConnection(DbConfig.host, DbConfig.username, DbConfig.password);
         } catch (Exception e) {
             System.out.printf("Loi ket noi db: " + e.getMessage());

@@ -1,10 +1,6 @@
-package khreal.Controller.Admin.Login;
-
-import khreal.Controller.Authentication.Authentication;
-import khreal.Utils.DbConfig;
+package khreal.Controller;
 
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,21 +9,25 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-//@WebServlet(name = "Login")
-public class Login extends HttpServlet {
-    @Override
-    public void init(ServletConfig config) throws ServletException {
-        DbConfig.driver = config.getInitParameter("db.driver");
-        DbConfig.username = config.getInitParameter("db.user");
-        DbConfig.password = config.getInitParameter("db.password");
-        DbConfig.host = config.getInitParameter("db.url");
-    }
+//@WebServlet(name = "StartDapp")
+public class StartDapp extends HttpServlet {
 
     protected void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         response.setContentType("text/html;charset=UTF-8");
+        HttpSession session = request.getSession();
         try {
-            String strUserLogin = request.getParameter("username");
-            String strPassword = request.getParameter("password");
+            if(session != null && session.getAttribute("isAdmin") != null && "true".equals(session.getAttribute(
+                    "isAdmin"))){
+            response.sendRedirect("/admin-home");
+            }else if(session != null && session.getAttribute("isMember") != null && "true".equals(session.getAttribute(
+                    "isMember"))){
+                response.sendRedirect("/member-home");
+            }
+            else{
+                response.sendRedirect("/home");
+            }
+
+
 //            Authentication.CheckL ogin(strUserLogin.trim(),strPassword.trim())
             if(true){//Do chua ket noi dc voi mysql
                 HttpSession httpSession = request.getSession();
@@ -44,11 +44,19 @@ public class Login extends HttpServlet {
         }
 
     }
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        process(request, response);
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) {
+        try{
+            process(request, response);
+        }catch (Exception e){
+            e.printStackTrace(System.out);
+        }
     }
 
-//    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOExcepticon {
-//        process(request, response);
-//    }
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) {
+        try{
+            process(request, response);
+        }catch (Exception e){
+            e.printStackTrace(System.out);
+        }
+    }
 }

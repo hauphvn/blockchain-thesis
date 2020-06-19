@@ -1,5 +1,5 @@
-var ManageRealEsate = artifacts.require("./ManageRealEsate.sol");
+var DocumentRegistry = artifacts.require("./DocumentRegistry.sol");
 
 module.exports = function(deployer) {
-    deployer.deploy(ManageRealEsate,{from:"0x89E8416eA5b69863CCb34D3A5C74A86bf5549147"});
+    deployer.deploy(DocumentRegistry,{from:"0xF21FBB0B188184dD75be672C0dbD02A303556d82"});
 };

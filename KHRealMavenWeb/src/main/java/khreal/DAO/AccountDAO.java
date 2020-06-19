@@ -41,10 +41,16 @@ public class AccountDAO {
                 }
             }
         }catch (Exception e){
-            System.out.println("Loi khi get all Account from DB: "+ e.getMessage());
             e.printStackTrace();
+        }finally {
         }
+
         return list;
+    }
+
+    public static void main(String[] args) {
+        AccountDAO accountDAO = new AccountDAO();
+        ArrayList<AccountDTO> lists = accountDAO.getAll();
     }
 
 }
