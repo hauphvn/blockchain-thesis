@@ -13,7 +13,11 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <h3 style="text-align: center;margin-top: 14px;">SÀN GIAO DỊCH BẤT ĐỘNG SẢN</h3>
+            <div style="text-align: center;margin-top: 14px;" class="card-title">
+                <h3>SÀN GIAO DỊCH BẤT ĐỘNG SẢN</h3> <br/> <h4>KH
+                REALESTATE BLOCKCHAIN</h4>
+            </div>
+
             <div class="wrap-login">
                 <div class="btn-sign-in">
                     <input type="button" class="btn btn-success" value="Đăng nhập" />
@@ -25,15 +29,10 @@
             <div class="wrap-item">
                 <div class="textWithBlurredBg">
                     <img src="../imgs/item-real/200.png" alt="hinh-mau">
-                    <p class="detail" onclick="document.getElementById('id01').style.display='block'">Xem chi tiết</p>
+                    <p class="detail" onclick="document.getElementById('i-view-detail').style.display='block'">Xem chi tiết</p>
                     <p class="buy">Mua</p>
                 </div>
 
-                <div class="textWithBlurredBg">
-                    <img src="../imgs/item-real/200.png" alt="hinh-mau">
-                    <p class="detail">Xem chi tiết</p>
-                    <p class="buy">Mua</p>
-                </div>
                 <div class="textWithBlurredBg">
                     <img src="../imgs/item-real/200.png" alt="hinh-mau">
                     <p class="detail">Xem chi tiết</p>
