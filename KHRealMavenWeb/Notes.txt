@@ -1,0 +1,4 @@
+generate warrap: web3j truffle generate TruffleContract/build/contracts/ManageRealEsate.json -o . -p src.main.java.khreal.Contracts
+Trong project su dung:
+- Ethereum client: Ganache
+( Cớ thể sử dụng Infura để sử dụng trên cloud: Web3j web3 = Web3j.build(new HttpService("https://morden.infura.io/your-token"));

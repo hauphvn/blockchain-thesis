@@ -2,3 +2,6 @@ DappKHReal/
 KHRealMavenWeb/target/
 KHRealMavenWeb/.idea/
 KHRealMavenWeb/TruffleContract/node_modules/
+KHRealMavenWeb/TruffleContract/node_modules/
+KHRealMavenWeb/TruffleContract/src/
+KHRealMavenWeb/TruffleContract/test/
